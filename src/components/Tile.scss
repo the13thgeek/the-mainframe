@@ -9,15 +9,63 @@
   &:hover {
       background-color: #444;
   }
-}
 
-.standard-widget {
-  h3.widget-title {
-      margin: 0;
-      font-size: 16px;
+  &.ranking {
+    .grid-ranking {
+      .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+
+        .rank {
+          display: flex;
+          font-size: 18px;
+        }
+
+        .player {
+          display: flex;
+          flex-direction: column;
+          
+          p.data {
+            margin: 0;
+          }
+
+          h4 {
+            margin: 0;
+          }
+        }
+
+      }
+    }
   }
 
+  &.ranking.top-exp {
+    .widget-title {
+      i.fa-trophy {
+        color: #cf0;
+      }
+    }
+  }
+}
+
+.widget-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+
+  h3 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 18px;
+    transform: translateY(1px);
+  }
+  
   i {
-      margin-right: 5px;
+    margin-right: 5px;
+    font-size: 20px;
   }
 }

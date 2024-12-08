@@ -13,6 +13,10 @@ nav.global {
     margin: 5px 0 13px;
 
     li {
+      &:last-child {
+        margin-left: 30px;
+      }
+
       a {
         text-transform: uppercase;
         font-weight: 400;
@@ -27,6 +31,10 @@ nav.global {
 
         &:hover {
           background-color: #666;
+        }
+
+        &.domain-link {
+          text-transform: lowercase;
         }
 
         &.active {

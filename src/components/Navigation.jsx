@@ -18,8 +18,8 @@ const Navigation = () => {
           </NavLink>
         </li>
         <li>
-          <Link to='https://the13thgeek.com' target='_blank'>
-          the13thgeek.com
+          <Link className='domain-link' to='https://the13thgeek.com' target='_blank'>
+          the13thgeek.com <i className="fa-solid fa-up-right-from-square"></i>
           </Link>
         </li>
       </ul>

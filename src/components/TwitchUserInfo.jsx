@@ -13,16 +13,39 @@ const TwitchUserInfo = () => {
     };
 
     return (
-        <div>
+        <div className='profile-detail'>
             {user ? (
-                <>
-                    <img src={user.profile_image_url} alt="Avatar" style={{ width: "40px", borderRadius: "50%" }} />
-                    <span>{user.display_name}</span><br />
-                    <span>Level {user.level} ({user.title}) [{user.level_progress}%] </span>
-                    <button onClick={handleLogout}>Logout</button>
-                </>
+                <div className="row">
+                    <div className="avatar">
+                        <img src={user.profile_image_url} alt="Twitch Avatar" />
+                    </div>
+                    <div className="contents">
+                        <div className="row stats">
+                            <div className="user-stats">
+                                <h3 className='twitch-username'>{user.display_name}</h3>
+                                <span className="level"><i className="fa-solid fa-trophy"></i> Level {user.level}</span> <span className="title">{user.title}</span>
+                            </div>
+                            <button className='sign-out' onClick={handleLogout}><i className="fa-solid fa-right-from-bracket"></i> Logout</button>
+                        </div>
+                        <div className="row exp">
+                            <div className="user-exp">
+                                <span className="exp">{Math.ceil(user.exp)} EXP</span>
+                            </div>
+                            <div className="bar-exp">
+                                <div className="shader" style={{ width: user.level_progress + '%' }}></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             ) : (
-                <button onClick={() => (window.location.href = getAuthUrl())}>Login to Twitch</button>
+                <>
+                    <div className="invite">
+                        <h3>Your Profile</h3>
+                        <p>Connect with Twitch to unlock personalized stream features, exclusive perks and fun off-stream community activities!</p>
+                        <button className='sign-in' onClick={() => (window.location.href = getAuthUrl())}><i className="fa-brands fa-twitch"></i> Login with Twitch</button>
+                    </div>
+                </>
+                
             )}
         </div>
     );

@@ -1,0 +1,104 @@
+.invite {
+  h3 {
+    margin-top: 0;
+  }
+}
+
+.profile-detail {
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .avatar {
+    img {
+      width: 80px;
+      border-radius: 50%;
+    }
+  }
+
+  .contents {
+    width: 100%;
+
+    .row.stats {
+      justify-content: space-between;
+      align-items: start;
+
+      button.sign-out {
+        &:hover {
+          background-color: #c00;
+          color: #fff;
+        }
+      }
+
+      h3.twitch-username {
+        margin: 0 0 5px;
+        font-size: 25px;
+      }
+    }
+
+    .row.exp {
+      margin-top: 10px;
+      gap: 5px;
+      justify-content: space-between;
+      align-items: start;
+      flex-direction: column;
+
+      .exp {
+        font-size: 14px;
+      }
+
+      .bar-exp {
+        width: 100%;
+        height: 10px;
+        background-color: #000;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+
+        .shader {
+          position: absolute;
+          left: 0;
+          height: 100%;
+          background-color: #ffd700;
+        }
+      }
+    }
+
+    .user-stats {
+      margin: 0;
+      
+
+      i.fa-trophy {
+        color: #ffd700;
+      }
+
+      .level {
+        font-size: 16px;
+      }
+
+      .title {
+        display: inline-block;
+        background-color: #dadada;
+        color: #333;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 12px;
+        padding: 3px 7px;
+        border-radius: 5px;
+        margin-left: 10px;
+        transform: translateY(-1px);
+        text-transform: uppercase;
+      }
+    }
+
+  }
+
+}
+
+button.sign-in {
+  background-color: #6441a5;
+  color: #fff;
+}
