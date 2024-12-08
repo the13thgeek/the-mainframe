@@ -1,3 +1,76 @@
+/* VARS HERE */
+$global-font-family: 'Raleway';
+/* Breakpoints */
+$screen-lg: 1440px;
+$screen-md: 992px;
+$screen-sm: 768px;
+
+/* STYLES HERE */
+
+body {
+  margin: 0;
+  background-color: #131313;
+  color: #fff;
+  font-family: $global-font-family, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  margin: 30px 0;
+  display: flex;
+}
+
+.structure {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.layout-row {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+
+  .col-a {
+    flex: 2;
+  }
+  .col-b {
+    flex: 1;
+  }
+}
+
+@media (max-width: $screen-md) {
+
+  .structure {
+    max-width: 100%;
+    margin: 0 20px;
+  }
+
+  .layout-row {
+    .col-a, .col-b {
+      flex: 1;
+    }
+  }
+
+}
+
+@media (max-width: $screen-sm) {
+
+  .structure {
+    max-width: 100%;
+    margin: 0 20px;
+  }
+
+  .layout-row {
+    flex-direction: column;
+  }
+
+}
+
 // #root {
 //   max-width: 1280px;
 //   margin: 0 auto;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { getAuthUrl, getUserFromStorage, clearUserFromStorage } from "../utils/auth";
 import { useNavigate } from "react-router-dom";
+import './TwitchUserInfo.scss';
 
 const TwitchUserInfo = () => {
     const navigate = useNavigate();
@@ -12,7 +13,7 @@ const TwitchUserInfo = () => {
     };
 
     return (
-        <div style={{ padding: "10px", backgroundColor: "#eee", textAlign: "right" }}>
+        <div>
             {user ? (
                 <>
                     <img src={user.profile_image_url} alt="Avatar" style={{ width: "40px", borderRadius: "50%" }} />

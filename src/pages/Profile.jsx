@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import TwitchUserInfo from "../components/TwitchUserInfo";
 import { getUserFromStorage } from "../utils/auth";
 import { useNavigate } from "react-router-dom";
 
@@ -16,6 +17,7 @@ const Profile = () => {
 
     return (
         <div>
+            <TwitchUserInfo />
             <h1>Your Twitch Profile</h1>
             <img src={user.profile_image_url} alt="Avatar" />
             <p>Name: {user.display_name}</p>

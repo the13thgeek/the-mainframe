@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import TwitchUserInfo from "./components/TwitchUserInfo";
+//import TwitchUserInfo from "./components/TwitchUserInfo";
+import Navigation from "./components/Navigation";
+import SectionTitle from "./components/SectionTitle";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import { TWITCH_REDIRECT_URI, TWITCH_CLIENT_ID, saveUserToStorage } from "./utils/auth";
@@ -49,13 +51,20 @@ function App() {
     }, []);
 
     return (
+        <>
         <Router>
-            <TwitchUserInfo />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/profile" element={<Profile />} />
-            </Routes>
+            <Navigation />
+            <SectionTitle />
+            <main>
+              <div className="structure">
+              <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/profile" element={<Profile />} />
+              </Routes>
+              </div>
+            </main>
         </Router>
+        </>
     )
 }
 
