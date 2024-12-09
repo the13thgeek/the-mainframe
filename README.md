@@ -1,10 +1,10 @@
 # theMainframe
 
+**theMainframe** is an interactive hub for @the13thgeek's Twitch community, offering a unique, engaging experience for viewers. By logging in with their Twitch account, users can track their progress with EXP earned from chatting, check-ins, and channel point rewards. The site features customizable check-in cards, a rhythm game song request system, and a leaderboard to showcase top EXP earners. As the site evolves, exciting features like achievements, mini-games, and live Twitch stats integration will enhance the fun and interactivity, making theMainframe the ultimate destination for @the13thgeek's viewers.
+
 ## Changelog
 
 For updates and changes to **theMainframe**, check out the [CHANGELOG.md](./CHANGELOG.md).
-
-**theMainframe** is an interactive hub for @the13thgeek's Twitch community, offering a unique, engaging experience for viewers. By logging in with their Twitch account, users can track their progress with EXP earned from chatting, check-ins, and channel point rewards. The site features customizable check-in cards, a rhythm game song request system, and a leaderboard to showcase top EXP earners. As the site evolves, exciting features like achievements, mini-games, and live Twitch stats integration will enhance the fun and interactivity, making theMainframe the ultimate destination for @the13thgeek's viewers.
 
 ## Viewer Features
 
