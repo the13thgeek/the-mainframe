@@ -9,12 +9,21 @@
   font-size: 40px;
   display: flex;
   align-items: center;
+  
+  .the {
+    padding-top: 20px;
+    line-height: 30px;
+  }
 
   .mainframe-box {
+    line-height: 30px;
     position: relative;
     background-color: #fff;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
     color: #000;
-    padding: 6px 6px 2px 0;
+    padding: 20px 6px 2px 0;
     display: inline-block;
     mix-blend-mode: screen;
   }

@@ -26,10 +26,10 @@ function App() {
                 .then(async (data) => {
                     let user = data.data[0];
 
-                    return fetch(`${import.meta.env.VITE_GEEKHUB_NODEJS_URL}/geekhub/login-widget`, {
+                    return fetch(`${import.meta.env.VITE_CLOUD_URL}/mainframe/login-widget`, {
                         method: 'POST',
                         headers: {
-                            "x-api-key": import.meta.env.VITE_GEEKHUB_NODEJS_APIKEY,
+                            "x-api-key": import.meta.env.VITE_CLOUD_APIKEY,
                             "Content-Type": "application/json"
                         },
                         body: JSON.stringify({
@@ -39,14 +39,18 @@ function App() {
                     })
                     .then((res) => res.json())
                     .then((localData) => {
-                        user = { ...user, ...localData };
+                        if(localData) {
+                            user = { ...user, ...localData };
+                        }
                         saveUserToStorage(user);                        
                         window.location.hash = "#/"; // Clean URL, keep `HashRouter` path
                         window.location.reload(); // Reload to update UI
                     });
                     
+                    
                 });
             }
+           
         }
     }, []);
 

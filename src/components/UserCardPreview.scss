@@ -1,0 +1,16 @@
+.tile.user-card {
+  p {
+    text-align: center;
+    margin: 10px 0 0 0;
+
+    .badge-prem {
+      display: inline-block;
+      background-color: #900;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 3px 5px 2px;
+      margin-left: 10px;
+      border-radius: 4px;
+    }
+  }
+}

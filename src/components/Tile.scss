@@ -17,8 +17,7 @@
   &:hover {
       background-color: #282828;
       box-shadow: 0 2px 4px 1px rgba(255, 255, 255, 0.6);
-      //transform: translateY(-2px);
-      transition: box-shadow 0.3s, transform 0.3s;
+        transition: box-shadow 0.3s, transform 0.3s;
   }
 
   &.ranking {
@@ -52,10 +51,14 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 35px;
-          height: 35px;
+          width: 45px;
+          height: 45px;
           background-color: #1a1a1a;
           border-radius: 50%;
+
+          i {
+            font-size: 26px;
+          }
         }
 
         .player {
@@ -63,22 +66,22 @@
           flex-direction: column;
           
           .data {
-            margin: 0;
+            margin: 5px 0 0 0;
             font-size: 12px;
+          }
+
+          span.level {
+            display: inline-block;
+            background-color: #666;
+            font-weight: 300;
+            font-size: 11px;
+            margin-right: 5px;
+            padding: 3px 6px;
+            border-radius: 7px;
           }
 
           h4 {
             margin: 2px 0;
-
-            span.level {
-              display: inline-block;
-              background-color: #666;
-              font-weight: 300;
-              font-size: 11px;
-              margin-left: 5px;
-              padding: 3px 6px;
-              border-radius: 7px;
-            }
           }
         }
 

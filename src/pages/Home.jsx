@@ -4,6 +4,7 @@ import { getUserFromStorage } from "../utils/auth";
 import TwitchUserInfo from "../components/TwitchUserInfo";
 import Tile from "../components/Tile";
 import LiveStream from "../components/LiveStream";
+import UserCardPreview from "../components/UserCardPreview";
 import './Home.scss';
 
 const Home = () => {
@@ -14,11 +15,11 @@ const Home = () => {
   useEffect(() => {
     const fetchPlayerRanking = async()  => {
       try {
-        const response = await fetch(`${import.meta.env.VITE_GEEKHUB_NODEJS_URL}/geekhub/exp-rank`,
+        const response = await fetch(`${import.meta.env.VITE_CLOUD_URL}/mainframe/exp-rank`,
           {
             method: 'POST',
             headers: {
-              "x-api-key": import.meta.env.VITE_GEEKHUB_NODEJS_APIKEY,
+              "x-api-key": import.meta.env.VITE_CLOUD_APIKEY,
               "Content-Type": "application/json"
             }
           });
@@ -27,13 +28,13 @@ const Home = () => {
           setRankData(result);
         }
       } catch(e) {
-        console.log(e.message);
+        console.log('[Ranking] Error: ' + e.message);
       }
     };
 
     const fetchLiveData = async () => {
       // Fetch live data
-      const liveResponse = await fetch(`https://api.twitch.tv/helix/streams?user_login=the13thgeek`, {
+      const liveResponse = await fetch(`https://api.twitch.tv/helix/streams?user_login=shatteredmutant`, {
         headers: {
             'Authorization': `Bearer ${TWITCH_ACCESS_TOKEN}`,
             'Client-Id': `${TWITCH_EXT_CLIENT_ID}`
@@ -47,16 +48,19 @@ const Home = () => {
       setLiveData(liveDataFeed);
     }
 
-    fetchLiveData();
+    if(user) {
+      fetchLiveData();
+    }
     fetchPlayerRanking();
   },[]);
 
 	return (
+    <>    
 		<div className="layout-row">
       <div className="col-a">
         <Tile extraClassName={'profile'}>
           <TwitchUserInfo />
-        </Tile>
+        </Tile>        
         {user && liveData && (
           <Tile extraClassName={'live-stream'} icon={<i className="fa-solid fa-tv"></i>} title={'Live Stream'}>
             <LiveStream liveData={liveData} />
@@ -102,6 +106,11 @@ const Home = () => {
         
       </div>
       <div className="col-b">
+        {user && user.user_card && (
+          <Tile extraClassName={'user-card'} icon={<i className="fa-regular fa-id-card"></i>} title="User Card">
+            <UserCardPreview cardName={user.user_card.sysname} cardTitle={user.user_card.name} isPremium={user.user_card.is_premium} />
+          </Tile>
+        )}
         <Tile extraClassName={'ranking top-exp'} icon={<i className="fa-solid fa-trophy"></i>} title={'Community Ranking'}>
           <div className="grid-ranking">
             {!rankData && (
@@ -112,16 +121,16 @@ const Home = () => {
                 <div className="rank">#{idx+1}</div>
                 <div className="icon"><i className={'fa-solid fa-user user-level level-'+rankItem.level}></i></div>
                 <div className="player">
-                  <h4>{rankItem.twitch_display_name} <span className="level">Lvl {rankItem.level}</span></h4>
-                  <div className="data"><span className={'title user-level level-'+rankItem.level}>{rankItem.title}</span></div>
+                  <h4>{rankItem.twitch_display_name}</h4>
+                  <div className="data"><span className="level">Lvl {rankItem.level}</span> <span className={'title user-level level-'+rankItem.level}>{rankItem.title}</span></div>
                 </div>
               </div>
             ))}
           </div>
         </Tile>
       </div>
-			
 		</div>
+    </>
 	);
 };
 
