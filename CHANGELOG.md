@@ -7,8 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.1] - 2024-12-08
+## [0.2] - 2024-12-09
+### Added
+- Community Ranking
+- Live Stream info
+- Profile Page
+- User Level colour schemes
+- Welcome/invitation text
 
+## Changed
+- Renamed site name to theMainFrame
+- Moved the Twitch Live integration from theCloud to local to ease traffic
+- User info (titles, exp, level) colour schemes are now tied to their level colours
+
+## [0.1] - 2024-12-08
 ### Added
 - Initial build
 - Set up Twitch integration

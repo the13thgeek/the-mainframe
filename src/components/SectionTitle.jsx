@@ -5,7 +5,12 @@ const SectionTitle = () => {
   return (
     <section className="title-global">
       <div className="structure">
-        <h1>MainFrame Hub</h1>
+        <h1 className='site-title'>
+          <span className="the">the</span>
+          <span className="mainframe-box">
+            <span className="text">Mainframe&trade;</span>
+          </span>
+        </h1>
       </div>
     </section>
   )

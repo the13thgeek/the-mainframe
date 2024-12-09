@@ -104,6 +104,9 @@ const Home = () => {
       <div className="col-b">
         <Tile extraClassName={'ranking top-exp'} icon={<i className="fa-solid fa-trophy"></i>} title={'Community Ranking'}>
           <div className="grid-ranking">
+            {!rankData && (
+              <p>Ranking data is currently unavailable.</p>
+            )}
             {rankData && rankData.map((rankItem,idx) => (
               <div className="row" key={idx}>
                 <div className="rank">#{idx+1}</div>
