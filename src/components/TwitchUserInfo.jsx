@@ -23,7 +23,7 @@ const TwitchUserInfo = () => {
                         <div className="row stats">
                             <div className="user-stats">
                                 <h3 className='twitch-username'>{user.display_name}</h3>
-                                <span className="level"><i className="fa-solid fa-trophy"></i> Level {user.level}</span> <span className="title">{user.title}</span>
+                                <span className="level"><i className="fa-solid fa-trophy"></i> Level {user.level}</span> <span className={'title user-level-bg level-'+user.level}>{user.title}</span>
                             </div>
                             <button className='sign-out' onClick={handleLogout}><i className="fa-solid fa-right-from-bracket"></i> Logout</button>
                         </div>
@@ -32,7 +32,7 @@ const TwitchUserInfo = () => {
                                 <span className="exp">{Math.ceil(user.exp)} EXP</span>
                             </div>
                             <div className="bar-exp">
-                                <div className="shader" style={{ width: user.level_progress + '%' }}></div>
+                                <div className={'shader user-level-bg level-'+user.level} style={{ width: user.level_progress + '%' }}></div>
                             </div>
                         </div>
                     </div>

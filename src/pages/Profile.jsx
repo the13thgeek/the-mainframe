@@ -1,28 +1,33 @@
 import React, { useEffect } from "react";
+import Tile from "../components/Tile";
 import TwitchUserInfo from "../components/TwitchUserInfo";
 import { getUserFromStorage } from "../utils/auth";
 import { useNavigate } from "react-router-dom";
 
 const Profile = () => {
-    const navigate = useNavigate();
-    const user = getUserFromStorage();
+  const navigate = useNavigate();
+  const user = getUserFromStorage();
 
-    useEffect(() => {
-        if (!user) {
-            navigate("/");
-        }
-    }, [user, navigate]);
+  useEffect(() => {
+    if (!user) {
+      navigate("/");
+    }
+  }, [user, navigate]);
 
-    if (!user) return null;
+  if (!user) return null;
 
-    return (
-        <div>
-            <TwitchUserInfo />
-            <h1>Your Twitch Profile</h1>
-            <img src={user.profile_image_url} alt="Avatar" />
-            <p>Name: {user.display_name}</p>
-        </div>
-    );
+  return (
+    <div className="layout-row">
+      <div className="col-a">
+        <Tile extraClassName={'profile'}>
+          <TwitchUserInfo />
+        </Tile>
+      </div>
+      <div className="col-b">
+        B
+      </div>
+    </div>
+  );
 };
 
-export default Profile;
+        export default Profile;

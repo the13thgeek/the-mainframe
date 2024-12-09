@@ -14,7 +14,7 @@
 
   .avatar {
     img {
-      width: 80px;
+      width: 120px;
       border-radius: 50%;
     }
   }
@@ -62,7 +62,7 @@
           position: absolute;
           left: 0;
           height: 100%;
-          background-color: #ffd700;
+          border-right: #fff 2px solid;
         }
       }
     }
@@ -81,8 +81,6 @@
 
       .title {
         display: inline-block;
-        background-color: #dadada;
-        color: #333;
         font-weight: 600;
         font-size: 12px;
         line-height: 12px;
@@ -101,4 +99,7 @@
 button.sign-in {
   background-color: #6441a5;
   color: #fff;
+  &:hover {
+    background-color: #fff;
+  }
 }

@@ -67,6 +67,119 @@ main {
   }
 }
 
+.user-level {
+  &.level-1 { color: #00ffff; }
+  &.level-2 { color: #00fdf0; }
+  &.level-3 { color: #00fbe0; }
+  &.level-4 { color: #00f9d1; }
+  &.level-5 { color: #00f7c2; }
+  &.level-6 { color: #00f5b3; }
+  &.level-7 { color: #00f3a3; }
+  &.level-8 { color: #00f194; }
+  &.level-9 { color: #00ef85; }
+  &.level-10 { color: #00ed75; }
+  &.level-11 { color: #00eb66; }
+  &.level-12 { color: #00e957; }
+  &.level-13 { color: #00e748; }
+  &.level-14 { color: #00e538; }
+  &.level-15 { color: #00e329; }
+  &.level-16 { color: #00e11a; }
+  &.level-17 { color: #00df0a; }
+  &.level-18 { color: #02dd00; }
+  &.level-19 { color: #12e000; }
+  &.level-20 { color: #22e500; }
+  &.level-21 { color: #34e800; }
+  &.level-22 { color: #46eb00; }
+  &.level-23 { color: #58ee00; }
+  &.level-24 { color: #6af100; }
+  &.level-25 { color: #7cf400; }
+  &.level-26 { color: #8ef700; }
+  &.level-27 { color: #a0fa00; }
+  &.level-28 { color: #b3fc00; }
+  &.level-29 { color: #c5ff00; }
+  &.level-30 { color: #d7ff00; }
+  &.level-31 { color: #e4fb00; }
+  &.level-32 { color: #f0f700; }
+  &.level-33 { color: #fcd400; }
+  &.level-34 { color: #f8b000; }
+  &.level-35 { color: #f48d00; }
+  &.level-36 { color: #f06900; }
+  &.level-37 { color: #ec4600; }
+  &.level-38 { color: #e82200; }
+  &.level-39 { color: #e40000; }
+  &.level-40 { color: #e00012; }
+  &.level-41 { color: #dc0023; }
+  &.level-42 { color: #d80034; }
+  &.level-43 { color: #d40045; }
+  &.level-44 { color: #d00056; }
+  &.level-45 { color: #cc0067; }
+  &.level-46 { color: #c80078; }
+  &.level-47 { color: #c40089; }
+  &.level-48 { color: #c0009a; }
+  &.level-49 { color: #bc00ab; }
+  &.level-50 { color: #b800bc; }
+}
+
+.user-level-bg {
+  &.level-1 { background-color: #00ffff; }
+  &.level-2 { background-color: #00fdf0; }
+  &.level-3 { background-color: #00fbe0; }
+  &.level-4 { background-color: #00f9d1; }
+  &.level-5 { background-color: #00f7c2; }
+  &.level-6 { background-color: #00f5b3; }
+  &.level-7 { background-color: #00f3a3; }
+  &.level-8 { background-color: #00f194; }
+  &.level-9 { background-color: #00ef85; }
+  &.level-10 { background-color: #00ed75; }
+  &.level-11 { background-color: #00eb66; }
+  &.level-12 { background-color: #00e957; }
+  &.level-13 { background-color: #00e748; }
+  &.level-14 { background-color: #00e538; }
+  &.level-15 { background-color: #00e329; }
+  &.level-16 { background-color: #00e11a; }
+  &.level-17 { background-color: #00df0a; }
+  &.level-18 { background-color: #02dd00; }
+  &.level-19 { background-color: #12e000; }
+  &.level-20 { background-color: #22e500; }
+  &.level-21 { background-color: #34e800; }
+  &.level-22 { background-color: #46eb00; }
+  &.level-23 { background-color: #58ee00; }
+  &.level-24 { background-color: #6af100; }
+  &.level-25 { background-color: #7cf400; }
+  &.level-26 { background-color: #8ef700; }
+  &.level-27 { background-color: #a0fa00; }
+  &.level-28 { background-color: #b3fc00; }
+  &.level-29 { background-color: #c5ff00; }
+  &.level-30 { background-color: #d7ff00; }
+  &.level-31 { background-color: #e4fb00; }
+  &.level-32 { background-color: #f0f700; }
+  &.level-33 { background-color: #fcd400; }
+  &.level-34 { background-color: #f8b000; }
+  &.level-35 { background-color: #f48d00; }
+  &.level-36 { background-color: #f06900; }
+  &.level-37 { background-color: #ec4600; }
+  &.level-38 { background-color: #e82200; }
+  &.level-39 { background-color: #e40000; }
+  &.level-40 { background-color: #e00012; }
+  &.level-41 { background-color: #dc0023; }
+  &.level-42 { background-color: #d80034; }
+  &.level-43 { background-color: #d40045; }
+  &.level-44 { background-color: #d00056; }
+  &.level-45 { background-color: #cc0067; }
+  &.level-46 { background-color: #c80078; }
+  &.level-47 { background-color: #c40089; }
+  &.level-48 { background-color: #c0009a; }
+  &.level-49 { background-color: #bc00ab; }
+  &.level-50 { background-color: #b800bc; }
+}
+
+
+@media (min-width: $screen-lg) {
+  .structure {
+    max-width: 1200px;
+  }
+}
+
 @media (max-width: $screen-md) {
 
   .structure {
