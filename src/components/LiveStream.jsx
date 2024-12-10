@@ -24,12 +24,7 @@ const LiveStream = ({ liveData = null }) => {
         </ul>
         <p className='viewers'><i className="fa-solid fa-users"></i> {liveData.viewer_count} {liveData.viewer_count === 1 ? 'viewer' : 'viewers'}</p>
       </div>
-    </div>
-    
-    {/* <pre>
-      {JSON.stringify(liveData, null, 2)}
-    </pre> */}
-    
+    </div>    
     </>
   )
 }

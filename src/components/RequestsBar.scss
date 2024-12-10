@@ -1,0 +1,66 @@
+.srs-indicator {
+  padding: 8px 25px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+
+  &.on {
+    background-color: #32cd32;
+  }
+  &.off {
+    background-color: #ff4040;
+  }
+
+  .status {
+    flex: 1;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .version {
+    flex: 2;
+    font-size: 14px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+  }
+}
+
+.song-search {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+
+  .icon {
+    position: absolute;
+    font-size: 22px;
+    top: 6px;
+    left: 10px;
+    z-index: 2;
+    color: #666;
+    &.on {
+      color: #32cd32;
+    }
+    &.off {
+      color: #ff4040;
+    }
+  }
+
+  input.search {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: #666 1px solid;
+    padding: 10px 10px 8px 40px;
+    border-radius: 13px;
+  }
+}

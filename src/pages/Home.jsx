@@ -5,6 +5,7 @@ import TwitchUserInfo from "../components/TwitchUserInfo";
 import Tile from "../components/Tile";
 import LiveStream from "../components/LiveStream";
 import UserCardPreview from "../components/UserCardPreview";
+import RequestsBar from "../components/RequestsBar";
 import './Home.scss';
 
 const Home = () => {
@@ -34,7 +35,7 @@ const Home = () => {
 
     const fetchLiveData = async () => {
       // Fetch live data
-      const liveResponse = await fetch(`https://api.twitch.tv/helix/streams?user_login=shatteredmutant`, {
+      const liveResponse = await fetch(`https://api.twitch.tv/helix/streams?user_login=tokidokicosplay`, {
         headers: {
             'Authorization': `Bearer ${TWITCH_ACCESS_TOKEN}`,
             'Client-Id': `${TWITCH_EXT_CLIENT_ID}`
@@ -64,6 +65,9 @@ const Home = () => {
         {user && liveData && (
           <Tile extraClassName={'live-stream'} icon={<i className="fa-solid fa-tv"></i>} title={'Live Stream'}>
             <LiveStream liveData={liveData} />
+            {(liveData.game_name === 'StepMania' || 1) && (
+              <RequestsBar />
+            )}
           </Tile>
         )}
         {!user && (

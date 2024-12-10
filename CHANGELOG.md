@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - User Card previews
 - Revamped H1 theMainframe logo
+- UserCardPreview on the home page
+- Rhythm Game request bar (status+search box)
 
 ## [0.2] - 2024-12-09
 ### Added

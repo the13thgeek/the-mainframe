@@ -14,7 +14,7 @@ const UserCardPreview = ({ cardName = null, cardTitle = null, isPremium = false}
       <div className='card-preview'>
         <img src={UserCard(cardName)} alt={`Card: ${cardTitle}`} />
         <p className="card-name">
-          {cardTitle} { isPremium && (<span className="badge-prem">Premium</span>) }</p>
+          {cardTitle} { isPremium ? (<span className="badge-prem">Premium</span>) : "" }</p>
       </div>
     )
   } else {
