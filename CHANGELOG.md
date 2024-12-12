@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.4] - 2024-12-11
+### Added
+- Change active card functionality
+- Rankings widgets
+- New upcoming card designs
+
+### Changed
+- Ranking widgets optimized
+
 ## [0.3] - 2024-12-09
 ### Added
 - User Card previews

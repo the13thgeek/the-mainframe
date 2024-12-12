@@ -8,8 +8,9 @@ const SectionTitle = () => {
         <h1 className='site-title'>
           <span className="the">the</span>
           <span className="mainframe-box">
-            <span className="text">Mainframe&trade;</span>
+            <span className="text">Mainframe</span>
           </span>
+          &trade;
         </h1>
       </div>
     </section>

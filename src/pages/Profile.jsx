@@ -1,12 +1,57 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Tile from "../components/Tile";
 import TwitchUserInfo from "../components/TwitchUserInfo";
-import { getUserFromStorage } from "../utils/auth";
+import { getUserFromStorage, saveUserToStorage } from "../utils/auth";
 import { useNavigate } from "react-router-dom";
+import './Profile.scss';
 
 const Profile = () => {
+  
   const navigate = useNavigate();
   const user = getUserFromStorage();
+  const [userCards,setUserCards] = useState(user.user_cards);
+
+  const UserCard = (cardName) => {
+    const imageURL = `/assets/cards/${cardName}.png`;
+    return imageURL;
+  }
+
+  const changeCard = async (userId, cardId) => {
+    const requestCloud = await fetch(`${import.meta.env.VITE_CLOUD_URL}/mainframe/change-card-site`, {
+      method: "POST",
+      headers: {
+          "x-api-key": import.meta.env.VITE_CLOUD_APIKEY,
+          "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        user_id: userId,
+        card_id: cardId
+      })
+    });
+    const data = await requestCloud.json();    
+
+    if(data.status) {
+      let newUserData = user;
+      let newActiveCard = null;
+      let newCardSet = [];
+
+      for(let card of user.user_cards) {
+        if(card.card_id == cardId) {
+          newActiveCard = card;
+          card.is_default = 1;
+        } else {
+          card.is_default = 0;
+        }
+        newCardSet.push(card);
+      }
+      newUserData.user_card = newActiveCard;
+      newUserData.user_cards = newCardSet;
+      saveUserToStorage(newUserData);
+      setUserCards(newCardSet);
+    }
+    alert(data.message);
+
+  }
 
   useEffect(() => {
     if (!user) {
@@ -21,6 +66,37 @@ const Profile = () => {
       <div className="col-a">
         <Tile extraClassName={'profile'}>
           <TwitchUserInfo />
+          {/* <pre>
+            {JSON.stringify(user, null, 2)}
+          </pre> */}
+        </Tile>
+        <Tile extraClassName={'card-collection'} icon={<i className="fa-solid fa-credit-card"></i>} title={'Card Collection'}>
+          <div className="card-list">
+            {userCards.map((card,idx) => (
+              <div className={'card-item' + (card.is_default === 1 ? (` active`) : (''))} key={idx}>
+                <img src={UserCard(card.sysname)} alt={card.name} />
+                <div className="card-info">
+                  <p className="title">{card.is_premium === 1 ? 'Premium ' : ''}{card.name}</p>
+                  <div className="badges">
+                    {card.is_premium === 1 && (
+                      <span className="card-badge premium">Premium</span>
+                    )}
+                    {card.is_rare === 1 && (
+                      <span className="card-badge rare">Rare</span>
+                    )}
+                  </div>
+                </div>
+                <div className="card-actions">
+                  {card.is_default !== 1 ? (
+                    <button className="set-active" onClick={() => changeCard(user.local_id,card.card_id)}>Set Active</button>
+                  ) : (
+                    <p>Active</p>
+                  )}
+                </div>
+                
+              </div>
+            ))}
+          </div>
         </Tile>
       </div>
       <div className="col-b">
@@ -30,4 +106,4 @@ const Profile = () => {
   );
 };
 
-        export default Profile;
+export default Profile;

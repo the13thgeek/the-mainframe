@@ -19,12 +19,13 @@
     line-height: 30px;
     position: relative;
     background-color: #fff;
-    border-top-left-radius: 13px;
-    border-top-right-radius: 13px;
-    border-bottom-right-radius: 13px;
     color: #000;
-    padding: 20px 6px 2px 0;
+    padding: 20px 6px 2px 0px;
     display: inline-block;
     mix-blend-mode: screen;
+
+    .text {
+      margin-left: -4px;
+    }
   }
 }

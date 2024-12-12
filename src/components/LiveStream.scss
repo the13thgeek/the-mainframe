@@ -4,6 +4,14 @@
   100% { opacity: 0.3; }
 }
 
+.tile.live-stream {
+  .widget-title {
+    i.fa-tv {
+      color: #c00;
+    }
+  }
+}
+
 .screen {
   position: relative;
   //aspect-ratio: 16/9;

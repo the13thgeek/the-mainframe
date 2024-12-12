@@ -1,7 +1,7 @@
 import React from 'react';
 import './UserCardPreview.scss';
 
-const UserCardPreview = ({ cardName = null, cardTitle = null, isPremium = false}) => {
+const UserCardPreview = ({ cardName = null, cardTitle = null, isPremium = false, isRare = false}) => {
 
   const UserCard = (cardName) => {
     const imageURL = `/assets/cards/${cardName}.png`;
@@ -14,7 +14,10 @@ const UserCardPreview = ({ cardName = null, cardTitle = null, isPremium = false}
       <div className='card-preview'>
         <img src={UserCard(cardName)} alt={`Card: ${cardTitle}`} />
         <p className="card-name">
-          {cardTitle} { isPremium ? (<span className="badge-prem">Premium</span>) : "" }</p>
+          {cardTitle} 
+          { isPremium ? (<span className="card-badge premium">Premium</span>) : "" }
+          { isRare ? (<span className="card-badge rare">Rare</span>) : "" }
+        </p>
       </div>
     )
   } else {

@@ -34,7 +34,8 @@ function App() {
                         },
                         body: JSON.stringify({
                             twitch_id: user.id,
-                            twitch_display_name: user.display_name
+                            twitch_display_name: user.display_name,
+                            twitch_avatar: user.profile_image_url
                         })
                     })
                     .then((res) => res.json())
