@@ -17,7 +17,7 @@ const Home = () => {
 
     const fetchLiveData = async () => {
       // Fetch live data
-      const liveResponse = await fetch(`https://api.twitch.tv/helix/streams?user_login=Josgar`, {
+      const liveResponse = await fetch(`https://api.twitch.tv/helix/streams?user_login=blisterino`, {
         headers: {
             'Authorization': `Bearer ${TWITCH_ACCESS_TOKEN}`,
             'Client-Id': `${TWITCH_EXT_CLIENT_ID}`
@@ -52,7 +52,7 @@ const Home = () => {
           {user && liveData && (
             <Tile extraClassName={'live-stream'} icon={<i className="fa-solid fa-tv"></i>} title={'Live Stream'}>
               <LiveStream liveData={liveData} />
-              {(liveData.game_name === 'StepMania' || 1) && (
+              {(liveData.game_name === 'StepMania') && (
                 <RequestsBar />
               )}
             </Tile>
@@ -94,19 +94,20 @@ const Home = () => {
             </Tile>
           )}
         </div>
-        <div className="layout-sub-row">
-          <div className="col-a">
-            <Tile extraClassName={'ranking top-spender'} icon={<i className="fa-solid fa-coins"></i>} title={'Top Channel Points Spenders'}>
-              <Ranking rankType={'spender'} itemsToShow={5} valueLabels={'CP'} />
-            </Tile>
+        {user && (
+          <div className="layout-sub-row">
+            <div className="col-a">
+              <Tile extraClassName={'ranking top-spender'} icon={<i className="fa-solid fa-coins"></i>} title={'Top Channel Points Spenders'}>
+                <Ranking rankType={'spender'} itemsToShow={5} valueLabels={'CP'} />
+              </Tile>
+            </div>
+            <div className="col-b">
+              <Tile extraClassName={'ranking top-checkins'} icon={<i className="fa-solid fa-passport"></i>} title={'Top Check-Ins'}>
+                <Ranking rankType={'checkins'} itemsToShow={5} valueLabels={'strm'} />
+              </Tile>
+            </div>
           </div>
-          <div className="col-b">
-            <Tile extraClassName={'ranking top-checkins'} icon={<i className="fa-solid fa-passport"></i>} title={'Top Check-Ins'}>
-              <Ranking rankType={'checkins'} itemsToShow={5} valueLabels={'strm'} />
-            </Tile>
-          </div>
-        </div>
-        
+        )}        
         
       </div>
       <div className="col-b">

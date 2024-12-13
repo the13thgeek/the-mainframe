@@ -1,3 +1,10 @@
+@keyframes glimmer {
+  0% { background-color: #0f1729; }
+  5% { background-color: #999; }
+  100% { background-color: #0f1729; }
+}
+
+
 .tile.ranking {
 
   .grid-ranking {
@@ -15,12 +22,13 @@
       cursor: default;
 
       &:hover {
-        animation: glimmer 0.7s 1;
-        background-color: #2f2f2f;
+        animation: glimmer 0.5s 1;
+        background-color: #0f1729;
       }
 
       .rank {
         display: flex;
+        justify-content: center;
         font-size: 18px;
         width: 30px;
         min-width: 30px;
