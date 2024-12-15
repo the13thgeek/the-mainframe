@@ -8,12 +8,29 @@
 .card-item {
   overflow: hidden;
   border-radius: 20px;
+  background-color: #11182d;
   border: #1d283a 1px solid;
 
   &.active {
-    background-color: #dadada;
-    border: #999 1px solid;
-    color: #000;
+    background-color: #1d2b50;
+    border: #273968 1px solid;
+    color: #fff;
+  }
+}
+
+.tile.card-collection {
+  .widget-title {
+    i.fa-credit-card {
+      color: #666;
+    }
+  }
+}
+
+.tile.achievements {
+  .widget-title {
+    i.fa-medal {
+      color: #ffd700;
+    }
   }
 }
 

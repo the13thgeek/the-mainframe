@@ -1,0 +1,37 @@
+@keyframes progressor {
+  0% { left: -5%; opacity: 0.5; }
+  80% { left: 105%; opacity: 0.8; }
+  100% { left: 105%; opacity: 0.8; }
+}
+
+.exp-progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #000;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+
+  .shader {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    height: 100%;
+    border-right: #fff 2px solid;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+    &::before {
+      content: '';
+      display: block;
+      width: 5px;
+      height: 10px;
+      position: absolute;
+      top: 0;
+      left: -5%;
+      z-index: 2;
+      background-color: #fff;
+      animation: progressor 1.5s infinite;
+    }
+  }
+}

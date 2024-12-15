@@ -12,12 +12,12 @@ import './Home.scss';
 const Home = () => {
 	const user = getUserFromStorage();
   const [liveData, setLiveData] = useState(null);
-
+  
   useEffect(() => {    
 
     const fetchLiveData = async () => {
       // Fetch live data
-      const liveResponse = await fetch(`https://api.twitch.tv/helix/streams?user_login=blisterino`, {
+      const liveResponse = await fetch(`https://api.twitch.tv/helix/streams?user_login=BaconElemental`, {
         headers: {
             'Authorization': `Bearer ${TWITCH_ACCESS_TOKEN}`,
             'Client-Id': `${TWITCH_EXT_CLIENT_ID}`
@@ -98,12 +98,12 @@ const Home = () => {
           <div className="layout-sub-row">
             <div className="col-a">
               <Tile extraClassName={'ranking top-spender'} icon={<i className="fa-solid fa-coins"></i>} title={'Top Channel Points Spenders'}>
-                <Ranking rankType={'spender'} itemsToShow={5} valueLabels={'CP'} />
+                <Ranking rankType={'spender'} itemsToShow={5} valueLabels={'CP'} enableUserView={(user !== null)} />
               </Tile>
             </div>
             <div className="col-b">
               <Tile extraClassName={'ranking top-checkins'} icon={<i className="fa-solid fa-passport"></i>} title={'Top Check-Ins'}>
-                <Ranking rankType={'checkins'} itemsToShow={5} valueLabels={'strm'} />
+                <Ranking rankType={'checkins'} itemsToShow={5} valueLabels={'strm'} enableUserView={(user !== null)} />
               </Tile>
             </div>
           </div>
@@ -116,8 +116,8 @@ const Home = () => {
             <UserCardPreview cardName={user.user_card.sysname} cardTitle={user.user_card.name} isPremium={user.user_card.is_premium} isRare={user.user_card.is_rare} />
           </Tile>
         )}
-        <Tile extraClassName={'ranking top-exp'} icon={<i className="fa-solid fa-trophy"></i>} title={'Community Ranking'}>
-          <Ranking rankType={'exp'} itemsToShow={10} valueLabels={'exp'} />
+        <Tile extraClassName={'ranking top-exp'} icon={<i className="fa-solid fa-ranking-star"></i>} title={'Community Ranking'}>
+          <Ranking rankType={'exp'} itemsToShow={10} valueLabels={'exp'} enableUserView={(user !== null)} />
         </Tile>
       </div>
 		</div>

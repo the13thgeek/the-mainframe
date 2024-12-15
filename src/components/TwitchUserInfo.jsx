@@ -1,4 +1,5 @@
 import React from 'react';
+import ExpProgressBar from './ExpProgressBar';
 import { getAuthUrl, getUserFromStorage, clearUserFromStorage } from "../utils/auth";
 import { useNavigate } from "react-router-dom";
 import './TwitchUserInfo.scss';
@@ -31,9 +32,7 @@ const TwitchUserInfo = () => {
                             <div className="user-exp">
                                 <span className="exp">{Math.ceil(user.exp)} EXP</span>
                             </div>
-                            <div className="bar-exp">
-                                <div className={'shader user-level-bg level-'+user.level} style={{ width: user.level_progress + '%' }}></div>
-                            </div>
+                            <ExpProgressBar level={user.level} progress={user.level_progress} />
                         </div>
                     </div>
                 </div>

@@ -2,6 +2,7 @@
   position: relative;
   background-color: #131c34;
   border: #1d283a 1px solid;
+  box-shadow: 0 0 5px 5px #162039;
   border-radius: 13px;
   padding: 20px;
   margin-bottom: 25px;
@@ -9,6 +10,7 @@
 
   &:hover {
       background-color: #16203c;
+      box-shadow: none;
       //box-shadow: 0 2px 4px 1px rgba(255, 255, 255, 0.2);
       //transition: box-shadow 0.3s, transform 0.3s;
   }

@@ -5,7 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.5] - 2024-12-15
+### Changed
+- Prompt dialogs from alert() to Modal
+- Community Ranking icons
+- EXP bar to a standalone, reusable component
+- Added subtle shadows to Level Titles for readability
+- Ranking usernames are made clickable for logged-in users
+- Header gradient colour
+- Navigation bar to become fixed to the top of the page
+- EXP bar animation
+- Promoted UserCard() to a common utility function
+
+### Added
+- Modals: Prompts
+- Modals: User Preview Cards
 
 ## [0.4.1] - 2024-12-13
 ### Changed

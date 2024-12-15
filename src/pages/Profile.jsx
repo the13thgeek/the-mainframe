@@ -1,20 +1,40 @@
 import React, { useState, useEffect } from "react";
 import Tile from "../components/Tile";
 import TwitchUserInfo from "../components/TwitchUserInfo";
+import Modal from "../components/Modal";
 import { getUserFromStorage, saveUserToStorage } from "../utils/auth";
 import { useNavigate } from "react-router-dom";
+import { UserCard } from "../utils/common";
 import './Profile.scss';
 
 const Profile = () => {
-  
   const navigate = useNavigate();
   const user = getUserFromStorage();
-  const [userCards,setUserCards] = useState(user.user_cards);
-
-  const UserCard = (cardName) => {
-    const imageURL = `/assets/cards/${cardName}.png`;
-    return imageURL;
+  const [userCards,setUserCards] = useState(user?.user_cards);
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState(null);
+  
+  const openDialog = (status, message) => {
+    setModalContent(
+      <>
+        <div className="icon">
+          {status ? (
+            <i className="fa-solid fa-circle-check"></i>
+          ) : (
+            <i className="fa-solid fa-circle-xmark"></i>
+          )}
+        </div>
+        <div className="message">
+          <p>{message}</p>
+        </div>
+      </>
+    );
+    setModalOpen(true);
   }
+
+  const closeDialog = () => {
+    setModalOpen(false);
+  };
 
   const changeCard = async (userId, cardId) => {
     const requestCloud = await fetch(`${import.meta.env.VITE_CLOUD_URL}/mainframe/change-card-site`, {
@@ -49,8 +69,7 @@ const Profile = () => {
       saveUserToStorage(newUserData);
       setUserCards(newCardSet);
     }
-    alert(data.message);
-
+    openDialog(data.status, data.message);
   }
 
   useEffect(() => {
@@ -100,8 +119,13 @@ const Profile = () => {
         </Tile>
       </div>
       <div className="col-b">
-        B
+        <Tile extraClassName={'achievements'} icon={<i className="fa-solid fa-medal"></i>} title={'Achievements'}>
+
+        </Tile>
       </div>
+      <Modal isOpen={isModalOpen} onClose={() => closeDialog()} footer={<button onClick={closeDialog}>OK</button>}>
+        {modalContent}
+      </Modal>
     </div>
   );
 };

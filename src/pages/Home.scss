@@ -8,6 +8,14 @@ h1 {
 
 }
 
+.tile.user-card {
+  .widget-title {
+    i.fa-id-card {
+      color: #f93;
+    }
+  }
+}
+
 ul.perks {
   list-style: none;
   margin: 35px 0 0 0;

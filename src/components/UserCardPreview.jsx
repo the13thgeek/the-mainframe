@@ -1,14 +1,9 @@
 import React from 'react';
+import { UserCard } from '../utils/common';
 import './UserCardPreview.scss';
 
 const UserCardPreview = ({ cardName = null, cardTitle = null, isPremium = false, isRare = false}) => {
-
-  const UserCard = (cardName) => {
-    const imageURL = `/assets/cards/${cardName}.png`;
-
-    return imageURL;
-  }
-
+  
   if(cardName && cardTitle) {
     return (
       <div className='card-preview'>

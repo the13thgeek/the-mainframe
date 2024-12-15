@@ -1,11 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import './Ranking.scss';
+import Modal from "../components/Modal";
+import DialogUserPreview from './DialogUserPreview';
 
-const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null }) => {
+const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableUserView = false }) => {
   const [rankData, setRankData] = useState(null); 
-  
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState(null);
+
   if(!rankType) return(null);
 
+  const openUserInfo = (userId) => {
+    if(userId) {
+      setModalContent(
+        <DialogUserPreview userId={userId} />
+      );
+      setModalOpen(true);
+    } else {
+      return false;
+    }  
+  }
+  
   useEffect(() => {
     const fetchRanking = async()  => {  
       try {
@@ -34,12 +49,13 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null }) => {
   },[]);
 
   return (
+    <>
     <div className="grid-ranking">
       {!rankData && (
         <p>Ranking data is currently unavailable.</p>
       )}
       {rankData && rankData.map((rankItem,idx) => (
-        <div className="row" key={idx}>
+        <div className={'row' + (enableUserView ? ' clickable' : '')} key={idx} onClick={() => openUserInfo(enableUserView ? rankItem.id : null)}>
           <div className="rank">#{idx+1}</div>
           <div className="icon">
             {rankItem.twitch_avatar ? (
@@ -64,6 +80,10 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null }) => {
         </div>
       ))}
     </div>
+    <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
+      {modalContent}
+    </Modal>
+    </>
   )
 }
 

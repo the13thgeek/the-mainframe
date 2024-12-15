@@ -21,6 +21,10 @@
       border-radius: 10px;
       cursor: default;
 
+      &.clickable {
+        cursor: pointer;
+      }
+
       &:hover {
         animation: glimmer 0.5s 1;
         background-color: #0f1729;
@@ -112,7 +116,7 @@
 
 .tile.ranking.top-exp {
   .widget-title {
-    i.fa-trophy {
+    i.fa-ranking-star {
       color: #cf0;
     }
   }

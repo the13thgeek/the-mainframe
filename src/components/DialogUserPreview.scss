@@ -1,0 +1,86 @@
+.user-profile-preview {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+
+  .level-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .title {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 3px 7px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transform: translateY(-1px);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #999;
+  }
+
+  .avatar {    
+    display: flex;
+    padding: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    img {
+      border-radius: 50%;
+      aspect-ratio: 1/1;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      aspect-ratio: 1/1;
+      background-color: #1a1a1a;
+      border-radius: 50%;
+    }
+
+    i {
+      font-size: 40px;
+    }
+  }
+
+  .contents {
+    flex: 3;
+
+    .card-box {
+      position: relative;
+      aspect-ratio: 7/4;
+    }
+
+    h3.twitch-username {
+      position: absolute;
+      bottom: 14%;
+      left: 13%;
+      z-index: 5;
+      margin: 0 0 5px;
+      font-size: 25px;
+    }
+
+    .level {
+      position: absolute;
+      z-index: 4;
+      bottom: 18%;
+      left: 2.5%;
+      width: 30px;
+      text-align: center;
+      font-size: 23px;
+    }
+
+  }
+}

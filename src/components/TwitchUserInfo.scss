@@ -48,23 +48,7 @@
 
       .exp {
         font-size: 14px;
-      }
-
-      .bar-exp {
-        width: 100%;
-        height: 10px;
-        background-color: #000;
-        border-radius: 10px;
-        position: relative;
-        overflow: hidden;
-
-        .shader {
-          position: absolute;
-          left: 0;
-          height: 100%;
-          border-right: #fff 2px solid;
-        }
-      }
+      }      
     }
 
     .user-stats {
@@ -89,6 +73,7 @@
         margin-left: 10px;
         transform: translateY(-1px);
         text-transform: uppercase;
+        text-shadow: 1px 1px 1px #999;
       }
     }
 
