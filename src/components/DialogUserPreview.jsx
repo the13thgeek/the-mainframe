@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ExpProgressBar from './ExpProgressBar';
+//import PlayerStats from './PlayerStats';
+import PlayerAchievements from './PlayerAchievements';
 import { UserCard } from '../utils/common';
 import './DialogUserPreview.scss';
 
@@ -41,29 +43,36 @@ const DialogUserPreview = ({ userId }) => {
         <p>Loading...</p>
       ) : (
         <>
-        <div className="level-info">
-          <div className={'avatar user-level-bg level-'+userData.level}>
-            {userData.twitch_avatar ? (
-              <img src={userData.twitch_avatar} alt="Twitch Avatar" />
-            ) : (
-              <div className="icon">
-                <i className={'fa-solid fa-user user-level level-'+userData.level}></i>
-              </div>
-            )}
-          </div>
-          <ExpProgressBar level={userData.level} progress={userData.levelProgress} />
-          <p>
-            <span className="level">Level {userData.level}</span><br />
-            <span className={'title user-level-bg level-'+userData.level}>{userData.title}</span>
-          </p>            
-        </div>
-        <div className="contents">
+        <div className="content-row">
+          <div className="level-info">
+            <div className={'avatar user-level-bg level-'+userData.level}>
+              {userData.twitch_avatar ? (
+                <img src={userData.twitch_avatar} alt="Twitch Avatar" />
+              ) : (
+                <div className="icon">
+                  <i className={'fa-solid fa-user user-level level-'+userData.level}></i>
+                </div>
+              )}
+            </div>
+            <ExpProgressBar level={userData.level} progress={userData.levelProgress} />
+            <p>
+              <span className="level">Level {userData.level}</span><br />
+              <span className={'title user-level-bg level-'+userData.level}>{userData.title}</span>
+            </p>            
+          </div>  
+          <div className="contents">
             <div className="card-box">
               <img src={UserCard(userData.card_default.sysname)} alt={`Card: ${userData.card_default.name}`} />
               <h3 className='twitch-username'>{userData.twitch_display_name}</h3>            
               <div className="level">{userData.level}</div>
             </div>
+          </div>
         </div>
+        <div className="content-row">
+          {/* <PlayerStats userStats={userData.stats} userLevel={userData.level} /> */}
+          <PlayerAchievements achievementsList={userData.achievements} />
+        </div>
+        
         </>
       ) }    
     </div>

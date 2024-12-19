@@ -49,10 +49,10 @@ const Home = () => {
               </pre>
             )} */}
           </Tile>        
-          {user && liveData && (
+          {user && (
             <Tile extraClassName={'live-stream'} icon={<i className="fa-solid fa-tv"></i>} title={'Live Stream'}>
               <LiveStream liveData={liveData} />
-              {(liveData.game_name === 'StepMania') && (
+              {(liveData?.game_name === 'StepMania' || 1) && (
                 <RequestsBar />
               )}
             </Tile>
@@ -117,7 +117,7 @@ const Home = () => {
           </Tile>
         )}
         <Tile extraClassName={'ranking top-exp'} icon={<i className="fa-solid fa-ranking-star"></i>} title={'Community Ranking'}>
-          <Ranking rankType={'exp'} itemsToShow={10} valueLabels={'exp'} enableUserView={(user !== null)} />
+          <Ranking rankType={'exp'} itemsToShow={30} valueLabels={'exp'} enableUserView={(user !== null)} />
         </Tile>
       </div>
 		</div>

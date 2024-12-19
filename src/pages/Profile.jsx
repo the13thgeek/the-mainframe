@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Tile from "../components/Tile";
 import TwitchUserInfo from "../components/TwitchUserInfo";
 import Modal from "../components/Modal";
+import PlayerStats from "../components/PlayerStats";
+import PlayerAchievements from "../components/PlayerAchievements";
 import { getUserFromStorage, saveUserToStorage } from "../utils/auth";
 import { useNavigate } from "react-router-dom";
 import { UserCard } from "../utils/common";
@@ -119,8 +121,11 @@ const Profile = () => {
         </Tile>
       </div>
       <div className="col-b">
+        <Tile extraClassName={'stats'} icon={<i className="fa-solid fa-chart-pie"></i>} title={'Player Statistics'}>
+            <PlayerStats userStats={user.stats} userLevel={user.level} />
+        </Tile>
         <Tile extraClassName={'achievements'} icon={<i className="fa-solid fa-medal"></i>} title={'Achievements'}>
-
+            <PlayerAchievements achievementsList={user.achievements} />
         </Tile>
       </div>
       <Modal isOpen={isModalOpen} onClose={() => closeDialog()} footer={<button onClick={closeDialog}>OK</button>}>

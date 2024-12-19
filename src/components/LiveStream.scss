@@ -12,10 +12,18 @@
   }
 }
 
+.live-info {
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #11182d;
+  border: #1d283a 1px solid;
+  margin-bottom: 15px;
+}
+
 .screen {
   position: relative;
   //aspect-ratio: 16/9;
-  height: 200px;
+  height: 250px;
   background-color: #000;
   border-radius: 20px;
   background-size: cover;
@@ -37,6 +45,21 @@
     border-radius: 10px;
     text-transform: uppercase;
     animation: live-alert 0.75s infinite;
+  }
+
+  .live-indicator-offline {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 2;
+    background-color: #666;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
   }
 
   .action {
@@ -73,9 +96,10 @@
 .now-streaming {
   display: flex;
   flex-direction: row;
-  margin: 15px 0;
+  margin: 25px 25px;
   gap: 25px;
   align-items: start;
+
 
   .icon {
     i {

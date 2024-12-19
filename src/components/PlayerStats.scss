@@ -1,0 +1,39 @@
+.tile.stats,  .stats-content {
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+
+    li {
+      background-color: #11182d;
+      //border: #1d283a 1px solid;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      padding: 5px 0 15px 0;
+    }
+  }
+
+  .stat-number {
+    font-weight: 100; 
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+
+    span.label {
+      font-size: 20px;
+    }
+  }
+  
+  .stat-label {
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+
+}
