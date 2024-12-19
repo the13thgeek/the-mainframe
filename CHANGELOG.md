@@ -6,16 +6,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [0.5.1] - 2024-12-18
-## Added
+### Added
 - Player Stats
 - Player Achievements
 - Stepmania songs DB
 
-## Changed
+### Changed
 - Player Stats layout
 - Changed song request prompts to Modal
 
-## Fixed
+### Fixed
 - Requests song section not updating when song is requested
 - Added handling for null live feed data
 - Added handling for null SRS relay
