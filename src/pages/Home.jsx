@@ -52,7 +52,7 @@ const Home = () => {
           {user && (
             <Tile extraClassName={'live-stream'} icon={<i className="fa-solid fa-tv"></i>} title={'Live Stream'}>
               <LiveStream liveData={liveData} />
-              {(liveData?.game_name === 'StepMania') && (
+              {(liveData?.game_name === 'StepMania' || 1) && (
                 <RequestsBar />
               )}
             </Tile>
