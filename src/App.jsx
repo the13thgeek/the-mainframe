@@ -71,6 +71,7 @@ function App() {
             <footer>
                 <div className="structure">
                     <p>v{import.meta.env.VITE_APP_VER}</p>
+                    <p>w: {import.meta.env.VITE_WEBSOCKET_URL}</p>
                 </div>
             </footer>
         </Router>
