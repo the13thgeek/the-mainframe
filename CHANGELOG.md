@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - WebSocket URL
 
+### Changed
+- Changed CP to PTS in Points Spender Rankings
+
 ## [0.5.2] - 2024-12-20
 ### Added
 - Achievements description

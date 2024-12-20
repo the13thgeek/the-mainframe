@@ -98,7 +98,7 @@ const Home = () => {
           <div className="layout-sub-row">
             <div className="col-a">
               <Tile extraClassName={'ranking top-spender'} icon={<i className="fa-solid fa-coins"></i>} title={'Top Channel Points Spenders'}>
-                <Ranking rankType={'spender'} itemsToShow={5} valueLabels={'CP'} enableUserView={(user !== null)} />
+                <Ranking rankType={'spender'} itemsToShow={5} valueLabels={'PTS'} enableUserView={(user !== null)} />
               </Tile>
             </div>
             <div className="col-b">
