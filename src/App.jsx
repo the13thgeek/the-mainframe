@@ -68,6 +68,11 @@ function App() {
               </Routes>
               </div>
             </main>
+            <footer>
+                <div className="structure">
+                    <p>v{import.meta.env.VITE_APP_VER}</p>
+                </div>
+            </footer>
         </Router>
         </>
     )

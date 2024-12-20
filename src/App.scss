@@ -49,6 +49,13 @@ main {
   display: flex;
 }
 
+footer {
+  p { 
+    text-align: center;
+    color: #666;
+  }
+}
+
 .structure {
   width: 100%;
   max-width: 960px;

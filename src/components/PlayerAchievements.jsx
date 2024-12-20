@@ -25,6 +25,7 @@ const PlayerAchivements = ({ achievementsList = null }) => {
               </div>
               <div className="details">
                 <h4 className='achievement-name'>{achievement.achievement_name} <small>(Tier {achievement.achievement_tier})</small></h4>
+                <p className="details">{achievement.description}</p>
                 <p className="date">{formatDateString(achievement.achieved_at)}</p>
               </div>
             </li>

@@ -17,7 +17,7 @@ const Home = () => {
 
     const fetchLiveData = async () => {
       // Fetch live data
-      const liveResponse = await fetch(`https://api.twitch.tv/helix/streams?user_login=BaconElemental`, {
+      const liveResponse = await fetch(`https://api.twitch.tv/helix/streams?user_login=the13thgeek`, {
         headers: {
             'Authorization': `Bearer ${TWITCH_ACCESS_TOKEN}`,
             'Client-Id': `${TWITCH_EXT_CLIENT_ID}`
@@ -117,7 +117,7 @@ const Home = () => {
           </Tile>
         )}
         <Tile extraClassName={'ranking top-exp'} icon={<i className="fa-solid fa-ranking-star"></i>} title={'Community Ranking'}>
-          <Ranking rankType={'exp'} itemsToShow={30} valueLabels={'exp'} enableUserView={(user !== null)} />
+          <Ranking rankType={'exp'} itemsToShow={10} valueLabels={'exp'} enableUserView={(user !== null)} />
         </Tile>
       </div>
 		</div>

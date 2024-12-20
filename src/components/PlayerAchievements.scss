@@ -35,10 +35,17 @@
   }
 
   h4.achievement-name {
+    font-size: 16px;
     margin: 0;
   }
 
-  p {
+  p.details {
+    margin: 5px 0 0 0;
+    font-size: 12px;
+    color: #ccc;
+  }
+
+  p.date {
     margin: 5px 0 0 0;
     font-size: 12px;
     color: #999;

@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.2] - 2024-12-20
+### Added
+- Achievements description
+- CNAME record
+- Footer
+
+### Changed
+- Sorting of achievements are now in Tier-descending
+
 ## [0.5.1] - 2024-12-18
 ### Added
 - Player Stats

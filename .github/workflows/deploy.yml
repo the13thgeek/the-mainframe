@@ -1,0 +1,50 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Change this if your default branch is not 'main'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18  # Use a Node.js version compatible with Vite
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Inject Environment Variables
+        env:
+          VITE_CLOUD_APIKEY: ${{ secrets.VITE_CLOUD_APIKEY }}
+          VITE_CLOUD_URL: ${{ secrets.VITE_CLOUD_URL }}
+          VITE_REDIRECT_URI: ${{ secrets.VITE_REDIRECT_URI }}
+          VITE_TWITCH_ACCESS_TOKEN: ${{ secrets.VITE_TWITCH_ACCESS_TOKEN }}
+          VITE_TWITCH_CLIENT_ID: ${{ secrets.VITE_TWITCH_CLIENT_ID }}
+          VITE_TWITCH_EXT_CLIENT_ID: ${{ secrets.VITE_TWITCH_EXT_CLIENT_ID }}
+          VITE_APP_VER: ${{ secrets.VITE_APP_VER }}
+
+        run: |
+          echo "VITE_CLOUD_APIKEY=${{ secrets.VITE_CLOUD_APIKEY }}" >> .env.production
+          echo "VITE_CLOUD_URL=${{ secrets.VITE_CLOUD_URL }}" >> .env.production
+          echo "VITE_REDIRECT_URI=${{ secrets.VITE_REDIRECT_URI }}" >> .env.production
+          echo "VITE_TWITCH_ACCESS_TOKEN=${{ secrets.VITE_TWITCH_ACCESS_TOKEN }}" >> .env.production
+          echo "VITE_TWITCH_CLIENT_ID=${{ secrets.VITE_TWITCH_CLIENT_ID }}" >> .env.production
+          echo "VITE_TWITCH_EXT_CLIENT_ID=${{ secrets.VITE_TWITCH_EXT_CLIENT_ID }}" >> .env.production
+          echo "VITE_APP_VER=${{ secrets.VITE_APP_VER }}" >> .env.production
+
+      - name: Build the project
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
