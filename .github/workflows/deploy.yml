@@ -30,6 +30,7 @@ jobs:
           VITE_TWITCH_CLIENT_ID: ${{ secrets.VITE_TWITCH_CLIENT_ID }}
           VITE_TWITCH_EXT_CLIENT_ID: ${{ secrets.VITE_TWITCH_EXT_CLIENT_ID }}
           VITE_APP_VER: ${{ secrets.VITE_APP_VER }}
+          VITE_WEBSOCKET_URL: ${{ secrets.VITE_WEBSOCKET_URL }}
 
         run: |
           echo "VITE_CLOUD_APIKEY=${{ secrets.VITE_CLOUD_APIKEY }}" >> .env.production
@@ -39,6 +40,7 @@ jobs:
           echo "VITE_TWITCH_CLIENT_ID=${{ secrets.VITE_TWITCH_CLIENT_ID }}" >> .env.production
           echo "VITE_TWITCH_EXT_CLIENT_ID=${{ secrets.VITE_TWITCH_EXT_CLIENT_ID }}" >> .env.production
           echo "VITE_APP_VER=${{ secrets.VITE_APP_VER }}" >> .env.production
+          echo "VITE_WEBSOCKET_URL=${{ secrets.VITE_WEBSOCKET_URL }}" >> .env.production
 
       - name: Build the project
         run: npm run build

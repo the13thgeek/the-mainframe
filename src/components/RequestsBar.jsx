@@ -74,7 +74,7 @@ const RequestsBar = () => {
 
   useEffect(() => {
 
-    const ws = new WebSocket("ws://localhost:8080");
+    const ws = new WebSocket(import.meta.env.VITE_WEBSOCKET_URL);
     ws.onmessage = (event) => {
       let srsRelayData = JSON.parse(event.data);
       setStatus(srsRelayData.srs);
