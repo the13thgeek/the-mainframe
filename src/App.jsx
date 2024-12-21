@@ -3,8 +3,10 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 //import TwitchUserInfo from "./components/TwitchUserInfo";
 import Navigation from "./components/Navigation";
 import SectionTitle from "./components/SectionTitle";
+import Tile from "./components/Tile";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
+import GlobalNotice from "./components/GlobalNotice";
 import { TWITCH_REDIRECT_URI, TWITCH_CLIENT_ID, saveUserToStorage } from "./utils/auth";
 import './App.scss';
 
@@ -62,6 +64,13 @@ function App() {
             <SectionTitle />
             <main>
               <div className="structure">
+                <Tile extraClassName={'global-notice'}>
+                    <GlobalNotice
+                        icon={<i className="fa-solid fa-circle-exclamation"></i>}
+                        type={'In Active Development'}
+                        message={'System is currently in testing. All player data (EXP/level/achievements/stats) will reset on January 1st, 2025. Collected cards will be preserved.'}
+                    />
+                </Tile>
               <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/profile" element={<Profile />} />

@@ -1,0 +1,23 @@
+.tile.global-notice {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+  background-color: #fc3;
+  color: #333;
+
+  .icon i {
+    font-size: 40px;
+  }
+
+  h4 {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+    font-size: 16px;
+  }
+}
