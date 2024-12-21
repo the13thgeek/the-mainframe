@@ -68,7 +68,7 @@ function App() {
                     <GlobalNotice
                         icon={<i className="fa-solid fa-circle-exclamation"></i>}
                         type={'In Active Development'}
-                        message={'System is currently in testing. All player data (EXP/level/achievements/stats) will reset on January 1st, 2025. Collected cards will be preserved.'}
+                        message={'System is currently in testing. All player data (EXP/level/achievements/stats) will reset on January 1st, 2025. Collected cards will be preserved. Please report any bugs or issues to @the13thgeek!'}
                     />
                 </Tile>
               <Routes>
