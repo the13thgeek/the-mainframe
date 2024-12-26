@@ -97,7 +97,7 @@ const Profile = () => {
               <div className={'card-item' + (card.is_default === 1 ? (` active`) : (''))} key={idx}>
                 <img src={UserCard(card.sysname)} alt={card.name} />
                 <div className="card-info">
-                  <p className="title">{card.is_premium === 1 ? 'Premium ' : ''}{card.name}</p>
+                  <p className="title">{card.name}</p>
                   <div className="badges">
                     {card.is_premium === 1 && (
                       <span className="card-badge premium">Premium</span>

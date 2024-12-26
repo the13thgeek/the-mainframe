@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Homepage - changed Check-in Ranking to Latest Check-ins
 - Stats: Renamed CP-PTS
 - Changed numbers formatting to add separator commas
+- Removed the redundant "Premium" label on Profile Card Collection
 
 ## [0.5.2b] - 2024-12-20
 ### Added
