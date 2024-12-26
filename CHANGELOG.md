@@ -13,7 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Tile design for widget titles
 - Homepage - changed Check-in Ranking to Latest Check-ins
-- Stats: Renamed CP-PTS 
+- Stats: Renamed CP-PTS
+- Changed numbers formatting to add separator commas
 
 ## [0.5.2b] - 2024-12-20
 ### Added

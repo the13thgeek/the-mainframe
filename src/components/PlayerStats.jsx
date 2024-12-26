@@ -11,13 +11,13 @@ const PlayerStats = ({ userStats = null, userLevel = null }) => {
       <ul>
         {userStats?.bean_redeems !== undefined && (
           <li>
-            <span className={'stat-number user-level level-'+userLevel}>{userStats.bean_redeems}</span>
+            <span className={'stat-number user-level level-'+userLevel}>{userStats.bean_redeems.toLocaleString('en-US')}</span>
             <span className="stat-label">Beans</span>
           </li>
         )}
         {userStats?.card_gacha_pulls !== undefined && (
           <li>
-            <span className={'stat-number user-level level-'+userLevel}>{userStats.card_gacha_pulls}</span>
+            <span className={'stat-number user-level level-'+userLevel}>{userStats.card_gacha_pulls.toLocaleString('en-US')}</span>
             <span className="stat-label">Gacha Pulls</span>
           </li>
         )}
@@ -29,25 +29,25 @@ const PlayerStats = ({ userStats = null, userLevel = null }) => {
         )}
         {userStats?.checkin_count !== undefined && (
           <li>
-            <span className={'stat-number user-level level-'+userLevel}>{userStats.checkin_count}</span>
+            <span className={'stat-number user-level level-'+userLevel}>{userStats.checkin_count.toLocaleString('en-US')}</span>
             <span className="stat-label">Stream Check-ins</span>
           </li>
         )}
         {userStats?.ghost_calls !== undefined && (
           <li>
-            <span className={'stat-number user-level level-'+userLevel}>{userStats.ghost_calls}</span>
+            <span className={'stat-number user-level level-'+userLevel}>{userStats.ghost_calls.toLocaleString('en-US')}</span>
             <span className="stat-label">Ghosts Sent</span>
           </li>
         )}
         {userStats?.points_spend !== undefined && (
           <li>
-            <span className={'stat-number user-level level-'+userLevel}>{userStats.points_spend}</span>
+            <span className={'stat-number user-level level-'+userLevel}>{userStats.points_spend.toLocaleString('en-US')}</span>
             <span className="stat-label">Points Spent</span>
           </li>
         )}
         {userStats?.redeems_count !== undefined && (
           <li>
-            <span className={'stat-number user-level level-'+userLevel}>{userStats.redeems_count}</span>
+            <span className={'stat-number user-level level-'+userLevel}>{userStats.redeems_count.toLocaleString('en-US')}</span>
             <span className="stat-label">Total Redeems</span>
           </li>
         )}

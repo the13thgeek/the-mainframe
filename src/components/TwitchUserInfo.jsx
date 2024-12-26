@@ -30,7 +30,7 @@ const TwitchUserInfo = () => {
                         </div>
                         <div className="row exp">
                             <div className="user-exp">
-                                <span className="exp">{Math.ceil(user.exp)} EXP</span>
+                                <span className="exp">{Math.ceil(user.exp).toLocaleString('en-US')} EXP</span>
                             </div>
                             <ExpProgressBar level={user.level} progress={user.level_progress} />
                         </div>

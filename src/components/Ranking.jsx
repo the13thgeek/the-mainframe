@@ -69,11 +69,14 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
           </div>
           <div className="player">
             <h4>{rankItem.twitch_display_name}</h4>
-            <div className="data"><span className="level">Lvl {rankItem.level}</span> <span className={'title user-level level-'+rankItem.level}>{rankItem.title}</span></div>
+            <div className="data">
+              <span className="level">Lvl {rankItem.level}</span>
+              <span className={'title user-level level-'+rankItem.level}>{rankItem.title}</span>
+            </div>
           </div>
           {valueLabels && (
             <div className="points">
-              <span className={'user-level level-'+rankItem.level}>{Math.ceil(rankItem.value)}</span>
+              <span className={'user-level level-'+rankItem.level}>{ !isNaN(rankItem.value) ? Math.ceil(rankItem.value).toLocaleString('en-US') : rankItem.value}</span>
               <span className="value-label">{valueLabels}</span>
             </div>
           )}
