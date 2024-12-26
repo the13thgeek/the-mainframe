@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.2c] - 2024-12-25
+### Added
+- Event Exclusive Card Type
+- Updated achievement badges
+
+### Changed
+- Tile design for widget titles
+- Homepage - changed Check-in Ranking to Latest Check-ins
+- Stats: Renamed CP-PTS 
+
 ## [0.5.2b] - 2024-12-20
 ### Added
 - Global Test Notice

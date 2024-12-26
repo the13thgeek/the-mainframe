@@ -9,7 +9,9 @@ const Tile = ({ extraClassName, icon = null, title = null, children }) => {
           {icon} <h3>{title}</h3>
         </div>
       )}
-      {children}
+      <div className="widget-body">
+        {children}
+      </div>      
     </div>
   )
 }

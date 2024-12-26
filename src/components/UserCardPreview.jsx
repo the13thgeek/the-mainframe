@@ -2,7 +2,7 @@ import React from 'react';
 import { UserCard } from '../utils/common';
 import './UserCardPreview.scss';
 
-const UserCardPreview = ({ cardName = null, cardTitle = null, isPremium = false, isRare = false}) => {
+const UserCardPreview = ({ cardName = null, cardTitle = null, isPremium = false, isRare = false, isEvent = false}) => {
   
   if(cardName && cardTitle) {
     return (
@@ -11,6 +11,7 @@ const UserCardPreview = ({ cardName = null, cardTitle = null, isPremium = false,
         <p className="card-name">
           {cardTitle} 
           { isPremium ? (<span className="card-badge premium">Premium</span>) : "" }
+          { isEvent ? (<span className="card-badge event">Event Exclusive</span>) : "" }
           { isRare ? (<span className="card-badge rare">Rare</span>) : "" }
         </p>
       </div>

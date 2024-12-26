@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { getUserFromStorage } from "../utils/auth";
 import ExpProgressBar from './ExpProgressBar';
-//import PlayerStats from './PlayerStats';
+import PlayerStats from './PlayerStats';
 import PlayerAchievements from './PlayerAchievements';
 import { UserCard } from '../utils/common';
 import './DialogUserPreview.scss';
@@ -9,6 +10,7 @@ const DialogUserPreview = ({ userId }) => {
   if(!userId) return null;
   const [userData, setUserData] = useState(null);
   const [isLoading, setLoading] = useState(true);
+  const currentUser = getUserFromStorage();
 
   useEffect(() => {
     const fetchUserProfile = async()  => {  
@@ -68,11 +70,15 @@ const DialogUserPreview = ({ userId }) => {
             </div>
           </div>
         </div>
+        
+          {currentUser.local_id === 1 && (
+            <div className="content-row">
+              <PlayerStats userStats={userData.stats} userLevel={userData.level} />
+              </div>
+          )}
         <div className="content-row">
-          {/* <PlayerStats userStats={userData.stats} userLevel={userData.level} /> */}
           <PlayerAchievements achievementsList={userData.achievements} />
         </div>
-        
         </>
       ) }    
     </div>

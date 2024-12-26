@@ -41,7 +41,7 @@ const PlayerStats = ({ userStats = null, userLevel = null }) => {
         )}
         {userStats?.points_spend !== undefined && (
           <li>
-            <span className={'stat-number user-level level-'+userLevel}>{userStats.points_spend}<span className="label">CP</span></span>
+            <span className={'stat-number user-level level-'+userLevel}>{userStats.points_spend}</span>
             <span className="stat-label">Points Spent</span>
           </li>
         )}

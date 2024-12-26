@@ -102,6 +102,9 @@ const Profile = () => {
                     {card.is_premium === 1 && (
                       <span className="card-badge premium">Premium</span>
                     )}
+                    {card.is_event === 1 && (
+                      <span className="card-badge event">Event Exclusive</span>
+                    )}
                     {card.is_rare === 1 && (
                       <span className="card-badge rare">Rare</span>
                     )}

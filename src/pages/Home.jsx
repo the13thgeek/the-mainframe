@@ -17,7 +17,7 @@ const Home = () => {
 
     const fetchLiveData = async () => {
       // Fetch live data
-      const liveResponse = await fetch(`https://api.twitch.tv/helix/streams?user_login=the13thgeek`, {
+      const liveResponse = await fetch(`https://api.twitch.tv/helix/streams?user_login=TheArcadeBear`, {
         headers: {
             'Authorization': `Bearer ${TWITCH_ACCESS_TOKEN}`,
             'Client-Id': `${TWITCH_EXT_CLIENT_ID}`
@@ -52,7 +52,7 @@ const Home = () => {
           {user && (
             <Tile extraClassName={'live-stream'} icon={<i className="fa-solid fa-tv"></i>} title={'Live Stream'}>
               <LiveStream liveData={liveData} />
-              {(liveData?.game_name === 'StepMania') && (
+              {(liveData?.game_name === 'StepMania' || 1) && (
                 <RequestsBar />
               )}
             </Tile>
@@ -102,8 +102,8 @@ const Home = () => {
               </Tile>
             </div>
             <div className="col-b">
-              <Tile extraClassName={'ranking top-checkins'} icon={<i className="fa-solid fa-passport"></i>} title={'Top Check-Ins'}>
-                <Ranking rankType={'checkins'} itemsToShow={5} valueLabels={'strm'} enableUserView={(user !== null)} />
+              <Tile extraClassName={'ranking top-checkins'} icon={<i className="fa-solid fa-passport"></i>} title={'Latest Check-Ins'}>
+                <Ranking rankType={'checkins_last'} itemsToShow={5} enableUserView={(user !== null)} />
               </Tile>
             </div>
           </div>
@@ -113,7 +113,7 @@ const Home = () => {
       <div className="col-b">
         {user && user.user_card && (
           <Tile extraClassName={'user-card'} icon={<i className="fa-regular fa-id-card"></i>} title="User Card">
-            <UserCardPreview cardName={user.user_card.sysname} cardTitle={user.user_card.name} isPremium={user.user_card.is_premium} isRare={user.user_card.is_rare} />
+            <UserCardPreview cardName={user.user_card.sysname} cardTitle={user.user_card.name} isPremium={user.user_card.is_premium} isRare={user.user_card.is_rare} isEvent={user.user_card.is_event} />
           </Tile>
         )}
         <Tile extraClassName={'ranking top-exp'} icon={<i className="fa-solid fa-ranking-star"></i>} title={'Community Ranking'}>
