@@ -8,7 +8,7 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState(null);
 
-  if(!rankType) return(null);
+  //if(!rankType) return(null);
 
   const openUserInfo = (userId) => {
     if(userId) {
@@ -51,7 +51,7 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
   return (
     <>
     <div className="grid-ranking">
-      {!rankData && (
+      {!rankData || rankData.length === 0 && (
         <p>Ranking data is currently unavailable.</p>
       )}
       {rankData && rankData.map((rankItem,idx) => (

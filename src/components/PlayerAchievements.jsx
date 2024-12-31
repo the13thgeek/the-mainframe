@@ -1,7 +1,7 @@
 import React from 'react';
 import './PlayerAchievements.scss'
 
-const PlayerAchivements = ({ achievementsList = null }) => {
+const PlayerAchievements = ({ achievementsList = null }) => {
   
   const formatDateString = (dateString) => {
     const date = new Date(dateString);
@@ -40,4 +40,4 @@ const PlayerAchivements = ({ achievementsList = null }) => {
   )
 }
 
-export default PlayerAchivements
+export default PlayerAchievements

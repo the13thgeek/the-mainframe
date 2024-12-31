@@ -5,6 +5,9 @@ const PlayerStats = ({ userStats = null, userLevel = null }) => {
   if (!userStats || !userLevel) return null;
   return (
     <div className='stats-content'>
+      {!userStats || userStats.length === 0 && (
+        <p>Stats data is currently unavailable.</p>
+      )}
       {/* <pre>
         {JSON.stringify(userStats, null, 2)}
       </pre> */}

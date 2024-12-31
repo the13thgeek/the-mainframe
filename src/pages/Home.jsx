@@ -59,7 +59,7 @@ const Home = () => {
           )}
           {!user && (
             <Tile extraClassName={'welcome'}>
-              <h1>Welcome to <span className="hilite">@the13thgeek</span>'s Mainframe Hub!</h1>
+              <h1>Welcome to <span className="hilite">the Mainframe</span>!</h1>
               <p>Log in to the Hub with your Twitch account to:</p>
               <ul className="perks">
                 <li>
