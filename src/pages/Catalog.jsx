@@ -92,7 +92,7 @@ const Catalog = () => {
           <p className='acquisition'>
             <b>Catalog #</b> {card.catalog_no}<br />
             <b>Released: </b> {card.release}<br />
-            <b>Pull Availability:</b> { card.is_pull === 1 ? card.is_premium === 1 ? ('Yes, VIP/Subscribers only') : ('Yes') : ('No') }
+            <b>Pull Availability:</b> { card.is_active === 1 ? card.is_premium === 1 ? ('Yes, VIP/Subscribers only') : ('Yes') : ('No') }
             {card.notes !== "null" && (<><br /><b>Notes:</b></>)}
           </p>
           { card.notes !== "null" && (
