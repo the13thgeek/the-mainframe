@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { TWITCH_ACCESS_TOKEN, TWITCH_EXT_CLIENT_ID, thumbnailResize } from '../utils/twitch';
 import { getUserFromStorage } from "../utils/auth";
-import TwitchUserInfo from "../components/TwitchUserInfo";
 import Tile from "../components/Tile";
 import LiveStream from "../components/LiveStream";
 import UserCardPreview from "../components/UserCardPreview";
@@ -41,14 +40,9 @@ const Home = () => {
 		<div className="layout-row">
       <div className="col-a">
         <div className="sub-row">
-          <Tile extraClassName={'profile'}>
+          {/* <Tile extraClassName={'profile'}>
             <TwitchUserInfo />
-            {/* {user && (
-              <pre>
-                {JSON.stringify(user, null, 2)}
-              </pre>
-            )} */}
-          </Tile>        
+          </Tile>         */}
           {user && (
             <Tile extraClassName={'live-stream'} icon={<i className="fa-solid fa-tv"></i>} title={'Live Stream'}>
               <LiveStream liveData={liveData} />

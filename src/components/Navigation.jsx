@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { getUserFromStorage } from "../utils/auth";
 import './Navigation.scss';
 
 const Navigation = () => {
+  const user = getUserFromStorage();
     
   return (
     <nav className='global'>
@@ -12,11 +14,16 @@ const Navigation = () => {
           Dashboard
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/profile" className={({isActive}) => isActive ? "active" : "" }>
-          Profile
-          </NavLink>
-        </li>
+        { user !== null && (
+          <>
+          <li>
+            <NavLink to="/profile" className={({isActive}) => isActive ? "active" : "" }>
+            Profile
+            </NavLink>
+          </li>
+          </>
+        )}
+        
         <li>
           <Link className='domain-link' to='https://the13thgeek.com' target='_blank'>
           the13thgeek.com <i className="fa-solid fa-up-right-from-square"></i>

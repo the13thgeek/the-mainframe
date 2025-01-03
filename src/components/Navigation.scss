@@ -64,3 +64,17 @@ nav.global {
     }
   }
 }
+
+@media (max-width: 768px) {
+
+  nav.global {
+    ul.nav-menu {
+      li {
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+
+}

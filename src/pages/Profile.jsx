@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Tile from "../components/Tile";
-import TwitchUserInfo from "../components/TwitchUserInfo";
 import Modal from "../components/Modal";
 import PlayerStats from "../components/PlayerStats";
 import PlayerAchievements from "../components/PlayerAchievements";
@@ -85,12 +84,9 @@ const Profile = () => {
   return (
     <div className="layout-row">
       <div className="col-a">
-        <Tile extraClassName={'profile'}>
+        {/* <Tile extraClassName={'profile'}>
           <TwitchUserInfo />
-          {/* <pre>
-            {JSON.stringify(user, null, 2)}
-          </pre> */}
-        </Tile>
+        </Tile> */}
         <Tile extraClassName={'card-collection'} icon={<i className="fa-solid fa-credit-card"></i>} title={'Card Collection'}>
           <div className="card-list">
             {userCards.map((card,idx) => (
