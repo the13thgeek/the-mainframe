@@ -1,0 +1,152 @@
+h3.card-category {
+  margin: 0 0 30px;
+}
+
+.catalog-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  margin-bottom: 30px;
+
+  .catalog-item {
+    cursor: pointer;
+    display: flex;
+    transition: all 0.3s;
+    border: #131c34 2px solid;
+    border-radius: 15px;
+    background-color: #000;
+    position: relative;
+
+    .indicators {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      gap: 5px;
+      top: -3px;
+      left: 10px;
+      z-index: 1;
+
+      .indicator {
+        background-color: #000;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 5px 8px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        &.collect {
+          background-color: #060;
+        }
+        &.new {
+          background-color: #e00;
+        }
+      }
+    }
+
+    img {
+      opacity: 0.7;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      border: #fff 2px solid;
+
+      img {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.card-details {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+
+  .card-thumbnail {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex: 2;
+    gap: 5px;
+  }
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    flex: 3;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+  }
+
+  h3 {
+    margin: 0;    
+  }
+
+  .badges {
+    margin-bottom: 10px;
+  }
+
+  img {
+    aspect-ratio: 7/4;
+  }
+
+  p {
+    margin: 0;
+
+    &.acquisition {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 0;
+    }
+
+    &.notes {
+      background-color: rgba(0,0,0,0.6);
+      padding: 5px 8px;
+      font-size: 14px;
+      line-height: 22px;
+      border-radius: 8px;
+    }
+  }
+}
+
+ul.faq {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #999;
+
+  li {
+    p.q {
+      font-weight: 600;
+    }
+    b {
+      font-weight: 400;
+    }
+    p.q, b {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+
+  .catalog-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .card-details {
+    flex-direction: column;
+  }
+
+}

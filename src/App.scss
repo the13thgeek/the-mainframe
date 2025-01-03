@@ -71,6 +71,15 @@ footer {
   margin-left: 10px;
   border-radius: 4px;
 
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &.oop {
+    background-color: #666;
+    color: #fff;
+  }
+
   &.premium {
     background-color: #900;
     color: #fff;

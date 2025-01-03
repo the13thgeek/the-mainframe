@@ -15,6 +15,16 @@ const Profile = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState(null);
   
+  const userCardsEX = userCards?.filter(card =>
+    ['EX','GX','SP'].some(option => card.catalog_no.startsWith(option))
+  );
+  const userCardsRP = userCards?.filter(card =>
+    ['RP'].some(option => card.catalog_no.startsWith(option))
+  );
+  const userCardsRG = userCards?.filter(card =>
+    ['RG'].some(option => card.catalog_no.startsWith(option))
+  );
+  
   const openDialog = (status, message) => {
     setModalContent(
       <>
@@ -87,12 +97,14 @@ const Profile = () => {
         {/* <Tile extraClassName={'profile'}>
           <TwitchUserInfo />
         </Tile> */}
-        <Tile extraClassName={'card-collection'} icon={<i className="fa-solid fa-credit-card"></i>} title={'Card Collection'}>
+        <Tile extraClassName={'card-collection'} icon={<i className="fa-solid fa-credit-card"></i>} title={'Member Card Collection'}>
+          {/* Special Cards */}
+          <h3 className="card-category">Specials &amp; Exclusives</h3>
           <div className="card-list">
-            {userCards.map((card,idx) => (
+            {userCardsEX.length > 0 && userCardsEX.map((card,idx) => (
               <div className={'card-item' + (card.is_default === 1 ? (` active`) : (''))} key={idx}>
                 <img src={UserCard(card.sysname + "-thumb")} alt={card.name} />
-                <div className="card-info">
+                <div className="info">
                   <p className="title">{card.name}</p>
                   <div className="badges">
                     {card.is_premium === 1 && (
@@ -105,15 +117,77 @@ const Profile = () => {
                       <span className="card-badge rare">Rare</span>
                     )}
                   </div>
-                </div>
+                  <p className="notes">{card?.notes}</p>
+                </div>  
                 <div className="card-actions">
                   {card.is_default !== 1 ? (
                     <button className="set-active" onClick={() => changeCard(user.local_id,card.card_id)}>Set Active</button>
                   ) : (
-                    <p>Active</p>
+                    <span>Active</span>
                   )}
-                </div>
-                
+                </div>              
+              </div>
+            ))}
+          </div>
+          {/* Premium Cards */}
+          <h3 className="card-category">Premium Issue</h3>
+          <div className="card-list">
+            {userCardsRP.length > 0 && userCardsRP.map((card,idx) => (
+              <div className={'card-item' + (card.is_default === 1 ? (` active`) : (''))} key={idx}>
+                <img src={UserCard(card.sysname + "-thumb")} alt={card.name} />
+                <div className="info">
+                  { card.is_default === 1 && (
+                    <div className="card-active-indicator">Active</div>
+                  ) }
+                  <p className="title">{card.name}</p>
+                  <div className="badges">
+                    {card.is_premium === 1 && (
+                      <span className="card-badge premium">Premium</span>
+                    )}
+                    {card.is_event === 1 && (
+                      <span className="card-badge event">Event Exclusive</span>
+                    )}
+                    {card.is_rare === 1 && (
+                      <span className="card-badge rare">Rare</span>
+                    )}
+                  </div>
+                  <div className="card-actions">
+                    {card.is_default !== 1 && (
+                      <button className="set-active" onClick={() => changeCard(user.local_id,card.card_id)}>Set Active</button>
+                    )}
+                  </div>
+                </div>                
+              </div>
+            ))}
+          </div>
+          {/* Standard Cards */}
+          <h3 className="card-category">Standard Issue</h3>
+          <div className="card-list">
+            {userCardsRG.length > 0 && userCardsRG.map((card,idx) => (
+              <div className={'card-item' + (card.is_default === 1 ? (` active`) : (''))} key={idx}>
+                <img src={UserCard(card.sysname + "-thumb")} alt={card.name} />
+                <div className="info">
+                  { card.is_default === 1 && (
+                    <div className="card-active-indicator">Active</div>
+                  ) }
+                  <p className="title">{card.name}</p>
+                  <div className="badges">
+                    {card.is_premium === 1 && (
+                      <span className="card-badge premium">Premium</span>
+                    )}
+                    {card.is_event === 1 && (
+                      <span className="card-badge event">Event Exclusive</span>
+                    )}
+                    {card.is_rare === 1 && (
+                      <span className="card-badge rare">Rare</span>
+                    )}
+                  </div>
+                  <div className="card-actions">
+                    {card.is_default !== 1 && (
+                      <button className="set-active" onClick={() => changeCard(user.local_id,card.card_id)}>Set Active</button>
+                    )}
+                  </div>
+                </div>                
               </div>
             ))}
           </div>

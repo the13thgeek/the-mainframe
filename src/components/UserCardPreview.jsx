@@ -10,6 +10,8 @@ const UserCardPreview = ({ cardName = null, cardTitle = null, isPremium = false,
         <img src={UserCard(cardName)} alt={`Card: ${cardTitle}`} />
         <p className="card-name">
           {cardTitle} 
+        </p>
+        <p className="badges">
           { isPremium ? (<span className="card-badge premium">Premium</span>) : "" }
           { isEvent ? (<span className="card-badge event">Event Exclusive</span>) : "" }
           { isRare ? (<span className="card-badge rare">Rare</span>) : "" }

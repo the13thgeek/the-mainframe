@@ -21,6 +21,11 @@ const Navigation = () => {
             Profile
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/catalog" className={({isActive}) => isActive ? "active" : "" }>
+            Catalog
+            </NavLink>
+          </li>
           </>
         )}
         

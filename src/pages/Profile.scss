@@ -1,15 +1,61 @@
+h3.card-category {
+  margin: 0 0 30px;
+}
+
+p.instructions {
+  margin: 0 0 30px;
+}
+
 .card-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
+  margin-bottom: 30px;
 }
 
 .card-item {
   overflow: hidden;
-  border-radius: 20px;
+  position: relative;
+  border-radius: 15px;
   background-color: #11182d;
   border: #1d283a 1px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  img {
+    position: relative;
+    z-index: 1;
+  }
+
+  .info {
+    cursor: default;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 100%;
+
+    p {
+      margin: 0;
+
+      &.title {
+        font-weight: 800;
+      }
+
+      &.notes {
+        font-size: 12px;
+        background-color: rgba(0,0,0,0.6);
+        padding: 5px 8px;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  .card-actions {
+    justify-self: flex-end;
+  }
 
   &.active {
     background-color: #1d2b50;

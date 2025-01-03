@@ -3,10 +3,11 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 //import TwitchUserInfo from "./components/TwitchUserInfo";
 import Navigation from "./components/Navigation";
 import SectionTitle from "./components/SectionTitle";
-import Tile from "./components/Tile";
+//import Tile from "./components/Tile";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
-import GlobalNotice from "./components/GlobalNotice";
+import Catalog from "./pages/Catalog";
+//import GlobalNotice from "./components/GlobalNotice";
 import { TWITCH_REDIRECT_URI, TWITCH_CLIENT_ID, saveUserToStorage } from "./utils/auth";
 import './App.scss';
 
@@ -74,6 +75,7 @@ function App() {
               <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/profile" element={<Profile />} />
+                  <Route path="/catalog" element={<Catalog />} />
               </Routes>
               </div>
             </main>
