@@ -13,6 +13,7 @@ body {
   background-color: #0f1729;
   color: #fff;
   font-family: $global-font-family, sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -236,7 +237,10 @@ footer {
   }
 
   .layout-row {
-    .col-a, .col-b {
+    .col-a {
+      flex: 2;
+    }
+    .col-b {
       flex: 1;
     }
   }

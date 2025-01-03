@@ -95,7 +95,7 @@ const Profile = () => {
           <div className="card-list">
             {userCards.map((card,idx) => (
               <div className={'card-item' + (card.is_default === 1 ? (` active`) : (''))} key={idx}>
-                <img src={UserCard(card.sysname)} alt={card.name} />
+                <img src={UserCard(card.sysname + "-thumb")} alt={card.name} />
                 <div className="card-info">
                   <p className="title">{card.name}</p>
                   <div className="badges">
