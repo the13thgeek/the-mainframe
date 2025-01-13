@@ -23,8 +23,8 @@ const StreamSchedule = () => {
     schedule.map((scheduleItem, idx) => (
       <div key={idx} className="schedule-item">
         <div className="day-time">
-          <b>[{scheduleItem.day}]</b><br />
-          <small>{scheduleItem.date}</small>
+          <b>[{scheduleItem.day}] {scheduleItem.date}</b><br />
+          <small>{scheduleItem.time}</small>
         </div>
         <div className="program">
           <b>{scheduleItem.title}</b><br />
