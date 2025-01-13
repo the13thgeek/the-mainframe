@@ -17,6 +17,14 @@ main.page-home {
       &.logged {
         grid-template-columns: 3fr 3fr 2fr;
       }
+
+      .col-b {
+        display: flex;
+
+        .tile {
+          flex: 1;
+        }
+      }
     }
 
     &.links {
@@ -227,14 +235,14 @@ ul.perks {
             'a c'
             'b b';
         }
-        .tile.livestream-preview {
+        .col-a {
           grid-area: a; 
         }
-        .tile.livestream-info { 
+        .col-b { 
           grid-area: b; 
           height: 350px;
         }
-        .tile.user-card { 
+        .col-c { 
           grid-area: c; 
         }
       }
@@ -248,13 +256,13 @@ ul.perks {
           'c c'
         ;
 
-        .tile.ranking.spenders {
+        .col-a {
           grid-area: a;
         }
-        .tile.ranking.checkins {
+        .col-b {
           grid-area: b;
         }
-        .tile.ranking.achievements {
+        .col-c {
           grid-area: c;
         }
       }
@@ -275,6 +283,24 @@ ul.perks {
       margin-bottom: 15px;
 
       &.initial {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+          'a'
+          'b';
+
+          .col-a {
+            grid-area: a; 
+          }
+          .col-b { 
+            grid-area: b; 
+            height: auto;
+          }
+          .col-c { 
+            display: none;
+          }
+       
         &.logged {
           grid-template-columns: 1fr;
           grid-template-rows: auto;
@@ -282,17 +308,24 @@ ul.perks {
             'a'
             'b'
             'c';
+
+            .col-a {
+              grid-area: a; 
+            }
+            .col-b { 
+              grid-area: b; 
+              height: 350px;
+            }
+            .col-c { 
+              display: flex;
+              grid-area: c; 
+
+              .tile {
+                flex: 1;
+              }
+            }
         }
-        .tile.livestream-preview {
-          grid-area: a; 
-        }
-        .tile.livestream-info { 
-          grid-area: b; 
-          height: 350px;
-        }
-        .tile.user-card { 
-          grid-area: c; 
-        }
+        
       }
 
       &.lists {

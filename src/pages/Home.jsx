@@ -44,104 +44,108 @@ const Home = () => {
     <main className="page-home">
       <div className="structure">
         <div className={'row initial'+(user ? ' logged' : '')}>
-          <div>
+          <div className="col-a">
             <Tile extraClassName={'livestream-preview'} title={'Live Stream'}>
               <LiveStream liveData={liveData} />
             </Tile>
           </div>
           { user ? (
             <>
-            <Tile extraClassName={'livestream-info'}>
-              <Tabs className={'info-tabs'} selectedTabClassName='active'>
-                <TabList className={'tabs-list'}>
-                  {(liveData?.game_name === 'StepMania') && (
-                    <Tab disabledClassName='disabled'><span>Requests</span></Tab>
-                  )}
-                  { liveData && (
-                    <Tab disabledClassName='disabled'><span>Stream</span></Tab>
-                  ) }
-                  <Tab disabledClassName='disabled'><span>Schedule</span></Tab>
-                  { liveData ? (
-                    <Tab disabledClassName='disabled'><span>Gacha</span></Tab>
-                  ) : (
-                    <Tab disabledClassName='disabled' disabled><span>Gacha</span></Tab>
-                  )}
-                </TabList>
-                <div className="contents">
-                  {(liveData?.game_name === 'StepMania') && (
-                    <TabPanel className='panel song-requests' selectedClassName='active'>
-                      <RequestsBar />
-                    </TabPanel>
-                  )}
-                  { liveData && (
-                    <TabPanel className='panel stream-info' selectedClassName='active'>
+            <div className="col-b">
+              <Tile extraClassName={'livestream-info'}>
+                <Tabs className={'info-tabs'} selectedTabClassName='active'>
+                  <TabList className={'tabs-list'}>
+                    {(liveData?.game_name === 'StepMania') && (
+                      <Tab disabledClassName='disabled'><span>Requests</span></Tab>
+                    )}
+                    { liveData && (
+                      <Tab disabledClassName='disabled'><span>Stream</span></Tab>
+                    ) }
+                    <Tab disabledClassName='disabled'><span>Schedule</span></Tab>
+                    { liveData ? (
+                      <Tab disabledClassName='disabled'><span>Gacha</span></Tab>
+                    ) : (
+                      <Tab disabledClassName='disabled' disabled><span>Gacha</span></Tab>
+                    )}
+                  </TabList>
+                  <div className="contents">
+                    {(liveData?.game_name === 'StepMania') && (
+                      <TabPanel className='panel song-requests' selectedClassName='active'>
+                        <RequestsBar />
+                      </TabPanel>
+                    )}
+                    { liveData && (
+                      <TabPanel className='panel stream-info' selectedClassName='active'>
+                        <div className="wrapper">
+                          <h3 className="stream-title">{liveData.title}</h3>
+                          <p>Now playing: <b>{liveData.game_name}</b></p>
+                          <small>Started at {dateFormatter('simple-time',liveData.started_at)}</small>
+                          <ul className="tags">
+                            {liveData.tags.map((tag, idx) => (
+                              <li key={idx}> {tag} </li>
+                            ))}
+                          </ul>
+                          <p className='viewers'><i className="fa-solid fa-users"></i> {liveData.viewer_count} {liveData.viewer_count === 1 ? 'viewer' : 'viewers'}</p>
+                        </div>
+                      </TabPanel>
+                    ) }
+                    <TabPanel className='panel schedule' selectedClassName='active'>
                       <div className="wrapper">
-                        <h3 className="stream-title">{liveData.title}</h3>
-                        <p>Now playing: <b>{liveData.game_name}</b></p>
-                        <small>Started at {dateFormatter('simple-time',liveData.started_at)}</small>
-                        <ul className="tags">
-                          {liveData.tags.map((tag, idx) => (
-                            <li key={idx}> {tag} </li>
-                          ))}
-                        </ul>
-                        <p className='viewers'><i className="fa-solid fa-users"></i> {liveData.viewer_count} {liveData.viewer_count === 1 ? 'viewer' : 'viewers'}</p>
+                        <StreamSchedule />
                       </div>
                     </TabPanel>
-                  ) }
-                  <TabPanel className='panel schedule' selectedClassName='active'>
-                    <div className="wrapper">
-                      <StreamSchedule />
-                    </div>
-                  </TabPanel>
-                  <TabPanel className='panel gacha' selectedClassName='active'>
-                    <div className="wrapper">
-                      <GachaCardList />
-                    </div>
-                  </TabPanel>
-                </div>
-              </Tabs>
-            </Tile>
-            <div>
+                    <TabPanel className='panel gacha' selectedClassName='active'>
+                      <div className="wrapper">
+                        <GachaCardList />
+                      </div>
+                    </TabPanel>
+                  </div>
+                </Tabs>
+              </Tile>
+            </div>
+            <div className="col-c">
               <Tile extraClassName={'user-card'} title={'User Card'}>
                 <UserCardPreview userLevel={user.level} cardName={user.user_card.sysname} cardTitle={user.user_card.name} isPremium={user.user_card.is_premium} isRare={user.user_card.is_rare} isEvent={user.user_card.is_event} />
               </Tile>
             </div>
             </>
           ) : (
-            <Tile title={'Welcome to the Mainframe!'} extraClassName={'welcome'}>
-              <p>Connect with Twitch to unlock personalized stream features, exclusive perks and fun off-stream community activities!</p>
-              <p>Log in to the Mainframe with your Twitch account to:</p>
-              <ul className="perks">
-                <li>
-                  <div className="icon"><i className="item-3 fa-solid fa-music"></i></div>
-                  <p className="details">
-                    <b className='headline'>Request Songs for Rhythm Game Streams</b><br ></br>
-                    Looking for the perfect track? Use our searchable list to find and submit songs directly to the stream.
-                  </p> 
-                </li>
-                <li>
-                  <div className="icon"><i className="item-2 fa-solid fa-address-card"></i></div>
-                  <p className="details">
-                    <b className='headline'>Manage Your Frequent Flyer cards</b><br ></br>
-                    Easily organize your collection of stream cards and choose which one to use for check-ins and shoutouts.
-                  </p> 
-                </li>
-                <li>
-                  <div className="icon"><i className="item-1 fa-solid fa-user-plus"></i></div>
-                  <p className="details">
-                    <b className='headline'>Track Your Profile Stats</b><br ></br>
-                    Earn EXP by watching <b>@the13thgeek's</b> streams, participating in chat and redeeming channel point rewards. See how you rank with your fellow geeks and level up!
-                  </p> 
-                </li>
-                <li>
-                  <div className="icon"><i className="item-4 fa-solid fa-heart-circle-plus"></i></div>
-                  <p className="details">
-                    <b className='headline'>...plus more!</b><br ></br>
-                    We're continuously adding new features to enhance your on-stream and off-stream experience. Stay tuned!
-                  </p> 
-                </li>
-              </ul>
-            </Tile>
+            <div className="col-b">
+              <Tile title={'Welcome to the Mainframe!'} extraClassName={'welcome'}>
+                <p>Connect with Twitch to unlock personalized stream features, exclusive perks and fun off-stream community activities!</p>
+                <p>Log in to the Mainframe with your Twitch account to:</p>
+                <ul className="perks">
+                  <li>
+                    <div className="icon"><i className="item-3 fa-solid fa-music"></i></div>
+                    <p className="details">
+                      <b className='headline'>Request Songs for Rhythm Game Streams</b><br ></br>
+                      Looking for the perfect track? Use our searchable list to find and submit songs directly to the stream.
+                    </p> 
+                  </li>
+                  <li>
+                    <div className="icon"><i className="item-2 fa-solid fa-address-card"></i></div>
+                    <p className="details">
+                      <b className='headline'>Manage Your Frequent Flyer cards</b><br ></br>
+                      Easily organize your collection of stream cards and choose which one to use for check-ins and shoutouts.
+                    </p> 
+                  </li>
+                  <li>
+                    <div className="icon"><i className="item-1 fa-solid fa-user-plus"></i></div>
+                    <p className="details">
+                      <b className='headline'>Track Your Profile Stats</b><br ></br>
+                      Earn EXP by watching <b>@the13thgeek's</b> streams, participating in chat and redeeming channel point rewards. See how you rank with your fellow geeks and level up!
+                    </p> 
+                  </li>
+                  <li>
+                    <div className="icon"><i className="item-4 fa-solid fa-heart-circle-plus"></i></div>
+                    <p className="details">
+                      <b className='headline'>...plus more!</b><br ></br>
+                      We're continuously adding new features to enhance your on-stream and off-stream experience. Stay tuned!
+                    </p> 
+                  </li>
+                </ul>
+              </Tile>
+            </div>
           )}
         </div>
         <div className="row">
