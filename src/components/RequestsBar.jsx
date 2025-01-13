@@ -141,17 +141,17 @@ const RequestsBar = () => {
 
   return (
     <>
-    { status && (
+    { status ? (
       <>
       <div className={`srs-indicator `+ (status.requests_open ? "on" : "off")}>
         <div className='status'>
           {status.requests_open ? (
             <>
-            <i className="fa-solid fa-music"></i> Requests OPEN
+            Requests OPEN
             </>
           ) : (
             <>
-            <i className="fa-solid fa-circle-pause"></i> Requests CLOSED
+            Requests CLOSED
             </>
           )}
         </div>
@@ -161,11 +161,11 @@ const RequestsBar = () => {
       </div>
       <div className="song-search">
         <span className={`icon `+ (status.requests_open ? "on" : "off")}><i className="fa-solid fa-circle-play"></i></span>
-        <input type="text" className="search" placeholder='Search songs...' maxLength={50} onChange={handleInputChange} />
+        <input type="text" className="search" placeholder='Search for songs...' maxLength={50} onChange={handleInputChange} />
       </div>
       <div className="song-list">
-        {filteredSongData && filteredSongData.map((song) => (
-          <div className="row" key={song.id}>
+        {filteredSongData && filteredSongData.map((song, idx) => (
+          <div className="song-row" data-id={song.id} key={idx}>
             <div className="song-info">
               <b className='song-title' title={song?.romanizedTitle ? song?.romanizedTitle : song.title}>{song.title}</b><br />
               <span className="song-artist" title={song.romanizedArtist ? song.romanizedArtist : song.artist}>{song.artist}</span>
@@ -185,6 +185,10 @@ const RequestsBar = () => {
         )}
       </div>
       </>
+    ) : (
+      <div className="srs-notice">
+        <p><i className="fa-solid fa-circle-info"></i> Please set the game version.</p>
+      </div>
     )}
     <Modal isOpen={isModalOpen} onClose={() => closeDialog()} footer={<button onClick={closeDialog}>OK</button>}>
       {modalContent}

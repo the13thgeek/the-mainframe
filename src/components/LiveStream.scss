@@ -1,3 +1,5 @@
+@use "sass:color";
+
 @keyframes live-alert {
   0% { opacity: 0.3; }
   50% { opacity: 1; }
@@ -12,20 +14,11 @@
   }
 }
 
-.live-info {
-  overflow: hidden;
-  border-radius: 20px;
-  background-color: #11182d;
-  border: #1d283a 1px solid;
-  margin-bottom: 15px;
-}
-
 .screen {
   position: relative;
-  //aspect-ratio: 16/9;
-  height: 250px;
+  aspect-ratio: 16/9;
+  width: 100%;
   background-color: #000;
-  border-radius: 20px;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -37,12 +30,12 @@
     left: 20px;
     z-index: 2;
     background-color: #d00;
-    font-size: 16px;
-    letter-spacing: 1px;
+    color: #fff;
+    font-size: 12px;
     font-weight: 600;
     display: inline-block;
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 3px;
     text-transform: uppercase;
     animation: live-alert 0.75s infinite;
   }
@@ -52,103 +45,109 @@
     top: 15px;
     left: 20px;
     z-index: 2;
-    background-color: #666;
-    font-size: 16px;
-    letter-spacing: 1px;
+    background-color: #999;
+    color: #fff;
+    font-size: 12px;
     font-weight: 600;
     display: inline-block;
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 3px;
     text-transform: uppercase;
   }
 
-  .action {
-    position: absolute;
-    z-index: 1;
-    background-color: rgba(0,0,0,0.3);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s;
-
-    span {
-      font-size: 20px;
-      font-weight: 600;
-      color: #fff;
-      transition: all 0.3s;
-      opacity: 0;
-    }
-
-    &:hover {
-      background-color: rgba(0,0,0,0.8);
-
-      span {
-        opacity: 1;
-      }
-    }
-  }
 }
 
 .now-streaming {
-  display: flex;
-  flex-direction: row;
-  margin: 25px 25px;
-  gap: 25px;
-  align-items: start;
+  padding: 30px 25px;
+  text-align: center;
+  background-color: #6441a5;
+  color: #fff;
 
-
-  .icon {
-    i {
-      font-size: 35px;
-      color: #cf0;
-    }
+  &.offline {
+    background-color: #ccc;
   }
 
-  .details {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-
-    h3 {
-      margin: 0;
-    }
-    p {
-      margin: 0;
-      &.game-title {
-        font-size: 14px;
-        color: #aaa;
-        margin-bottom: 5px;
-      }
-      &.viewers {
-        font-size: 14px;
-        color: #aaa;
-        i {
-          color: #fff;
-          margin-right: 5px;
-        }
-      }
-    }
-    ul.tags {
-      list-style: none;
-      margin: 0 0 5px;
-      padding: 0;
-
-      li {
-        float: left;
-        margin-right: 10px;
-        font-size: 12px;
-        background-color: #1b294b;
-        padding: 3px 10px;
-        margin-bottom: 4px;
-        border-radius: 9px;
-      }
-    }
-
-
+  h4, p {
+    font-size: 16px;
   }
-
+  h4 {
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0;
+  }  
 }
+
+.call-to-action {
+  padding: 20px 25px;
+  text-align: center;
+  
+  a.btn.watch-live {
+    background-color: #39f;
+    border-bottom-color: color.adjust(#39f, $lightness: -10%);
+  }
+}
+
+
+// .now-streaming {
+//   display: flex;
+//   flex-direction: row;
+//   margin: 25px 25px;
+//   gap: 25px;
+//   align-items: start;
+
+
+//   .icon {
+//     i {
+//       font-size: 35px;
+//       color: #cf0;
+//     }
+//   }
+
+//   .details {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 5px;
+
+//     h3 {
+//       margin: 0;
+//     }
+//     p {
+//       margin: 0;
+//       &.game-title {
+//         font-size: 14px;
+//         color: #aaa;
+//         margin-bottom: 5px;
+//       }
+//       &.viewers {
+//         font-size: 14px;
+//         color: #aaa;
+//         i {
+//           color: #fff;
+//           margin-right: 5px;
+//         }
+//       }
+//     }
+//     ul.tags {
+//       list-style: none;
+//       margin: 0 0 5px;
+//       padding: 0;
+
+//       li {
+//         float: left;
+//         margin-right: 10px;
+//         font-size: 12px;
+//         background-color: #1b294b;
+//         padding: 3px 10px;
+//         margin-bottom: 4px;
+//         border-radius: 9px;
+//       }
+//     }
+
+
+//   }
+
+// }

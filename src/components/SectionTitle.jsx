@@ -14,9 +14,7 @@ const SectionTitle = () => {
             </span>
             &trade;
           </h1>
-          <div className="user-data">
-            <TwitchUserInfo />
-          </div>
+          <TwitchUserInfo />
         </div>
       </div>
 

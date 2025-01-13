@@ -1,0 +1,22 @@
+footer {
+  padding: 60px 0;
+  border-top: #e2e2e2 1px solid;
+  background-color: #fbfbfb;
+  color: #232323;
+  font-size: 12px;
+  line-height: 20px;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  a {
+    color: #69f;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

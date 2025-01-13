@@ -12,13 +12,12 @@
 }
 
 .modal-content {
-  background: #131c34;
-  color: #fff;
+  background: #eee;
+  color: #000;
   padding: 40px 30px 30px 30px;
   border-radius: 8px;
   max-width: 600px;
-  min-width: 400px;
-  //width: 90%;
+  min-width: 200px;
   position: relative;
 }
 
@@ -28,6 +27,8 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
+  max-height: 80vh;
+  overflow-y: auto;
 
   .icon {
     font-size: 40px;
@@ -54,6 +55,7 @@
 
 .modal-close {
   position: absolute;
+  color: #333;
   top: 10px;
   right: 10px;
   background: transparent;

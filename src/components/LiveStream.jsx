@@ -4,19 +4,35 @@ import './LiveStream.scss';
 const LiveStream = ({ liveData = null }) => {
   return (
     <>
-    <div className="live-info">
-      <div className="screen" style={{ backgroundImage: `url(${liveData?.thumbnail_url || '/assets/stream-offline.jpg'})` }}>
-        {liveData ? (
+    <div className="screen" style={{ backgroundImage: `url(${liveData?.thumbnail_url || '/assets/stream-offline.jpg'})` }}>
+      {liveData ? (
+        <>
+        <div className="live-indicator"><i className="fa-solid fa-video"></i> Now Live</div>
+        <a href="https://twitch.tv/the13thgeek" target='_blank' className="action">
+          <img src={liveData?.thumbnail_url || '/assets/stream-offline.jpg'} />
+        </a>
+        </>
+      ): (
+        <div className="live-indicator-offline"><i className="fa-solid fa-video"></i> Stream is offline</div>
+      )}      
+    </div>
+      <div className={'now-streaming ' + (liveData ? 'live' : 'offline') }>
+        { liveData ? (
           <>
-          <div className="live-indicator"><i className="fa-solid fa-video"></i> Now Live</div>
-          <a href="https://twitch.tv/the13thgeek" target='_blank' className="action">
-            <span>Watch @the13thgeek Live</span>
-          </a>
+          <h4>{liveData.title}</h4>
+          <p>Now Playing: {liveData.game_name}</p>
           </>
-        ): (
-          <div className="live-indicator-offline"><i className="fa-solid fa-video"></i> Stream is offline</div>
-        )}      
+        ) : (
+          <h4>Stream Offline</h4>
+        )}
+        
       </div>
+      <div className="call-to-action">
+        <a href="https://twitch.tv/the13thgeek" target='_blank' className="btn watch-live">{ liveData ? 'Watch Live' : 'Visit Channel' }</a>
+      </div>
+
+
+    {/* <div className="live-info">
       { liveData && (
         <div className="now-streaming">
           <div className="icon">
@@ -34,7 +50,7 @@ const LiveStream = ({ liveData = null }) => {
           </div>
         </div>  
       )}
-    </div>    
+    </div>     */}
 
     </>
   )

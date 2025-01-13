@@ -1,0 +1,67 @@
+@keyframes blinky {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+.gacha-info {
+  font-size: 14px;
+}
+
+.gacha-section-heading {
+  color: #fff;
+  margin-bottom: 5px;
+  padding: 8px 10px;
+
+  h3 { 
+    margin: 0;
+    font-size: 16px;
+  }
+
+  &.specials {
+    background-color: #ff557a;
+  }
+  &.premium {
+    background-color: #00acd3;
+  }
+  &.standard {
+    background-color: #f7b215;
+  }
+
+}
+
+.gacha-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  margin-bottom: 5px;
+
+  .item {
+    position: relative;
+    background-color: #eee;
+    padding: 10px;
+
+    &.new {
+      &::before {
+        content: 'NEW!';
+        position: absolute;
+        top: 0;
+        right: 13%;
+        font-size: 10px;
+        color: #fff;
+        font-weight: bold;
+        background-color: #c00;
+        padding: 5px 7px;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        animation: blinky 0.75s infinite;
+      }
+    }
+
+    p {
+      font-size: 12px;
+      margin: 0;
+      text-align: center;
+    }
+  }
+}

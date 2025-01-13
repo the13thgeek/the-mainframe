@@ -54,34 +54,66 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
       {!rankData || rankData.length === 0 && (
         <p>Ranking data is currently unavailable.</p>
       )}
-      {rankData && rankData.map((rankItem,idx) => (
-        <div className={'row' + (enableUserView ? ' clickable' : '')} key={idx} onClick={() => openUserInfo(enableUserView ? rankItem.id : null)}>
-          <div className="rank">#{idx+1}</div>
-          <div className="icon">
-            {rankItem.twitch_avatar ? (
-              <div className={'avatar user-level-bg level-'+rankItem.level}>
-                <img src={rankItem.twitch_avatar} alt="Avatar" />
-              </div>
-            ) : (
-              <i className={'fa-solid fa-user user-level level-'+rankItem.level}></i>
-            )}
-            
-          </div>
-          <div className="player">
-            <h4>{rankItem.twitch_display_name}</h4>
-            <div className="data">
-              <span className="level">Lvl {rankItem.level}</span>
-              <span className={'title user-level level-'+rankItem.level}>{rankItem.title}</span>
+      <ol className="ranking">
+      {rankData && rankData.map((user,idx) => (   
+
+        <li key={idx} className={'rank-item' + (enableUserView ? ' clickable' : '')} onClick={() => openUserInfo(enableUserView ? user.id : null)}>
+          { rankType === 'spender' ? (
+            <>
+            <div className={'avatar user-level-bg level-'+user.level}>
+              <img src={user.twitch_avatar} alt="Avatar" />
             </div>
-          </div>
-          {valueLabels && (
-            <div className="points">
-              <span className={'user-level level-'+rankItem.level}>{ !isNaN(rankItem.value) ? Math.ceil(rankItem.value).toLocaleString('en-US') : rankItem.value}</span>
-              <span className="value-label">{valueLabels}</span>
+            <div className="user-info">
+              <p className='username'>{user.twitch_display_name}</p>
+              <p className="level">Lvl {user.level} <span className={'title user-level level-'+user.level}>{user.title}</span></p>
+              { valueLabels && (
+              <p className='data'><b>{ !isNaN(user.value) ? Math.ceil(user.value).toLocaleString('en-US') : user.value}</b> {valueLabels}</p>
+              )}            
             </div>
+            </>
+          ) : rankType === 'checkins_last' ? (
+            <>
+            <div className={'avatar user-level-bg level-'+user.level}>
+              <img src={user.twitch_avatar} alt="Avatar" />
+            </div>
+            <div className="user-info">
+              <p className='username'>{user.twitch_display_name}</p>
+              <p className="level">Lvl {user.level} <span className={'title user-level level-'+user.level}>{user.title}</span></p>
+            </div>
+            </>
+          ) : rankType === 'achievements' ? (
+            <>
+            <div className={'achievement-badge tier-'+user.tier.toLowerCase()}>
+              <img src={'/assets/badges/' + user.ach_sysname + '.png'} alt={user.ach_name} />
+            </div>
+            <div className="user-info">
+              <p className='username'>{user.twitch_display_name}</p>
+              <p className="level">Lvl {user.level} <span className={'title user-level level-'+user.level}>{user.title}</span></p>
+              <p className='achievement'>earned <b>{user.ach_name} (Tier {user.tier})</b></p>
+            </div>
+            </>
+          ) : (
+            <>
+            <div className={'avatar user-level-bg level-'+user.level}>
+              <img src={user.twitch_avatar} alt="Avatar" />
+            </div>
+            <div className="user-info">
+              <p className='username'>{user.twitch_display_name}</p>
+              <p className="level">Lvl {user.level} <span className={'title user-level level-'+user.level}>{user.title}</span></p>
+              { valueLabels && (
+              <p className='data'><b>{ !isNaN(user.value) ? Math.ceil(user.value).toLocaleString('en-US') : user.value}</b> {valueLabels}</p>
+              )}            
+            </div>
+            </>
           )}
-        </div>
-      ))}
+          
+        </li>
+        
+      ) 
+
+
+      )}  
+      </ol>      
     </div>
     <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
       {modalContent}

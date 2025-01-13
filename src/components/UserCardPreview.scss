@@ -2,5 +2,15 @@
   p {
     text-align: center;
     margin: 10px 0 0 0;
+
+    &.badges {
+      margin-bottom: 25px;
+    }
   }
+}
+
+.card-preview {
+  padding: 25px;
+  text-align: center;
+  background-color: #39f;
 }

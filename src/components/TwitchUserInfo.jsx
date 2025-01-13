@@ -1,5 +1,7 @@
 import React from 'react';
 import ExpProgressBar from './ExpProgressBar';
+import { Link } from 'react-router-dom';
+import { UserCard } from '../utils/common';
 import { getAuthUrl, getUserFromStorage, clearUserFromStorage } from "../utils/auth";
 import { useNavigate } from "react-router-dom";
 import './TwitchUserInfo.scss';
@@ -14,9 +16,13 @@ const TwitchUserInfo = () => {
     };
 
     return (
-        <div className='profile-detail'>
-            {user ? (
-                <div className="row">
+        <>
+        {user ? (
+            <div className={'profile-detail'}>
+                <div className="card-bg">
+                    <img src={UserCard(user.user_card.sysname)} alt={`Card: ${user.user_card.name}`} />
+                </div>
+                <div className="user-card">
                     <div className="avatar">
                         <img src={user.profile_image_url} alt="Twitch Avatar" />
                     </div>
@@ -26,7 +32,6 @@ const TwitchUserInfo = () => {
                                 <h3 className='twitch-username'>{user.display_name}</h3>
                                 <span className="level"><i className="fa-solid fa-trophy"></i> Level {user.level}</span> <span className={'title user-level-bg level-'+user.level}>{user.title}</span>
                             </div>
-                            <button className='sign-out' onClick={handleLogout}><i className="fa-solid fa-right-from-bracket"></i> Logout</button>
                         </div>
                         <div className="row exp">
                             <div className="user-exp">
@@ -36,17 +41,33 @@ const TwitchUserInfo = () => {
                         </div>
                     </div>
                 </div>
-            ) : (
-                <>
-                    <div className="invite">
-                        <h3>Your Profile</h3>
-                        <p>Connect with Twitch to unlock personalized stream features, exclusive perks and fun off-stream community activities!</p>
-                        <button className='sign-in' onClick={() => (window.location.href = getAuthUrl())}><i className="fa-brands fa-twitch"></i> Login with Twitch</button>
-                    </div>
-                </>
-                
-            )}
-        </div>
+                <div className="toolbar">
+                    <button className='sign-out' onClick={handleLogout}>Logout <i className="fa-solid fa-right-from-bracket"></i></button>
+                </div>                 
+            </div>
+        ) : (
+            <>
+            <div className="invite">
+                <div className="login-frame">
+                    <button className='sign-in' onClick={() => (window.location.href = getAuthUrl())}><i className="fa-brands fa-twitch"></i> Mainframe Login</button>
+                    <p>Login with your Twitch account.</p>
+                    {/* <p className="misc-links">
+                        <a href="https://twitch.tv/the13thgeek/" target='blank'>
+                            @the13thgeek Channel <i className="fa-solid fa-chevron-right"></i>
+                        </a>
+                        <a href="https://twitch.tv/the13thgeek/" target='blank'>
+                            Twitch Home <i className="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </p> */}
+                </div>
+                <div className="toolbar-invite">
+                    <Link to='/privacy-policy'>Privacy Policy &gt;</Link>
+                </div>    
+            </div>
+            
+            </>          
+        )}
+        </>
     );
 };
 

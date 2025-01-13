@@ -44,42 +44,20 @@ const DialogUserPreview = ({ userId }) => {
       { isLoading ? (
         <p>Loading...</p>
       ) : (
-        <>
-        <div className="content-row">
-          <div className="level-info">
-            <div className={'avatar user-level-bg level-'+userData.level}>
-              {userData.twitch_avatar ? (
-                <img src={userData.twitch_avatar} alt="Twitch Avatar" />
-              ) : (
-                <div className="icon">
-                  <i className={'fa-solid fa-user user-level level-'+userData.level}></i>
-                </div>
-              )}
-            </div>
-            <ExpProgressBar level={userData.level} progress={userData.levelProgress} />
-            <p>
-              <span className="level">Level {userData.level}</span><br />
-              <span className={'title user-level-bg level-'+userData.level}>{userData.title}</span>
-            </p>            
-          </div>  
-          <div className="contents">
-            <div className="card-box">
-              <img src={UserCard(userData.card_default.sysname)} alt={`Card: ${userData.card_default.name}`} />
-              <h3 className='twitch-username'>{userData.twitch_display_name}</h3>            
-              <div className="level">{userData.level}</div>
-            </div>
+      <div className={'profile-box user-level-bg level-'+userData.level}>
+        <div className='card'>
+          <img src={UserCard(userData.card_default.sysname)} alt={`Card: ${userData.card_default.name}`} />
+          <div className='avatar'>
+            <img src={userData.twitch_avatar} alt="Twitch Avatar" />
           </div>
         </div>
-        
-          {currentUser.local_id === 1 && (
-            <div className="content-row">
-              <PlayerStats userStats={userData.stats} userLevel={userData.level} />
-              </div>
-          )}
-        <div className="content-row">
-          <PlayerAchievements achievementsList={userData.achievements} />
-        </div>
-        </>
+        <h3>{userData.twitch_display_name}</h3>
+        <p className="player-level"><span className="level">Lvl {userData.level}</span><span className="title">{userData.title}</span></p>
+        {currentUser.local_id === 1 && (
+          <PlayerStats userStats={userData.stats} />
+        )}
+        <PlayerAchievements achievementsList={userData.achievements} displayFormat='grid' />        
+      </div>        
       ) }    
     </div>
   )

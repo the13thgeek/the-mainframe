@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { TWITCH_ACCESS_TOKEN, TWITCH_EXT_CLIENT_ID, thumbnailResize } from '../utils/twitch';
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { getUserFromStorage } from "../utils/auth";
+import { Link } from "react-router-dom";
+import { dateFormatter } from "../utils/common";
 import Tile from "../components/Tile";
 import LiveStream from "../components/LiveStream";
+import GachaCardList from '../components/GachaCardList';
+import StreamSchedule from '../components/StreamSchedule';
 import UserCardPreview from "../components/UserCardPreview";
+import PlayerRanking from "../components/PlayerRanking";
 import RequestsBar from "../components/RequestsBar";
 import Ranking from "../components/Ranking";
 import './Home.scss';
@@ -30,37 +36,87 @@ const Home = () => {
       setLiveData(liveDataFeed);
     }
 
-    if(user) {
-      fetchLiveData();
-    }
+    fetchLiveData();
+  
   },[]);
 
 	return (
-    <>    
-		<div className="layout-row">
-      <div className="col-a">
-        <div className="sub-row">
-          {/* <Tile extraClassName={'profile'}>
-            <TwitchUserInfo />
-          </Tile>         */}
-          {user && (
-            <Tile extraClassName={'live-stream'} icon={<i className="fa-solid fa-tv"></i>} title={'Live Stream'}>
+    <main className="page-home">
+      <div className="structure">
+        <div className={'row initial'+(user ? ' logged' : '')}>
+          <div>
+            <Tile extraClassName={'livestream-preview'} title={'Live Stream'}>
               <LiveStream liveData={liveData} />
-              {(liveData?.game_name === 'StepMania') && (
-                <RequestsBar />
-              )}
             </Tile>
-          )}
-          {!user && (
-            <Tile extraClassName={'welcome'}>
-              <h1>Welcome to <span className="hilite">the Mainframe</span>!</h1>
-              <p>Log in to the Hub with your Twitch account to:</p>
+          </div>
+          { user ? (
+            <>
+            <Tile extraClassName={'livestream-info'}>
+              <Tabs className={'info-tabs'} selectedTabClassName='active'>
+                <TabList className={'tabs-list'}>
+                  {(liveData?.game_name === 'StepMania') && (
+                    <Tab disabledClassName='disabled'><span>Requests</span></Tab>
+                  )}
+                  { liveData && (
+                    <Tab disabledClassName='disabled'><span>Stream</span></Tab>
+                  ) }
+                  <Tab disabledClassName='disabled'><span>Schedule</span></Tab>
+                  { liveData ? (
+                    <Tab disabledClassName='disabled'><span>Gacha</span></Tab>
+                  ) : (
+                    <Tab disabledClassName='disabled' disabled><span>Gacha</span></Tab>
+                  )}
+                </TabList>
+                <div className="contents">
+                  {(liveData?.game_name === 'StepMania') && (
+                    <TabPanel className='panel song-requests' selectedClassName='active'>
+                      <RequestsBar />
+                    </TabPanel>
+                  )}
+                  { liveData && (
+                    <TabPanel className='panel stream-info' selectedClassName='active'>
+                      <div className="wrapper">
+                        <h3 className="stream-title">{liveData.title}</h3>
+                        <p>Now playing: <b>{liveData.game_name}</b></p>
+                        <small>Started at {dateFormatter('simple-time',liveData.started_at)}</small>
+                        <ul className="tags">
+                          {liveData.tags.map((tag, idx) => (
+                            <li key={idx}> {tag} </li>
+                          ))}
+                        </ul>
+                        <p className='viewers'><i className="fa-solid fa-users"></i> {liveData.viewer_count} {liveData.viewer_count === 1 ? 'viewer' : 'viewers'}</p>
+                      </div>
+                    </TabPanel>
+                  ) }
+                  <TabPanel className='panel schedule' selectedClassName='active'>
+                    <div className="wrapper">
+                      <StreamSchedule />
+                    </div>
+                  </TabPanel>
+                  <TabPanel className='panel gacha' selectedClassName='active'>
+                    <div className="wrapper">
+                      <GachaCardList />
+                    </div>
+                  </TabPanel>
+                </div>
+              </Tabs>
+            </Tile>
+            <div>
+              <Tile extraClassName={'user-card'} title={'User Card'}>
+                <UserCardPreview userLevel={user.level} cardName={user.user_card.sysname} cardTitle={user.user_card.name} isPremium={user.user_card.is_premium} isRare={user.user_card.is_rare} isEvent={user.user_card.is_event} />
+              </Tile>
+            </div>
+            </>
+          ) : (
+            <Tile title={'Welcome to the Mainframe!'} extraClassName={'welcome'}>
+              <p>Connect with Twitch to unlock personalized stream features, exclusive perks and fun off-stream community activities!</p>
+              <p>Log in to the Mainframe with your Twitch account to:</p>
               <ul className="perks">
                 <li>
-                  <div className="icon"><i className="item-1 fa-solid fa-user-plus"></i></div>
+                  <div className="icon"><i className="item-3 fa-solid fa-music"></i></div>
                   <p className="details">
-                    <b className='headline'>Track Your Profile Stats</b><br ></br>
-                    Earn EXP by watching <b>@the13thgeek's</b> streams, participating in chat and redeeming channel point rewards. See how you rank with your fellow geeks and level up!
+                    <b className='headline'>Request Songs for Rhythm Game Streams</b><br ></br>
+                    Looking for the perfect track? Use our searchable list to find and submit songs directly to the stream.
                   </p> 
                 </li>
                 <li>
@@ -71,10 +127,10 @@ const Home = () => {
                   </p> 
                 </li>
                 <li>
-                  <div className="icon"><i className="item-3 fa-solid fa-music"></i></div>
+                  <div className="icon"><i className="item-1 fa-solid fa-user-plus"></i></div>
                   <p className="details">
-                    <b className='headline'>Request Songs for Rhythm Game Streams</b><br ></br>
-                    Looking for the perfect track? Use our searchable list to find and submit songs directly to the stream.
+                    <b className='headline'>Track Your Profile Stats</b><br ></br>
+                    Earn EXP by watching <b>@the13thgeek's</b> streams, participating in chat and redeeming channel point rewards. See how you rank with your fellow geeks and level up!
                   </p> 
                 </li>
                 <li>
@@ -88,34 +144,36 @@ const Home = () => {
             </Tile>
           )}
         </div>
-        {user && (
-          <div className="layout-sub-row">
-            <div className="col-a">
-              <Tile extraClassName={'ranking top-spender'} icon={<i className="fa-solid fa-coins"></i>} title={'Top Channel Points Spenders'}>
-                <Ranking rankType={'spender'} itemsToShow={5} valueLabels={'PTS'} enableUserView={(user !== null)} />
-              </Tile>
-            </div>
-            <div className="col-b">
-              <Tile extraClassName={'ranking top-checkins'} icon={<i className="fa-solid fa-passport"></i>} title={'Latest Check-Ins'}>
-                <Ranking rankType={'checkins_last'} itemsToShow={5} enableUserView={(user !== null)} />
-              </Tile>
-            </div>
-          </div>
-        )}        
-        
-      </div>
-      <div className="col-b">
-        {user && user.user_card && (
-          <Tile extraClassName={'user-card'} icon={<i className="fa-regular fa-id-card"></i>} title="User Card">
-            <UserCardPreview cardName={user.user_card.sysname} cardTitle={user.user_card.name} isPremium={user.user_card.is_premium} isRare={user.user_card.is_rare} isEvent={user.user_card.is_event} />
+        <div className="row">
+          <Tile extraClassName={'player-top-ranking'} title={'Player Leaderboard'}>
+            <PlayerRanking enableUserView={(user !== null)} />
           </Tile>
-        )}
-        <Tile extraClassName={'ranking top-exp'} icon={<i className="fa-solid fa-ranking-star"></i>} title={'Community Ranking'}>
-          <Ranking rankType={'exp'} itemsToShow={10} valueLabels={'exp'} enableUserView={(user !== null)} />
-        </Tile>
+        </div>
+        <div className="row links">
+          <Tile extraClassName={'link-catalog'}>
+            <div className="content">
+              <h3>Catalog</h3>
+              <p>Check the complete catalog of released user card designs. Organize your collection and find out more info on how to acquire specials and event exclusives!</p>
+              <p><Link to="/catalog" className='btn'>View Catalog</Link></p>
+            </div>
+          </Tile>
+          <Tile extraClassName={'link-poweredby'}></Tile>
+        </div>
+        <div className="row lists">
+          <Tile extraClassName={'ranking spender'} title={'Top Channel Points Spenders'}>
+            <Ranking rankType={'spender'} itemsToShow={5} valueLabels={'PTS'} enableUserView={(user !== null)} />
+          </Tile>
+          <Tile extraClassName={'ranking checkins'} title={'Latest Check-Ins'}>
+            <Ranking rankType={'checkins_last'} itemsToShow={5} enableUserView={(user !== null)} />
+          </Tile>
+          <Tile extraClassName={'ranking achievements'} title={'Latest Achievements'}>
+            <Ranking rankType={'achievements'} itemsToShow={5} enableUserView={(user !== null)} />
+          </Tile>
+        </div>
       </div>
-		</div>
-    </>
+      
+      
+    </main>
 	);
 };
 

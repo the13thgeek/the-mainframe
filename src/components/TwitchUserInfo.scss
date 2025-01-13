@@ -1,3 +1,11 @@
+@use "sass:color";
+
+@keyframes btnhilite {
+  0% { left: -50px; }
+  20% { left: 110%; }
+  100% { left: 110%; }
+}
+
 .invite {
   h3 {
     margin-top: 0;
@@ -5,17 +13,36 @@
 }
 
 .profile-detail {
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
 
-  .row {
+  .card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #999;
+    z-index: 0;
+    opacity: 0.1;
+    //margin-top: -10%;
+  }
+
+  .user-card {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: row;
     gap: 15px;
-  }
+    padding: 15px;
 
-  .avatar {
-    img {
-      width: 120px;
-      border-radius: 50%;
+    .avatar {
+      img {
+        width: 120px;
+        border-radius: 50%;
+      }
     }
   }
 
@@ -25,13 +52,6 @@
     .row.stats {
       justify-content: space-between;
       align-items: start;
-
-      button.sign-out {
-        &:hover {
-          background-color: #c00;
-          color: #fff;
-        }
-      }
 
       h3.twitch-username {
         margin: 0 0 5px;
@@ -47,7 +67,7 @@
       flex-direction: column;
 
       .exp {
-        font-size: 14px;
+        font-size: 11px;
       }      
     }
 
@@ -56,11 +76,12 @@
       
 
       i.fa-trophy {
-        color: #ffd700;
+        //color: #ffd700;
+        color: #cb0;
       }
 
       .level {
-        font-size: 16px;
+        font-size: 14px;
       }
 
       .title {
@@ -73,6 +94,7 @@
         margin-left: 10px;
         transform: translateY(-1px);
         text-transform: uppercase;
+        color: #fff;
         text-shadow: 1px 1px 1px #999;
       }
     }
@@ -81,10 +103,94 @@
 
 }
 
-button.sign-in {
-  background-color: #6441a5;
+.toolbar {
+  position: relative;
+  z-index: 2;
+  border-top: #999 1px solid;
+  background-color: rgba(0,0,0,0.15);
+  padding: 15px;
+  display: flex;
+  justify-content: right;
+}
+
+.invite {
+  padding: 0;
+  background-color: #7d5abe;
   color: #fff;
+  text-align: center;
+
+  .login-frame {
+    margin: 10px;
+    border: #fff 1px solid;
+    border-radius: 3px;
+    padding: 10px 10px 5px;
+  }
+
+  .toolbar-invite {
+    background-color: #6441a5;
+    color: #fff;
+    padding: 15px;
+    text-align: right;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 40px;
+    margin: 0;
+
+    &.misc-links {
+      border-top: #997ecc 1px solid;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+
+  a {
+    line-height: inherit;
+    color: inherit;
+  }
+}
+
+button.sign-in {
+  position: relative;
+  overflow: hidden;
+  background-color: #6441a5;
+  border-bottom-color: color.adjust(#6441a5, $lightness: -10%);
+  color: #fff;
+  width: 100%;
+  font-size: 16px;
+  padding: 18px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -70px;
+    width: 50px;
+    height: 100%;
+    transform: skew(-15deg);
+    background-color: rgba(255,255,255,0.3);
+    z-index: 2;
+    animation: btnhilite 4s infinite;
+  }
+
   &:hover {
-    background-color: #fff;
+    &::before {
+      animation: none;
+    }
+  }
+}
+
+button.sign-out {
+  background-color: #c00;
+  border-bottom-color: color.adjust(#c00, $lightness: -10%);
+
+  i {
+    margin-left: 5px;
   }
 }

@@ -1,0 +1,144 @@
+@keyframes sheen {
+  0% { left: 0; }
+  5% { width: 50px; }
+  95% { left: 110%; width: 50px; }
+  100% { width: 0; left: 110%; }
+}
+
+.tile.player-top-ranking {
+
+  .rank-item {
+    &.clickable {
+      cursor: pointer;
+    }
+  }
+
+  .card {
+    position: relative;
+    margin-bottom: 30px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .avatar {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: #fff 3px solid;
+      overflow: hidden;
+    }
+  }
+
+  p {
+    margin: 0;
+
+    &.player-name {
+      font-weight: 800;
+      color: #fff;
+      text-shadow: 1px 1px 1px #666;
+      margin-bottom: 5px;
+    }
+    &.player-level {
+      display: inline-block;      
+      background-color: #fff;
+      border-radius: 6px;
+      padding: 0;
+      overflow: hidden;
+
+      span.level {
+        display: inline-block;
+        font-size: 12px;
+        padding: 0 5px;
+      }
+
+      span.title {
+        font-size: 12px;
+        display: inline-block;
+        padding: 4px 8px;
+        border-radius: 6px;
+        font-weight: bold;
+        background-color: #666;
+        color: #fff;
+        margin: 0;
+      }
+    }
+  }
+
+  ol.top-players {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 60px;
+    counter-reset: list-item;
+
+    li {
+      position: relative;
+      padding: 25px 10px;
+      margin: 0;
+      flex: 1;
+      text-align: center;
+      counter-increment: list-item;      
+
+      &:hover {
+        &::after {
+          animation: sheen 0.7s 1;
+        }
+      }
+
+      &::before {
+        content: counter(list-item);
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        bottom: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+        color: #fff;
+        font-weight: bold;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        background-color: #ff5063;
+        border-radius: 3px;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        height: 100%;
+        width: 0;
+        background-color: rgba(255,255,255,0.3);
+      }      
+    }
+  }
+  
+}
+
+@media (max-width: 992px) {
+
+  .tile.player-top-ranking {
+    ol.top-players {
+      li {
+        &:nth-child(4),
+        &:nth-child(5) {
+          display: none;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  
+}

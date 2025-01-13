@@ -1,53 +1,85 @@
-.tile.stats,  .stats-content {
+.stats-content {
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 15px;
-    grid-column-gap: 15px;
-
-    li {
-      background-color: #11182d;
-      //border: #1d283a 1px solid;
-      border-radius: 5px;
-      display: flex;
-      flex-direction: column;
-      padding: 5px 0 15px 0;
-    }
-  }
-
-  .stat-number {
-    font-weight: 100; 
+  table.stats-table {
     width: 100%;
-    text-align: center;
-    font-size: 50px;
+    border-spacing: 2px;
 
-    span.label {
-      font-size: 20px;
+    th, td {
+      font-size: 14px;
+      padding: 5px;
     }
-  }
-  
-  .stat-label {
-    text-align: center;
-    font-size: 12px;
-    text-transform: uppercase;
-  }
 
-}
+    th {
+      background-color: rgba(255,255,255,0.8);
 
-@media (max-width: 992px) {
-  .tile.stats,  .stats-content {
+      &:nth-child(1) {
+        width: 60%;
+        text-align: left;
+      }
+    }
 
-    ul {
-      grid-row-gap: 5px;
-      grid-column-gap: 5px;
-      li {
-        padding: 10px;
+    td {
+      background-color: rgba(255,255,255,0.5);
+
+      &:nth-child(1) {
+        width: 60%;
+        text-align: left;
+      }
+      &:nth-child(2) {
+        text-align: center;
       }
     }
   }
+}
+
+
+  // ul {
+  //   list-style: none;
+  //   padding: 0;
+  //   margin: 0;
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr;
+  //   grid-row-gap: 15px;
+  //   grid-column-gap: 15px;
+
+  //   li {
+  //     background-color: #11182d;
+  //     //border: #1d283a 1px solid;
+  //     border-radius: 5px;
+  //     display: flex;
+  //     flex-direction: column;
+  //     padding: 5px 0 15px 0;
+  //   }
+  // }
+
+  // .stat-number {
+  //   font-weight: 100; 
+  //   width: 100%;
+  //   text-align: center;
+  //   font-size: 50px;
+
+  //   span.label {
+  //     font-size: 20px;
+  //   }
+  // }
+  
+  // .stat-label {
+  //   text-align: center;
+  //   font-size: 12px;
+  //   text-transform: uppercase;
+  // }
+
+
+@media (max-width: 992px) {
+  // .tile.stats,  .stats-content {
+
+  //   ul {
+  //     grid-row-gap: 5px;
+  //     grid-column-gap: 5px;
+  //     li {
+  //       padding: 10px;
+  //     }
+  //   }
+  // }
 
 }

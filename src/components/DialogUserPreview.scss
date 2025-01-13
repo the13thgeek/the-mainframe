@@ -1,112 +1,84 @@
 .user-profile-preview {
-  width: 100%;
+  width: 400px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 
-  .content-row {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
+  .profile-box {
+    padding: 15px;
+    border-radius: 3px;
+    text-align: center;
   }
 
-  .stats-content {
-    width: 100%;
+  .card {
+    position: relative;
+    margin-bottom: 30px;
 
-    ul {
-      grid-template-columns: 1fr 1fr 1fr;
+    .avatar {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: #eee 4px solid;
+      background-color: #666;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
     }
   }
 
-  .level-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
-
-    p {
-      text-align: center;
-    }
-  }
-
-  .title {
-    display: inline-block;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 12px;
-    padding: 3px 7px;
-    border-radius: 5px;
-    margin-top: 10px;
-    transform: translateY(-1px);
+  h3 {
+    text-align: center;
+    font-weight: 800;
     color: #fff;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 1px #999;
+    text-shadow: 1px 1px 1px #666;
+    margin-bottom: 5px;
   }
 
-  .avatar {    
-    display: flex;
-    padding: 5px;
-    border-radius: 50%;
+  p.player-level {
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 0;
+    margin: 5px 0 0;
     overflow: hidden;
-    margin-bottom: 20px;
 
-    img {
-      border-radius: 50%;
-      aspect-ratio: 1/1;
+    span.level {
+      display: inline-block;
+      font-size: 12px;
+      padding: 0 5px;
     }
 
-    .icon {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 90px;
-      aspect-ratio: 1/1;
-      background-color: #1a1a1a;
-      border-radius: 50%;
-    }
-
-    i {
-      font-size: 40px;
+    span.title {
+      font-size: 12px;
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-weight: bold;
+      background-color: #666;
+      color: #fff;
+      margin: 0;
     }
   }
 
-  .contents {
-    flex: 3;
-
-    .card-box {
-      position: relative;
-      aspect-ratio: 7/4;
-    }
-
-    h3.twitch-username {
-      position: absolute;
-      bottom: 14%;
-      left: 13%;
-      z-index: 5;
-      margin: 0 0 5px;
-      font-size: 25px;
-    }
-
-    .level {
-      position: absolute;
-      z-index: 4;
-      bottom: 18%;
-      left: 2.5%;
-      width: 30px;
-      text-align: center;
-      font-size: 23px;
-    }
-
+  .stats-content, .achievements-content {
+    margin: 15px 0 0;
   }
+}
 
-  .achievements-content {
-    width: 100%;
+@media (max-width: 992px) {
 
-    ul {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 15px;
-      grid-row-gap: 15px;
-    }
+  .user-profile-preview {
+    width: 350px;
   }
+  
+}
+
+@media (max-width: 768px) {
+
+  .user-profile-preview {
+    width: 300px;
+  }
+  
 }
