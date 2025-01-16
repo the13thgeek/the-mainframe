@@ -7,6 +7,9 @@ import SectionTitle from "./components/SectionTitle";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Catalog from "./pages/Catalog";
+import Games from "./pages/Games";
+import { gameAcornBasket } from './games/acorn-basket';
+import GameLoader from "./pages/GameLoader";
 import Privacy from "./pages/Privacy";
 //import GlobalNotice from "./components/GlobalNotice";
 import Footer from "./components/Footer";
@@ -76,6 +79,8 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/catalog" element={<Catalog />} />
+                <Route path="/games" element={<Games />} />
+                <Route path="/games/acorn-basket" element={<GameLoader loadGame={gameAcornBasket} />} />
                 <Route path="/privacy-policy" element={<Privacy />} />
             </Routes>
             <Footer />

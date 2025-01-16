@@ -1,0 +1,23 @@
+main.page-games {
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+
+    .col-a {
+      flex: 2;      
+    }
+    .col-b {
+      flex: 1;
+    }
+  }
+
+  .tile.games-list {
+    .widget-body {
+      padding: 25px;
+    }
+  }
+}

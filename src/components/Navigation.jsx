@@ -26,6 +26,11 @@ const Navigation = () => {
             Catalog
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/games" className={({isActive}) => isActive ? "active" : "" }>
+            Games
+            </NavLink>
+          </li>
           </>
         )}
         
