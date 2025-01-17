@@ -12,10 +12,7 @@ const Games = () => {
             <Tile extraClassName={'games-list'} title={'Games'}>
               <ul>
                 <li>
-                  <Link to='/games/acorn-basket'>Test 1</Link>
-                </li>
-                <li>
-                  <Link to='/games/test-2'>Test 2</Link>
+                  <Link to='/games/acorn-basket'>Acorn Basket</Link>
                 </li>
               </ul>
             </Tile>
