@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Tile from '../components/Tile';
 import { getUserFromStorage } from "../utils/auth";
 import AcornBasket from '../games/AcornBasket';
+import TestGame from '../games/TestGame';
 import './Games.scss';
 
 const GameLoader = ({ loadGame }) => {  
@@ -49,7 +50,8 @@ const GameLoader = ({ loadGame }) => {
             <Tile extraClassName={'games-list'} title={'Games'}>
               <p>GAME</p>
               <p>Last score: {gameScore}</p>
-              <AcornBasket />
+              <TestGame />
+              {/* <AcornBasket /> */}
               {/* <div className='game-screen' ref={pixiContainer}>
               </div> */}
             </Tile>
