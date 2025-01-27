@@ -50,8 +50,8 @@ const GameLoader = ({ loadGame }) => {
             <Tile extraClassName={'games-list'} title={'Games'}>
               <p>GAME</p>
               <p>Last score: {gameScore}</p>
-              <TestGame />
-              {/* <AcornBasket /> */}
+              {/* <TestGame /> */}
+              <AcornBasket username={user.display_name} />
               {/* <div className='game-screen' ref={pixiContainer}>
               </div> */}
             </Tile>

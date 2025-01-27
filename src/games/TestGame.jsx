@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { TextStyle } from 'pixi.js';
 import { Stage, Container, Sprite, Text } from '@pixi/react';
+import "@pixi/events";
 
 const TestGame = ({ username = 'default' }) => {
   const spriteUrl = '/assets/game/acorn-basket/food-acorn.png';
@@ -12,7 +13,7 @@ const TestGame = ({ username = 'default' }) => {
 
 
   return (
-    <Stage width={600} height={450} options={{ background: 0x000000 }} interactive={'auto'}>
+    <Stage width={600} height={450} options={{ background: 0x000000 }}>
       {/* <Sprite image={spriteUrl} x={100} y={100} /> */}
       {screen === "title" && (
         <Container x={0} y={0} width={600} height={450}>
@@ -46,7 +47,7 @@ const TestGame = ({ username = 'default' }) => {
             anchor={0.5}
             x={300}
             y={300}
-            buttonMode
+            interactive={true}
             pointerdown={startGame}
             style={{
               align: 'center',
