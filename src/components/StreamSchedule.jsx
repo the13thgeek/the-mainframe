@@ -14,8 +14,9 @@ const StreamSchedule = () => {
         setSchedule(sked);
       }
     }
-    fetchSchedule();
+    //fetchSchedule();
   },[]);
+
 
   if(!schedule || schedule?.length === 0) return (<p>Stream schedule is not available at this time.</p>)
 
