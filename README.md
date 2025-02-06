@@ -28,7 +28,7 @@ As a viewer, here’s what you can do on **theMainframe**:
 6. **Exciting Features Coming Soon**  
    The site is adding achievements, mini-games, and scoreboards to let you compete and show off your skills.
 
-7. **Live Twitch Stats**  
+7. **Live Twitch Stats and Achievements**  
    The site integrates with Twitch, displaying your stats and achievements live during the stream for added recognition.
 
 ---
