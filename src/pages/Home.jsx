@@ -11,6 +11,7 @@ import StreamSchedule from '../components/StreamSchedule';
 import UserCardPreview from "../components/UserCardPreview";
 import PlayerRanking from "../components/PlayerRanking";
 import RequestsBar from "../components/RequestsBar";
+import Arcade from "../components/Arcade";
 import Ranking from "../components/Ranking";
 import './Home.scss';
 
@@ -148,6 +149,13 @@ const Home = () => {
             </div>
           )}
         </div>
+        { user && (
+        <div className="row arcade">
+          <Tile extraClassName={'arcade'} title={'Arcade'}>
+            <Arcade userId={user.id} userName={user.display_name} userAvatar={user.profile_image_url} />
+          </Tile>
+        </div>
+        ) }
         <div className="row">
           <Tile extraClassName={'player-top-ranking'} title={'Player Leaderboard'}>
             <PlayerRanking enableUserView={(user !== null)} />
