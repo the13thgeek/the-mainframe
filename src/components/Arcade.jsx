@@ -22,54 +22,53 @@ const Arcade = ({ userId, userName, userAvatar }) => {
       </div>
       <div className="letter-grid">
         <div className="letter-row">
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
         </div>
         <div className="letter-row">
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
         </div>
         <div className="letter-row">
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
         </div>
         <div className="letter-row">
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
         </div>
         <div className="letter-row">
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
         </div>
         <div className="letter-row">
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
-          <div className="item">?</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
+          <div className="item">&nbsp;</div>
         </div>
       </div>
+      <form id="main">
+        <div className="user-input">
+          <input type="text" id="answer" name='answer' placeholder='answer' maxLength={5} />
+        </div>
+      </form>
     </div>
     <div className="sidebar">
       [SIDEBAR]

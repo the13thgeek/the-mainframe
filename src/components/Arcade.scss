@@ -1,5 +1,8 @@
 .tile.arcade {
   background-color: #212121;
+  background-image: url('/assets/arcade/bg-codebreaker.jpg');
+  background-position: 50% 0;
+  background-repeat: no-repeat;
 
   * {
     color: #eee;
@@ -10,7 +13,7 @@
   }
 
   .game-area {
-    padding: 0 0 30px 0;
+    padding: 0 0 60px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,22 +57,42 @@
   }
 
   .letter-grid {
+    margin-bottom: 10px;
+
     .letter-row {
       display: flex;
       flex-direction: row;
-      gap: 10px;
-      margin-bottom: 10px;
+      gap: 5px;
+      margin-bottom: 5px;
       .item {
         font-size: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
         aspect-ratio: 1/1;
-        background-color: #333;
+        background-color: #000;
+        border: #333 1px solid;
         color: #666;
-        padding: 10px 20px;
-        border-radius: 3px;
+        padding: 10px 25px;
+        border-radius: 4px;
       }
+    }
+  }
+
+  .user-input {
+    position: relative;
+    display: flex;
+    width: 320px;
+
+    input {
+      width: 100%;
+      background-color: #111;
+      color: #fff;
+      font-size: 30px;
+      border-radius: 3px;
+      border: #666 1px solid;
+      padding: 5px 10px;
+      text-transform: uppercase;
     }
   }
 }
