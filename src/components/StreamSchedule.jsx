@@ -14,7 +14,7 @@ const StreamSchedule = () => {
         setSchedule(sked);
       }
     }
-    //fetchSchedule();
+    fetchSchedule();
   },[]);
 
 
