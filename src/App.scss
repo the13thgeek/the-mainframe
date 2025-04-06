@@ -171,109 +171,109 @@ footer {
 }
 
 .user-level {
-  &.level-1 { color: #005b88; } // Darker pastel blue for strong contrast
-  &.level-2 { color: #006fa1; }
-  &.level-3 { color: #0084ba; }
-  &.level-4 { color: #0098d3; }
-  &.level-5 { color: #00acd3; }
-  &.level-6 { color: #00c0e8; }
-  &.level-7 { color: #00d4ea; }
-  &.level-8 { color: #00e8dc; }
-  &.level-9 { color: #00fbd2; }
-  &.level-10 { color: #2cffdb; } // Pastel Aqua with more depth
-  &.level-11 { color: #46f3c6; }
-  &.level-12 { color: #60e8b0; }
-  &.level-13 { color: #7bdb9a; }
-  &.level-14 { color: #95d085; }
-  &.level-15 { color: #aed471; }
-  &.level-16 { color: #c8d95d; }
-  &.level-17 { color: #e1df49; }
-  &.level-18 { color: #fbdf35; }
-  &.level-19 { color: #f9c925; }
-  &.level-20 { color: #f7b215; } // Pastel Lime Green with contrast
-  &.level-21 { color: #e9ac32; }
-  &.level-22 { color: #dca54e; }
-  &.level-23 { color: #cfae6a; }
-  &.level-24 { color: #c1b785; }
-  &.level-25 { color: #b3c0a1; }
-  &.level-26 { color: #a5c8bc; }
-  &.level-27 { color: #97d0d8; }
-  &.level-28 { color: #89d8f3; }
-  &.level-29 { color: #7bdcfa; }
-  &.level-30 { color: #5de2ff; } // Transition to brighter aqua
-  &.level-31 { color: #67e5e4; }
-  &.level-32 { color: #71e7c8; }
-  &.level-33 { color: #7beaaa; }
-  &.level-34 { color: #85ec8d; }
-  &.level-35 { color: #8fee70; }
-  &.level-36 { color: #99f154; }
-  &.level-37 { color: #a3f336; }
-  &.level-38 { color: #adf519; }
-  &.level-39 { color: #b7f700; }
-  &.level-40 { color: #c1fa00; } // Pastel Yellow-Green
-  &.level-41 { color: #e1f532; }
-  &.level-42 { color: #f1db4e; }
-  &.level-43 { color: #f3c35e; }
-  &.level-44 { color: #f6a86d; }
-  &.level-45 { color: #f98d7c; }
-  &.level-46 { color: #fc717b; }
-  &.level-47 { color: #ff557a; }
-  &.level-48 { color: #ff3969; }
-  &.level-49 { color: #ff1c59; }
-  &.level-50 { color: #ff0049; } // Pastel Red
+  &.level-1  { color: #0096C7; }
+  &.level-2  { color: #00A5BC; }
+  &.level-3  { color: #00B4B1; }
+  &.level-4  { color: #00C3A6; }
+  &.level-5  { color: #00D29B; }
+  &.level-6  { color: #00E190; }
+  &.level-7  { color: #00F085; }
+  &.level-8  { color: #1AFF79; }
+  &.level-9  { color: #3DFF6D; }
+  &.level-10 { color: #61FF61; }
+  &.level-11 { color: #81F956; }
+  &.level-12 { color: #A1F34B; }
+  &.level-13 { color: #C1ED40; }
+  &.level-14 { color: #E1E735; }
+  &.level-15 { color: #FFE02A; }
+  &.level-16 { color: #FFD424; }
+  &.level-17 { color: #FFC71E; }
+  &.level-18 { color: #FFBB18; }
+  &.level-19 { color: #FFAE12; }
+  &.level-20 { color: #FFA20C; }
+  &.level-21 { color: #FF9811; }
+  &.level-22 { color: #FF8E17; }
+  &.level-23 { color: #FF841C; }
+  &.level-24 { color: #FF7A22; }
+  &.level-25 { color: #FF7027; }
+  &.level-26 { color: #FF662D; }
+  &.level-27 { color: #FF5C32; }
+  &.level-28 { color: #FF5238; }
+  &.level-29 { color: #FF483D; }
+  &.level-30 { color: #FF3E43; }
+  &.level-31 { color: #F23A4A; }
+  &.level-32 { color: #E63652; }
+  &.level-33 { color: #D93159; }
+  &.level-34 { color: #CD2D61; }
+  &.level-35 { color: #C02968; }
+  &.level-36 { color: #B42570; }
+  &.level-37 { color: #A72077; }
+  &.level-38 { color: #9B1C7F; }
+  &.level-39 { color: #8E1886; }
+  &.level-40 { color: #82148E; }
+  &.level-41 { color: #711B96; }
+  &.level-42 { color: #60229E; }
+  &.level-43 { color: #5029A6; }
+  &.level-44 { color: #3F30AE; }
+  &.level-45 { color: #2F37B6; }
+  &.level-46 { color: #1E3EBE; }
+  &.level-47 { color: #0E45C6; }
+  &.level-48 { color: #003CCE; }
+  &.level-49 { color: #0028C6; }
+  &.level-50 { color: #0015BE; }
 }
 
 .user-level-bg {
-  &.level-1 { background-color: #005b88; } // Darker pastel blue for strong contrast
-  &.level-2 { background-color: #006fa1; }
-  &.level-3 { background-color: #0084ba; }
-  &.level-4 { background-color: #0098d3; }
-  &.level-5 { background-color: #00acd3; }
-  &.level-6 { background-color: #00c0e8; }
-  &.level-7 { background-color: #00d4ea; }
-  &.level-8 { background-color: #00e8dc; }
-  &.level-9 { background-color: #00fbd2; }
-  &.level-10 { background-color: #2cffdb; } // Pastel Aqua with more depth
-  &.level-11 { background-color: #46f3c6; }
-  &.level-12 { background-color: #60e8b0; }
-  &.level-13 { background-color: #7bdb9a; }
-  &.level-14 { background-color: #95d085; }
-  &.level-15 { background-color: #aed471; }
-  &.level-16 { background-color: #c8d95d; }
-  &.level-17 { background-color: #e1df49; }
-  &.level-18 { background-color: #fbdf35; }
-  &.level-19 { background-color: #f9c925; }
-  &.level-20 { background-color: #f7b215; } // Pastel Lime Green with contrast
-  &.level-21 { background-color: #e9ac32; }
-  &.level-22 { background-color: #dca54e; }
-  &.level-23 { background-color: #cfae6a; }
-  &.level-24 { background-color: #c1b785; }
-  &.level-25 { background-color: #b3c0a1; }
-  &.level-26 { background-color: #a5c8bc; }
-  &.level-27 { background-color: #97d0d8; }
-  &.level-28 { background-color: #89d8f3; }
-  &.level-29 { background-color: #7bdcfa; }
-  &.level-30 { background-color: #5de2ff; } // Transition to brighter aqua
-  &.level-31 { background-color: #67e5e4; }
-  &.level-32 { background-color: #71e7c8; }
-  &.level-33 { background-color: #7beaaa; }
-  &.level-34 { background-color: #85ec8d; }
-  &.level-35 { background-color: #8fee70; }
-  &.level-36 { background-color: #99f154; }
-  &.level-37 { background-color: #a3f336; }
-  &.level-38 { background-color: #adf519; }
-  &.level-39 { background-color: #b7f700; }
-  &.level-40 { background-color: #c1fa00; } // Pastel Yellow-Green
-  &.level-41 { background-color: #e1f532; }
-  &.level-42 { background-color: #f1db4e; }
-  &.level-43 { background-color: #f3c35e; }
-  &.level-44 { background-color: #f6a86d; }
-  &.level-45 { background-color: #f98d7c; }
-  &.level-46 { background-color: #fc717b; }
-  &.level-47 { background-color: #ff557a; }
-  &.level-48 { background-color: #ff3969; }
-  &.level-49 { background-color: #ff1c59; }
-  &.level-50 { background-color: #ff0049; } // Pastel Red
+  &.level-1  { background-color: #0096C7; }
+  &.level-2  { background-color: #00A5BC; }
+  &.level-3  { background-color: #00B4B1; }
+  &.level-4  { background-color: #00C3A6; }
+  &.level-5  { background-color: #00D29B; }
+  &.level-6  { background-color: #00E190; }
+  &.level-7  { background-color: #00F085; }
+  &.level-8  { background-color: #1AFF79; }
+  &.level-9  { background-color: #3DFF6D; }
+  &.level-10 { background-color: #61FF61; }
+  &.level-11 { background-color: #81F956; }
+  &.level-12 { background-color: #A1F34B; }
+  &.level-13 { background-color: #C1ED40; }
+  &.level-14 { background-color: #E1E735; }
+  &.level-15 { background-color: #FFE02A; }
+  &.level-16 { background-color: #FFD424; }
+  &.level-17 { background-color: #FFC71E; }
+  &.level-18 { background-color: #FFBB18; }
+  &.level-19 { background-color: #FFAE12; }
+  &.level-20 { background-color: #FFA20C; }
+  &.level-21 { background-color: #FF9811; }
+  &.level-22 { background-color: #FF8E17; }
+  &.level-23 { background-color: #FF841C; }
+  &.level-24 { background-color: #FF7A22; }
+  &.level-25 { background-color: #FF7027; }
+  &.level-26 { background-color: #FF662D; }
+  &.level-27 { background-color: #FF5C32; }
+  &.level-28 { background-color: #FF5238; }
+  &.level-29 { background-color: #FF483D; }
+  &.level-30 { background-color: #FF3E43; }
+  &.level-31 { background-color: #F23A4A; }
+  &.level-32 { background-color: #E63652; }
+  &.level-33 { background-color: #D93159; }
+  &.level-34 { background-color: #CD2D61; }
+  &.level-35 { background-color: #C02968; }
+  &.level-36 { background-color: #B42570; }
+  &.level-37 { background-color: #A72077; }
+  &.level-38 { background-color: #9B1C7F; }
+  &.level-39 { background-color: #8E1886; }
+  &.level-40 { background-color: #82148E; }
+  &.level-41 { background-color: #711B96; }
+  &.level-42 { background-color: #60229E; }
+  &.level-43 { background-color: #5029A6; }
+  &.level-44 { background-color: #3F30AE; }
+  &.level-45 { background-color: #2F37B6; }
+  &.level-46 { background-color: #1E3EBE; }
+  &.level-47 { background-color: #0E45C6; }
+  &.level-48 { background-color: #003CCE; }
+  &.level-49 { background-color: #0028C6; }
+  &.level-50 { background-color: #0015BE; }
 }
 
 
