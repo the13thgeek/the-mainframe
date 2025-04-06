@@ -43,7 +43,7 @@
       font-weight: 800;
       color: #fff;
       text-shadow: 1px 1px 1px #666;
-      margin-bottom: 5px;
+      margin-bottom: 4px;
     }
     &.player-level {
       display: inline-block;      
@@ -69,6 +69,10 @@
         margin: 0;
       }
     }
+  }
+
+  .player-premium {
+    font-size: 15px;
   }
 
   ol.top-players {

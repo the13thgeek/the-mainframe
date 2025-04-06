@@ -5,6 +5,16 @@ $screen-lg: 1440px;
 $screen-md: 992px;
 $screen-sm: 768px;
 
+/* ANIMATIONS HERE */
+@keyframes shimmer {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
 /* STYLES HERE */
 
 body {
@@ -126,6 +136,37 @@ footer {
 
   .col-a, .col-b {
     flex: 1;
+  }
+}
+
+.player-premium { 
+  overflow: hidden;
+  margin-bottom: 7px;
+
+  .badge {
+    display: inline-block;
+    background-color: #333;
+    padding: 3px 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-style: italic;
+    border-left: gold 3px solid;
+    border-right: gold 3px solid;
+  }
+
+  span {
+    background: linear-gradient(
+      to right,
+      #aaa 0%,
+      #ffffff 40%,
+      #aaa 60%,
+      #aaa 100%
+    );
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: shimmer 2s linear infinite;
   }
 }
 

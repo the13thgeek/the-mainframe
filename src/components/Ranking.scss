@@ -81,7 +81,7 @@
           &.username {
             font-weight: bold;
             font-size: 16px;
-            margin-bottom: 4px;
+            margin-bottom: 2px;
           }
           &.level {
             font-size: 12px;
@@ -101,6 +101,9 @@
             margin-top: 6px;
             font-size: 14px;
           }
+        }
+        .player-premium {
+          font-size: 12px;
         }
       }
     }
