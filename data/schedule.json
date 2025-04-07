@@ -1,31 +1,24 @@
 [
   {
     "day": "Mon",
-    "date": "Mar 31",
-    "time": "3pm EST",
-    "title": "We're Back! Right, Tippy Toe?",
-    "game": "Marvel Rivals"
-  },
-  {
-    "day": "Tue",
-    "date": "Apr 1",
+    "date": "Apr 07",
     "time": "8pm EST",
-    "title": "Silent Cartographer [Part 2]",
-    "game": "Halo: Combat Evolved"
+    "title": "An Overcharging Lakitu",
+    "game": "Mario Kart 8 Deluxe"
   },
   {
     "day": "Thu",
-    "date": "Apr 3",
-    "time": "8pm EST",
-    "title": "Mayhem in Digital 3D",
-    "game": "Super Mario 3D World"
-  },
-  {
-    "day": "Fri",
-    "date": "Apr 4",
+    "date": "Apr 10",
     "time": "8pm EST",
     "title": "Night at the Museum",
     "game": "Two Point Museum"
+  },
+  {
+    "day": "Fri",
+    "date": "Apr 11",
+    "time": "8pm EST",
+    "title": "Welcome to Krakoa",
+    "game": "Marvel Rivals"
   },
   {
     "day": "Sat",
