@@ -66,7 +66,7 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
             <div className="user-info">
               <p className='username'>{user.twitch_display_name}</p>
               <div className="badges">
-                {user.team !== null && (<div className={`badge-item team-`+user.team.toLowerCase()}><span>{user.team}</span></div>)}
+                {user.team !== null && (<div className={`badge-item team-`+user.team?.toLowerCase()}><span>{user.team}</span></div>)}
                 {user.is_premium === 1 && (<div className="badge-item mode-elite"><span>Mode Élite</span></div>)}
               </div>
               <p className="level">Lvl {user.level} <span className={'title user-level-bg level-'+user.level}>{user.title}</span></p>
@@ -83,7 +83,7 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
             <div className="user-info">
               <p className='username'>{user.twitch_display_name}</p>
               <div className="badges">
-                {user.team !== null && (<div className={`badge-item team-`+user.team.toLowerCase()}><span>{user.team}</span></div>)}
+                {user.team !== null && (<div className={`badge-item team-`+user.team?.toLowerCase()}><span>{user.team}</span></div>)}
                 {user.is_premium === 1 && (<div className="badge-item mode-elite"><span>Mode Élite</span></div>)}
               </div>
               <p className="level">Lvl {user.level} <span className={'title user-level-bg level-'+user.level}>{user.title}</span></p>
@@ -97,7 +97,7 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
             <div className="user-info">
               <p className='username'>{user.twitch_display_name}</p>
               <div className="badges">
-                {user.team !== null && (<div className={`badge-item team-`+user.team.toLowerCase()}><span>{user.team}</span></div>)}
+                {user.team !== null && (<div className={`badge-item team-`+user.team?.toLowerCase()}><span>{user.team}</span></div>)}
                 {user.is_premium === 1 && (<div className="badge-item mode-elite"><span>Mode Élite</span></div>)}
               </div>
               <p className="level">Lvl {user.level} <span className={'title user-level-bg level-'+user.level}>{user.title}</span></p>
@@ -112,7 +112,7 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
             <div className="user-info">
               <p className='username'>{user.twitch_display_name}</p>
               <div className="badges">
-                {user.team !== null && (<div className={`badge-item team-`+user.team.toLowerCase()}><span>{user.team}</span></div>)}
+                {user.team !== null && (<div className={`badge-item team-`+user.team?.toLowerCase()}><span>{user.team}</span></div>)}
                 {user.is_premium === 1 && (<div className="badge-item mode-elite"><span>Mode Élite</span></div>)}
               </div>
               <p className="level">Lvl {user.level} <span className={'title user-level-bg level-'+user.level}>{user.title}</span></p>
