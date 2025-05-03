@@ -30,7 +30,10 @@ const TwitchUserInfo = () => {
                         <div className="row stats">
                             <div className="user-stats">
                                 <h3 className='twitch-username'>{user.display_name}</h3>
-                                {user.is_premium === 1 && (<div className='player-premium'><div className="badge"><span>Mode Élite</span></div></div>)}
+                                <div className="badges">
+                                    {user.team !== null && (<div className={`badge-item team-`+user.team.toLowerCase()}><span>{user.team}</span></div>)}
+                                    {user.is_premium === 1 && (<div className='badge-item mode-elite'><span>Mode Élite</span></div>)}
+                                </div>                                
                                 <span className="level"><i className="fa-solid fa-trophy"></i> Level {user.level}</span> <span className={'title user-level-bg level-'+user.level}>{user.title}</span>
                             </div>
                         </div>

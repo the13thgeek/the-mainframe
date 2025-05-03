@@ -60,7 +60,10 @@ const PlayerRanking = ({ enableUserView = false }) => {
             </div>
           </div>
           <p className='player-name'>{user.twitch_display_name}</p>
-          {user.is_premium === 1 && (<div className='player-premium'><div className="badge"><span>Mode Élite</span></div></div>)}
+          <div className="badges">
+            {user.team !== null && (<div className={`badge-item team-`+user.team.toLowerCase()}><span>{user.team}</span></div>)}
+            {user.is_premium === 1 && (<div className="badge-item mode-elite"><span>Mode Élite</span></div>)}
+          </div>
           <p className='player-level'>
             <span className="level">Lvl {user.level}</span>
             <span className='title'>{user.title}</span>

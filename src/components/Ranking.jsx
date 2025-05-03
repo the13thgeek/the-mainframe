@@ -65,7 +65,10 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
             </div>
             <div className="user-info">
               <p className='username'>{user.twitch_display_name}</p>
-              {user.is_premium === 1 && (<div className='player-premium'><div className="badge"><span>Mode Élite</span></div></div>)}
+              <div className="badges">
+                {user.team !== null && (<div className={`badge-item team-`+user.team.toLowerCase()}><span>{user.team}</span></div>)}
+                {user.is_premium === 1 && (<div className="badge-item mode-elite"><span>Mode Élite</span></div>)}
+              </div>
               <p className="level">Lvl {user.level} <span className={'title user-level-bg level-'+user.level}>{user.title}</span></p>
               { valueLabels && (
               <p className='data'><b>{ !isNaN(user.value) ? Math.ceil(user.value).toLocaleString('en-US') : user.value}</b> {valueLabels}</p>
@@ -79,7 +82,10 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
             </div>
             <div className="user-info">
               <p className='username'>{user.twitch_display_name}</p>
-              {user.is_premium === 1 && (<div className='player-premium'><div className="badge"><span>Mode Élite</span></div></div>)}
+              <div className="badges">
+                {user.team !== null && (<div className={`badge-item team-`+user.team.toLowerCase()}><span>{user.team}</span></div>)}
+                {user.is_premium === 1 && (<div className="badge-item mode-elite"><span>Mode Élite</span></div>)}
+              </div>
               <p className="level">Lvl {user.level} <span className={'title user-level-bg level-'+user.level}>{user.title}</span></p>
             </div>
             </>
@@ -90,7 +96,10 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
             </div>
             <div className="user-info">
               <p className='username'>{user.twitch_display_name}</p>
-              {user.is_premium === 1 && (<div className='player-premium'><div className="badge"><span>Mode Élite</span></div></div>)}
+              <div className="badges">
+                {user.team !== null && (<div className={`badge-item team-`+user.team.toLowerCase()}><span>{user.team}</span></div>)}
+                {user.is_premium === 1 && (<div className="badge-item mode-elite"><span>Mode Élite</span></div>)}
+              </div>
               <p className="level">Lvl {user.level} <span className={'title user-level-bg level-'+user.level}>{user.title}</span></p>
               <p className='achievement'>earned <b>{user.ach_name} (Tier {user.tier})</b></p>
             </div>
@@ -102,7 +111,10 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
             </div>
             <div className="user-info">
               <p className='username'>{user.twitch_display_name}</p>
-              {user.is_premium === 1 && (<div className='player-premium'><div className="badge"><span>Mode Élite</span></div></div>)}
+              <div className="badges">
+                {user.team !== null && (<div className={`badge-item team-`+user.team.toLowerCase()}><span>{user.team}</span></div>)}
+                {user.is_premium === 1 && (<div className="badge-item mode-elite"><span>Mode Élite</span></div>)}
+              </div>
               <p className="level">Lvl {user.level} <span className={'title user-level-bg level-'+user.level}>{user.title}</span></p>
               { valueLabels && (
               <p className='data'><b>{ !isNaN(user.value) ? Math.ceil(user.value).toLocaleString('en-US') : user.value}</b> {valueLabels}</p>

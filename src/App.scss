@@ -139,35 +139,74 @@ footer {
   }
 }
 
-.player-premium { 
+.badges {
   overflow: hidden;
   margin-bottom: 7px;
+  gap: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-  .badge {
-    display: inline-block;
-    background-color: #333;
+
+  .badge-item {
     padding: 3px 13px;
     font-weight: bold;
     border-radius: 5px;
-    font-style: italic;
-    border-left: gold 3px solid;
-    border-right: gold 3px solid;
+
+    &.team-afterburner {
+      padding: 1px 13px;
+      font-family: 'Audiowide';
+      font-weight: 400;
+      background-color: #E53935;
+      border-left: #212121 3px solid;
+      border-right: #212121 3px solid;
+      color: #fff;
+    }
+
+    &.team-concorde {
+      padding: 1px 13px;
+      font-family: 'Audiowide';
+      font-weight: 400;
+      background-color: #1E88E5;
+      border-left: #eee 3px solid;
+      border-right: #eee 3px solid;
+      color: #fff;
+    }
+
+    &.team-stratos {
+      padding: 1px 13px;
+      font-family: 'Audiowide';
+      font-weight: 400;
+      background-color: #43A047;
+      border-left: #B0BEC5 3px solid;
+      border-right: #B0BEC5 3px solid;
+      color: #fff;
+    }
+
+    &.mode-elite {      
+      background-color: #333;
+      font-style: italic;
+      border-left: gold 3px solid;
+      border-right: gold 3px solid;
+
+      span {
+        background: linear-gradient(
+          to right,
+          #aaa 0%,
+          #ffffff 40%,
+          #aaa 60%,
+          #aaa 100%
+        );
+        background-size: 200% auto;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        animation: shimmer 2s linear infinite;
+      }
+    }
   }
 
-  span {
-    background: linear-gradient(
-      to right,
-      #aaa 0%,
-      #ffffff 40%,
-      #aaa 60%,
-      #aaa 100%
-    );
-    background-size: 200% auto;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    animation: shimmer 2s linear infinite;
-  }
+  
 }
 
 .user-level {

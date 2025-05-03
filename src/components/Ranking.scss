@@ -74,14 +74,36 @@
 
       .user-info {
         flex-grow: 1;
+
+        .badges {
+          font-size: 13px;
+          justify-content: start;
+        }
+
         p {
           margin: 0;
           padding: 0;
 
           &.username {
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
             font-weight: bold;
             font-size: 16px;
             margin-bottom: 2px;
+            z-index: 0;
+
+            &::after {
+              content: '';
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: 50px;
+              height: 100%;
+              pointer-events: none;
+              background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%,white 100%);
+              z-index: 1;
+            }
           }
           &.level {
             font-size: 12px;
