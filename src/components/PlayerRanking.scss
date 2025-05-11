@@ -88,7 +88,8 @@
       margin: 0;
       flex: 1;
       text-align: center;
-      counter-increment: list-item;      
+      counter-increment: list-item;
+      overflow: hidden;
 
       &:hover {
         &::after {
@@ -121,7 +122,8 @@
         display: block;
         height: 100%;
         width: 0;
-        background-color: rgba(255,255,255,0.3);
+        background-color: rgba(255,255,255,0.4);
+        transform: skewX(-10deg);
       }      
     }
   }
