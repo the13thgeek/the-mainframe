@@ -1,0 +1,75 @@
+.tile.showdown-scoreboard {
+  color: #000;
+
+  .widget-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .team-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    border-right: #666 1px dotted;
+
+    .mascot-bg {
+      aspect-ratio: 2/3;
+      width: 100%;
+      background-position: 50% 0;   
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &.team-1 {
+      background-color: #E53935;
+      .mascot-bg {
+        background-image: url('/assets/mascot-afterburner.jpg');
+      }
+    }
+    &.team-2 {
+      background-color: #1E88E5;
+      .mascot-bg {
+        background-image: url('/assets/mascot-concorde.jpg');
+      }
+    }
+    &.team-3 {
+      background-color: #43A047;
+      .mascot-bg {
+        background-image: url('/assets/mascot-stratos.jpg');
+      }
+    }
+    &:last-child {
+      border-right: 1px transparent solid;
+    }
+  }
+
+  .team-score {
+    background-color: #fff;
+    color: #000;
+    font-size: 50px;
+    margin: 0;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+  }
+
+  .mvp {
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 0;
+
+    h5 {
+      font-size: 16px;
+    }
+    small {
+      font-size: 11px;
+    }
+
+    h5, small {
+      margin: 0;
+    }
+  }
+}

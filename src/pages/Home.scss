@@ -28,7 +28,10 @@ main.page-home {
     }
 
     &.links {
-      color: #fff;
+      // color: #fff;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
 
       .link-catalog {
         color: #000;
@@ -36,7 +39,8 @@ main.page-home {
         background-image: url('/assets/banner-catalog.png');
         background-position: 100% 0;
         background-repeat: no-repeat;
-        height: 200px;
+        background-size: contain;
+        min-height: 200px;
         flex: 1;
 
         .content {
@@ -52,8 +56,12 @@ main.page-home {
           p {
             font-size: 14px;
             line-height: 18px;
+            background-color: #fff;
           }
         }
+      }
+      .showdown-scoreboard {
+        flex: 1;
       }
       .link-poweredby {
         flex: 1;
@@ -326,6 +334,10 @@ ul.perks {
             }
         }
         
+      }
+
+      &.links {
+        grid-template-columns: 1fr;
       }
 
       &.lists {

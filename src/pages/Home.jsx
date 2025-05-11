@@ -12,6 +12,7 @@ import UserCardPreview from "../components/UserCardPreview";
 import PlayerRanking from "../components/PlayerRanking";
 import RequestsBar from "../components/RequestsBar";
 import Ranking from "../components/Ranking";
+import TourneyScoreboard from "../components/TourneyScoreboard";
 import './Home.scss';
 
 const Home = () => {
@@ -162,6 +163,9 @@ const Home = () => {
             </div>
           </Tile>
           <Tile extraClassName={'link-poweredby'}></Tile>
+          {/* <Tile extraClassName={'showdown-scoreboard'} title={'Supersonic Showdown'}>
+            <TourneyScoreboard />
+          </Tile> */}
         </div>
         <div className="row lists">
           <Tile extraClassName={'ranking spender'} title={'Top Channel Points Spenders'}>
