@@ -3,7 +3,7 @@
 
   .widget-body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
   }
 
   .team-box {
@@ -12,13 +12,22 @@
     align-items: center;
     color: #fff;
     border-right: #666 1px dotted;
+    height: 100%;
+
+    h4 {
+      margin: 0;
+      padding: 15px 0 8px;
+      text-shadow: #333 2px 2px;
+    }
 
     .mascot-bg {
-      aspect-ratio: 2/3;
+      aspect-ratio: 1/1.1;
       width: 100%;
-      background-position: 50% 0;   
+      background-position: 50% 10%;   
       background-repeat: no-repeat;
       background-size: cover;
+      clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+      -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
     }
 
     &.team-1 {
@@ -45,27 +54,60 @@
   }
 
   .team-score {
+    clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
+    padding: 10px 0 20px;
+    margin: -25px 0 0 0;
     background-color: #fff;
     color: #000;
     font-size: 50px;
-    margin: 0;
+    position: relative;
     font-weight: bold;
     width: 100%;
     text-align: center;
   }
 
   .mvp {
+    clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
     width: 100%;
     text-align: center;
     background-color: #000;
     color: #fff;
-    padding: 5px 0;
+    margin: -20px 0 0 0;
+    padding: 25px 0 15px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30px;
+      height: 100%;
+      pointer-events: none;
+      background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, black 100%);
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 100%;
+      pointer-events: none;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, black 100%);
+      z-index: 1;
+    }
 
     h5 {
-      font-size: 16px;
+      font-size: 19px;
+      color: yellow;
     }
     small {
-      font-size: 11px;
+      font-size: 13px;
     }
 
     h5, small {

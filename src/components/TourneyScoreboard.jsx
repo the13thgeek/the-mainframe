@@ -11,7 +11,13 @@ const TourneyScoreboard = () => {
       case 3: return "Stratos";
       default: return "(undefined)";
     }
-  }
+  };
+
+  const truncateText = (text, maxLength = 13 ) => {
+    const isTruncated = text.length > maxLength;
+    const displayText = isTruncated ? text.slice(0, maxLength) + "..." : text;
+    return displayText;
+  };
 
   useEffect(() => {
       const fetchScores = async()  => {  
@@ -40,14 +46,14 @@ const TourneyScoreboard = () => {
   return (
     <>
     {scoreBoard && scoreBoard.map((team, idx) => (
-      <div class={'team-box team-'+team.team_number} key={idx}>
-        {/* <h4>{convertTeamName(team.team_number)}</h4> */}
+      <div className={'team-box team-'+team.team_number} key={idx}>
+        <h4>{convertTeamName(team.team_number)}</h4>
         <div className="mascot-bg"></div>
         <p className='team-score'>{team.total_points}</p>
-        {team.mvp_display_name !== null && (
+        {team.mvp !== null && (
           <div className="mvp">
-            <h5>{team.mvp_display_name}</h5>
-            <small>Team MVP</small>
+            <h5>{truncateText(team.mvp)}</h5>
+            <small>MVP</small>
           </div>
         )}
       </div>

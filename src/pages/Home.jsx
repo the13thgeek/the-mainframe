@@ -162,10 +162,10 @@ const Home = () => {
               <p><Link to="/catalog" className='btn'>View Catalog</Link></p>
             </div>
           </Tile>
-          <Tile extraClassName={'link-poweredby'}></Tile>
-          {/* <Tile extraClassName={'showdown-scoreboard'} title={'Supersonic Showdown'}>
+          {/* <Tile extraClassName={'link-poweredby'}></Tile> */}
+          <Tile extraClassName={'showdown-scoreboard'} title={'Supersonic Showdown'}>
             <TourneyScoreboard />
-          </Tile> */}
+          </Tile>
         </div>
         <div className="row lists">
           <Tile extraClassName={'ranking spender'} title={'Top Channel Points Spenders'}>
