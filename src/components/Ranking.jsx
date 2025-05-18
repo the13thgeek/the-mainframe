@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './Ranking.scss';
+import { getTierName } from '../utils/common';
 import Modal from "../components/Modal";
+import UsernameDisplay from './UsernameDisplay';
+import PlayerBadge from './PlayerBadge';
 import DialogUserPreview from './DialogUserPreview';
 
 const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableUserView = false }) => {
@@ -64,10 +67,12 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
               <img src={user.twitch_avatar} alt="Avatar" />
             </div>
             <div className="user-info">
-              <p className='username'>{user.twitch_display_name}</p>
+              {/* <p className='username'>{user.twitch_display_name}</p> */}
+              <UsernameDisplay userName={user.twitch_display_name} subMonths={user.sub_months} />
               <div className="badges">
-                {user.team !== null && (<div className={`badge-item team-`+user.team?.toLowerCase()}><span>{user.team}</span></div>)}
-                {user.is_premium === 1 && (<div className="badge-item mode-elite"><span>Mode Élite</span></div>)}
+                { getTierName(user.sub_months) !== null && (<PlayerBadge badgeName={getTierName(user.sub_months)} short={true} />) }
+                { user.team !== null && (<PlayerBadge badgeName={user.team?.toLowerCase()} short={true} />) }
+                { user.is_premium === 1 && (<PlayerBadge badgeName='elite' short={true} />) }
               </div>
               <p className="level">Lvl {user.level} <span className={'title user-level-bg level-'+user.level}>{user.title}</span></p>
               { valueLabels && (
@@ -81,10 +86,12 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
               <img src={user.twitch_avatar} alt="Avatar" />
             </div>
             <div className="user-info">
-              <p className='username'>{user.twitch_display_name}</p>
+              {/* <p className='username'>{user.twitch_display_name}</p> */}
+              <UsernameDisplay userName={user.twitch_display_name} subMonths={user.sub_months} />
               <div className="badges">
-                {user.team !== null && (<div className={`badge-item team-`+user.team?.toLowerCase()}><span>{user.team}</span></div>)}
-                {user.is_premium === 1 && (<div className="badge-item mode-elite"><span>Mode Élite</span></div>)}
+                { getTierName(user.sub_months) !== null && (<PlayerBadge badgeName={getTierName(user.sub_months)} short={true} />) }
+                { user.team !== null && (<PlayerBadge badgeName={user.team?.toLowerCase()} short={true} />) }
+                { user.is_premium === 1 && (<PlayerBadge badgeName='elite' short={true} />) }
               </div>
               <p className="level">Lvl {user.level} <span className={'title user-level-bg level-'+user.level}>{user.title}</span></p>
             </div>
@@ -95,10 +102,12 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
               <img src={'/assets/badges/' + user.ach_sysname + '.png'} alt={user.ach_name} />
             </div>
             <div className="user-info">
-              <p className='username'>{user.twitch_display_name}</p>
+              {/* <p className='username'>{user.twitch_display_name}</p> */}
+              <UsernameDisplay userName={user.twitch_display_name} subMonths={user.sub_months} />
               <div className="badges">
-                {user.team !== null && (<div className={`badge-item team-`+user.team?.toLowerCase()}><span>{user.team}</span></div>)}
-                {user.is_premium === 1 && (<div className="badge-item mode-elite"><span>Mode Élite</span></div>)}
+                { getTierName(user.sub_months) !== null && (<PlayerBadge badgeName={getTierName(user.sub_months)} short={true} />) }
+                { user.team !== null && (<PlayerBadge badgeName={user.team?.toLowerCase()} short={true} />) }
+                { user.is_premium === 1 && (<PlayerBadge badgeName='elite' short={true} />) }
               </div>
               <p className="level">Lvl {user.level} <span className={'title user-level-bg level-'+user.level}>{user.title}</span></p>
               <p className='achievement'>earned <b>{user.ach_name} (Tier {user.tier})</b></p>

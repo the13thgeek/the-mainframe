@@ -1,8 +1,9 @@
 import React from 'react';
 import ExpProgressBar from './ExpProgressBar';
 import { Link } from 'react-router-dom';
-import { UserCard } from '../utils/common';
+import { UserCard, getTierName } from '../utils/common';
 import { getAuthUrl, getUserFromStorage, clearUserFromStorage } from "../utils/auth";
+import PlayerBadge from './PlayerBadge';
 import { useNavigate } from "react-router-dom";
 import './TwitchUserInfo.scss';
 
@@ -30,10 +31,11 @@ const TwitchUserInfo = () => {
                         <div className="row stats">
                             <div className="user-stats">
                                 <h3 className='twitch-username'>{user.display_name}</h3>
+                                {/* <UsernameDisplay userName={user.twitch_display_name} subMonths={user.sub_months} /> */}
                                 <div className="badges">
-                                    {/* <div className="badge-item prestige">{user.sub_months}</div> */}
-                                    {user.team !== null && (<div className={`badge-item team-`+user.team?.toLowerCase()}><span>{user.team}</span></div>)}
-                                    {user.is_premium === 1 && (<div className='badge-item mode-elite'><span>Mode Élite</span></div>)}
+                                    { getTierName(user.sub_months) !== null && (<PlayerBadge badgeName={getTierName(user.sub_months)} />) }
+                                    { user.team !== null && (<PlayerBadge badgeName={user.team?.toLowerCase()} />) }
+                                    { user.is_premium === 1 && (<PlayerBadge badgeName='elite' />) }
                                 </div>                                
                                 <span className="level"><i className="fa-solid fa-trophy"></i> Level {user.level}</span> <span className={'title user-level-bg level-'+user.level}>{user.title}</span>
                             </div>

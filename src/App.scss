@@ -142,12 +142,12 @@ footer {
 .badges {
   overflow: hidden;
   margin-bottom: 7px;
-  gap: 7px;
+  gap: 4px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
-
+  /*
   .badge-item {
     padding: 3px 13px;
     font-weight: bold;
@@ -184,27 +184,10 @@ footer {
     }
 
     &.mode-elite {      
-      background-color: #333;
-      font-style: italic;
-      border-left: gold 3px solid;
-      border-right: gold 3px solid;
-
-      span {
-        background: linear-gradient(
-          to right,
-          #aaa 0%,
-          #ffffff 40%,
-          #aaa 60%,
-          #aaa 100%
-        );
-        background-size: 200% auto;
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        animation: shimmer 2s linear infinite;
-      }
+      
     }
   }
+  */
 
   
 }

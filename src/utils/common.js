@@ -52,3 +52,20 @@ export const dateFormatter = (format,input) => {
 
   return output;
 }
+export const truncateText = (text, maxLength = 13 ) => {
+    const isTruncated = text.length > maxLength;
+    const displayText = isTruncated ? text.slice(0, maxLength) + "..." : text;
+    return displayText;
+};
+
+export const getTierName = (months) => {
+    console.log('getTierName()');
+    console.log(months);
+    
+    if (months >= 36) { return 'Ascendant'; }
+    else if (months >= 24) { return 'Prime'; }
+    else if (months >= 18) { return 'Cipher'}
+    else if (months >= 12) { return 'Striker'; }
+    else if (months >= 6) { return 'Acolyte'; }
+    else { return null; }
+}

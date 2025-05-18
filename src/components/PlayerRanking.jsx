@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
-import { UserCard } from '../utils/common';
+import { UserCard, getTierName } from '../utils/common';
 import Modal from "../components/Modal";
+import PlayerBadge from './PlayerBadge';
+import UsernameDisplay from './UsernameDisplay';
 import DialogUserPreview from './DialogUserPreview';
 
 import './PlayerRanking.scss';
@@ -59,10 +61,13 @@ const PlayerRanking = ({ enableUserView = false }) => {
               <img src={user.twitch_avatar} alt={user.twitch_display_name + `'s avatar`} />
             </div>
           </div>
-          <p className='player-name'>{user.twitch_display_name}</p>
+          <UsernameDisplay userName={user.twitch_display_name} subMonths={user.sub_months} />
           <div className="badges">
-            {user.team !== null && (<div className={`badge-item team-`+user.team?.toLowerCase()}><span>{user.team}</span></div>)}
-            {user.is_premium === 1 && (<div className="badge-item mode-elite"><span>Mode Élite</span></div>)}
+            {/* {user.team !== null && (<div className={`badge-item team-`+user.team?.toLowerCase()}><span>{user.team}</span></div>)}
+            {user.is_premium === 1 && (<div className="badge-item mode-elite"><span>Mode Élite</span></div>)} */}
+            { getTierName(user.sub_months) !== null && (<PlayerBadge badgeName={getTierName(user.sub_months)} />) }
+            { user.is_premium === 1 && (<PlayerBadge badgeName='elite' />) }
+            { user.team !== null && (<PlayerBadge badgeName={user.team?.toLowerCase()} />) }
           </div>
           <p className='player-level'>
             <span className="level">Lvl {user.level}</span>

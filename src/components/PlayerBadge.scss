@@ -1,0 +1,76 @@
+.badge {
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background-color: #333;
+  color: white;
+  box-shadow: 0 0 4px rgba(255,255,255,0.2);
+  cursor: default;
+  
+  &.badge-acolyte {
+    background: linear-gradient(to right, #3f5efb, #5b9dfd);
+  }
+
+  &.badge-striker {
+    background: linear-gradient(to right, #e89b00, #ffc94b);
+  }
+
+  &.badge-cipher {
+    background: linear-gradient(to right, #9b59b6, #d2a8ff);
+  }
+
+  &.badge-prime {
+    background: linear-gradient(to right, #ffe66d, #bfa500);
+    color: #222;
+  }
+
+  &.badge-ascendant {
+    background: linear-gradient(to right, #00ffff, #b8ffff);
+    color: #000;
+  }
+
+  &.badge-afterburner {
+    background: linear-gradient(135deg, #E53935, #FF7043, #FFAB91);
+  }
+
+  &.badge-concorde {
+    background: linear-gradient(135deg, #1E88E5, #42A5F5, #90CAF9);
+  }
+
+  &.badge-stratos {
+    background: linear-gradient(135deg, #43A047, #66BB6A, #A5D6A7);
+  }
+
+  &.badge-elite {
+      //background-color: #333;
+      //font-style: italic;
+      //border-left: gold 3px solid;
+      //border-right: gold 3px solid;
+      background: linear-gradient(
+      135deg,
+      #1c1c1e,
+      #2a2a2d,
+      #3a3a3d,
+      #ffd700 90%
+    );
+    color: #fff;
+    //text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+      span {
+        background: linear-gradient(
+          to right,
+          #aaa 0%,
+          #ffffff 40%,
+          #aaa 60%,
+          #aaa 100%
+        );
+        background-size: 200% auto;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        animation: shimmer 2s linear infinite;
+      }
+  }
+
+}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { truncateText } from "../utils/common";
 import './TourneyScoreboard.scss';
 
 const TourneyScoreboard = () => {
@@ -11,12 +12,6 @@ const TourneyScoreboard = () => {
       case 3: return "Stratos";
       default: return "(undefined)";
     }
-  };
-
-  const truncateText = (text, maxLength = 13 ) => {
-    const isTruncated = text.length > maxLength;
-    const displayText = isTruncated ? text.slice(0, maxLength) + "..." : text;
-    return displayText;
   };
 
   useEffect(() => {
