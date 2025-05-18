@@ -58,10 +58,7 @@ export const truncateText = (text, maxLength = 13 ) => {
     return displayText;
 };
 
-export const getTierName = (months) => {
-    console.log('getTierName()');
-    console.log(months);
-    
+export const getTierName = (months) => {   
     if (months >= 36) { return 'Ascendant'; }
     else if (months >= 24) { return 'Prime'; }
     else if (months >= 18) { return 'Cipher'}
