@@ -39,11 +39,12 @@
   .username-wrapper {
     .username {
       font-weight: 800;
-      //text-shadow: 1px 1px 3px #666;
+      text-shadow: 1px 1px 2px #333;
+      padding: 0 4px 2px;
      
-      &.basic {
-        text-shadow: 1px 1px 3px #666;
-      }
+      // &.basic {
+      //   text-shadow: 1px 1px 3px #666;
+      // }
     }
   }
 

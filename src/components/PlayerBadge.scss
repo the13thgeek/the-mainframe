@@ -1,12 +1,47 @@
+@keyframes badgeshimmer {
+  0% { left: -150%; }
+  100% { left: 150%; }
+}
+
 .badge {
-  font-weight: bold;
+  font-weight: 600;
   padding: 2px 8px;
   border-radius: 4px;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   background-color: #333;
   color: white;
   box-shadow: 0 0 4px rgba(255,255,255,0.2);
   cursor: default;
+  position: relative;
+  overflow: hidden;
+
+  &.badge-acolyte,
+  &.badge-striker,
+  &.badge-cipher,
+  &.badge-prime,
+  &.badge-ascendant {
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -150%;
+      width: 200%;
+      height: 100%;
+      background: linear-gradient(
+        120deg,
+        transparent 0%,
+        rgba(255,255,255,0.2) 35%,
+        rgba(255,255,255,0.6) 50%,
+        rgba(255,255,255,0.2) 65%,
+        transparent 100%
+      );
+      animation: badgeshimmer 2.5s infinite;
+    }
+
+  }
+
+  
   
   &.badge-acolyte {
     background: linear-gradient(to right, #3f5efb, #5b9dfd);

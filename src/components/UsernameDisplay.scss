@@ -1,14 +1,14 @@
-@keyframes nameshimmer {
-  0% { left: -100%; }
-  100% { left: 100%; }
-}
+// @keyframes nameshimmer {
+//   0% { left: -100%; }
+//   100% { left: 100%; }
+// }
 
 .username-wrapper {
   display: inline-block;
   text-align: center;
-  padding: 0 auto; 
+  padding: 0;
   color: #fff;
-  margin: 5px auto 0;
+  margin: 0;
 }
 
 .username {
@@ -17,49 +17,49 @@
   font-weight: 800;
   font-size: 16px;
   color: inherit;
-  text-shadow: 0 0 3px rgba(255,255,255,0.2);
+  //text-shadow: 0 0 3px rgba(255,255,255,0.2);
   overflow: hidden;
-  padding: 0px 5px 2px;
+  padding: 0;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 200%;
-    height: 100%;
-    background: linear-gradient(
-      120deg,
-      transparent 0%,
-      rgba(255,255,255,0.2) 45%,
-      rgba(255,255,255,0.5) 50%,
-      rgba(255,255,255,0.2) 55%,
-      transparent 100%
-    );
-    animation: nameshimmer 2.5s infinite;
-  }
-  &.basic::after {
-    display: none;
-    animation: none;
-  }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: -100%;
+  //   width: 200%;
+  //   height: 100%;
+  //   background: linear-gradient(
+  //     120deg,
+  //     transparent 0%,
+  //     rgba(255,255,255,0.2) 45%,
+  //     rgba(255,255,255,0.5) 50%,
+  //     rgba(255,255,255,0.2) 55%,
+  //     transparent 100%
+  //   );
+  //   animation: nameshimmer 2.5s infinite;
+  // }
+  // &.basic::after {
+  //   display: none;
+  //   animation: none;
+  // }
 }
 
-.acolyte {
-  text-shadow: 0 0 4px #3f5efb, 0 0 8px #5b9dfd;
-}
+// .acolyte {
+//   text-shadow: 0 0 4px #3f5efb, 0 0 8px #5b9dfd;
+// }
 
-.striker {
-  text-shadow: 0 0 4px #e89b00, 0 0 8px #ffc94b;
-}
+// .striker {
+//   text-shadow: 0 0 4px #e89b00, 0 0 8px #ffc94b;
+// }
 
-.cipher {
-  text-shadow: 0 0 4px #9b59b6, 0 0 8px #d2a8ff;
-}
+// .cipher {
+//   text-shadow: 0 0 4px #9b59b6, 0 0 8px #d2a8ff;
+// }
 
-.prime {
-  text-shadow: 0 0 5px #ffe66d, 0 0 10px #bfa500;
-}
+// .prime {
+//   text-shadow: 0 0 5px #ffe66d, 0 0 10px #bfa500;
+// }
 
-.ascendant {
-  text-shadow: 0 0 6px #00ffff, 0 0 12px #b8ffff;
-}
+// .ascendant {
+//   text-shadow: 0 0 6px #00ffff, 0 0 12px #b8ffff;
+// }
