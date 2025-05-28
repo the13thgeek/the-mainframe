@@ -1,16 +1,23 @@
 [
   {
-    "day": "Thu",
-    "date": "May 22",
+    "day": "Tue",
+    "date": "May 27",
     "time": "8pm EST",
-    "title": "Honey, Where's My Democracy Suit?",
+    "title": "Open For Nostalgic Business",
+    "game": "inKONBINI"
+  },
+  {
+    "day": "Thu",
+    "date": "May 29",
+    "time": "8pm EST",
+    "title": "The Resistance",
     "game": "Helldivers II"
   },
   {
     "day": "Fri",
-    "date": "May 23",
+    "date": "May 30",
     "time": "8pm EST",
-    "title": "Ankh You Very Much",
+    "title": "Hellfire Gala",
     "game": "Marvel Rivals"
   }
 ]
