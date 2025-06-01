@@ -1,23 +1,30 @@
 [
   {
     "day": "Tue",
-    "date": "May 27",
+    "date": "June 3",
     "time": "8pm EST",
-    "title": "Open For Nostalgic Business",
-    "game": "inKONBINI"
+    "title": "Silent Cartographer",
+    "game": "Halo: Combat Evolved"
   },
   {
     "day": "Thu",
-    "date": "May 29",
+    "date": "June 5",
     "time": "8pm EST",
-    "title": "The Resistance",
-    "game": "Helldivers II"
+    "title": "Launch Day Mayhem",
+    "game": "Mario Kart World"
   },
   {
     "day": "Fri",
-    "date": "May 30",
+    "date": "June 6",
     "time": "8pm EST",
-    "title": "Hellfire Gala",
-    "game": "Marvel Rivals"
+    "title": "Pew Pew For Democracy",
+    "game": "Helldivers II"
+  },
+  {
+    "day": "Sat",
+    "date": "June 7",
+    "time": "10am EST",
+    "title": "Dance Dance Cardiolution",
+    "game": "Stepmania"
   }
 ]
