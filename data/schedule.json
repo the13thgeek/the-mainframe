@@ -1,30 +1,37 @@
 [
   {
     "day": "Tue",
-    "date": "June 3",
+    "date": "June 10",
     "time": "8pm EST",
-    "title": "Silent Cartographer",
-    "game": "Halo: Combat Evolved"
+    "title": "The Arbiter Rises",
+    "game": "Halo 2"
   },
   {
     "day": "Thu",
-    "date": "June 5",
+    "date": "June 12",
     "time": "8pm EST",
-    "title": "Launch Day Mayhem",
-    "game": "Mario Kart World"
-  },
-  {
-    "day": "Fri",
-    "date": "June 6",
-    "time": "8pm EST",
-    "title": "Pew Pew For Democracy",
+    "title": "Operation Whiskey Tango Foxtrot",
     "game": "Helldivers II"
   },
   {
+    "day": "Fri",
+    "date": "June 13",
+    "time": "8pm EST",
+    "title": "Puns, Pride and Pixelated Love",
+    "game": "Dream Daddy: A Dad Dating Simulator"
+  },
+  {
     "day": "Sat",
-    "date": "June 7",
+    "date": "June 14",
     "time": "10am EST",
     "title": "Dance Dance Cardiolution",
     "game": "Stepmania"
+  },
+  {
+    "day": "Sat",
+    "date": "June 14",
+    "time": "7pm EST",
+    "title": "Saving Hyrule After Dinner",
+    "game": "The Legend of Zelda: Breath of the Wild (Nintendo Switch 2 Edition)"
   }
 ]
