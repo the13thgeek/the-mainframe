@@ -34,7 +34,7 @@ const TwitchUserInfo = () => {
                                 {/* <UsernameDisplay userName={user.twitch_display_name} subMonths={user.sub_months} /> */}
                                 <div className="badges">
                                     { getTierName(user.sub_months) !== null && (<PlayerBadge badgeName={getTierName(user.sub_months)} />) }
-                                    { user.team !== null && (<PlayerBadge badgeName={user.team?.toLowerCase()} />) }
+                                    {/* { user.team !== null && (<PlayerBadge badgeName={user.team?.toLowerCase()} />) } */}
                                     { user.is_premium === 1 && (<PlayerBadge badgeName='elite' />) }
                                 </div>                                
                                 <span className="level"><i className="fa-solid fa-trophy"></i> Level {user.level}</span> <span className={'title user-level-bg level-'+user.level}>{user.title}</span>

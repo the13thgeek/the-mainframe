@@ -71,7 +71,7 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
               <UsernameDisplay userName={user.twitch_display_name} subMonths={user.sub_months} />
               <div className="badges">
                 { getTierName(user.sub_months) !== null && (<PlayerBadge badgeName={getTierName(user.sub_months)} short={true} />) }
-                { user.team !== null && (<PlayerBadge badgeName={user.team?.toLowerCase()} short={true} />) }
+                {/* { user.team !== null && (<PlayerBadge badgeName={user.team?.toLowerCase()} short={true} />) } */}
                 { user.is_premium === 1 && (<PlayerBadge badgeName='elite' short={true} />) }
               </div>
               <p className="level">Lvl {user.level} <span className={'title user-level-bg level-'+user.level}>{user.title}</span></p>
@@ -90,7 +90,7 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
               <UsernameDisplay userName={user.twitch_display_name} subMonths={user.sub_months} />
               <div className="badges">
                 { getTierName(user.sub_months) !== null && (<PlayerBadge badgeName={getTierName(user.sub_months)} short={true} />) }
-                { user.team !== null && (<PlayerBadge badgeName={user.team?.toLowerCase()} short={true} />) }
+                {/* { user.team !== null && (<PlayerBadge badgeName={user.team?.toLowerCase()} short={true} />) } */}
                 { user.is_premium === 1 && (<PlayerBadge badgeName='elite' short={true} />) }
               </div>
               <p className="level">Lvl {user.level} <span className={'title user-level-bg level-'+user.level}>{user.title}</span></p>
@@ -106,7 +106,7 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
               <UsernameDisplay userName={user.twitch_display_name} subMonths={user.sub_months} />
               <div className="badges">
                 { getTierName(user.sub_months) !== null && (<PlayerBadge badgeName={getTierName(user.sub_months)} short={true} />) }
-                { user.team !== null && (<PlayerBadge badgeName={user.team?.toLowerCase()} short={true} />) }
+                {/* { user.team !== null && (<PlayerBadge badgeName={user.team?.toLowerCase()} short={true} />) } */}
                 { user.is_premium === 1 && (<PlayerBadge badgeName='elite' short={true} />) }
               </div>
               <p className="level">Lvl {user.level} <span className={'title user-level-bg level-'+user.level}>{user.title}</span></p>
@@ -121,7 +121,7 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
             <div className="user-info">
               <p className='username'>{user.twitch_display_name}</p>
               <div className="badges">
-                {user.team !== null && (<div className={`badge-item team-`+user.team?.toLowerCase()}><span>{user.team}</span></div>)}
+                {/* {user.team !== null && (<div className={`badge-item team-`+user.team?.toLowerCase()}><span>{user.team}</span></div>)} */}
                 {user.is_premium === 1 && (<div className="badge-item mode-elite"><span>Mode Élite</span></div>)}
               </div>
               <p className="level">Lvl {user.level} <span className={'title user-level-bg level-'+user.level}>{user.title}</span></p>
