@@ -1,37 +1,16 @@
-[
-  {
-    "day": "Mon",
-    "date": "Aug 4",
-    "time": "3pm EST",
-    "title": "Saving Hyrule After Dinner",
-    "game": "The Legend of Zelda: Breath of the Wild (Nintendo Switch 2 Edition)"
-  },
+[  
   {
     "day": "Tue",
-    "date": "Aug 5",
+    "date": "Aug 19",
     "time": "8pm EST",
     "title": "Earth's Last Hope",
     "game": "Halo 3 feat. @Turbospinach & @Axl753"
   },
   {
     "day": "Thu",
-    "date": "Aug 7",
-    "time": "8pm EST",
-    "title": "Oh Banana!",
-    "game": "Donkey Kong Bananza"
-  },
-  {
-    "day": "Fri",
-    "date": "Aug 8",
+    "date": "Aug 21",
     "time": "8pm EST",
     "title": "Operation Whiskey Tango Foxtrot",
     "game": "Helldivers II"
-  },
-  {
-    "day": "Sat",
-    "date": "Aug 9",
-    "time": "10am EST",
-    "title": "Dance Dance Cardiolution",
-    "game": "Stepmania"
   }
 ]
