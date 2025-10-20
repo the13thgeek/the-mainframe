@@ -4,8 +4,8 @@ export const TWITCH_REDIRECT_URI = import.meta.env.VITE_REDIRECT_URI;
 export const getAuthUrl = () => 
   `https://id.twitch.tv/oauth2/authorize?client_id=${TWITCH_CLIENT_ID}&redirect_uri=${encodeURIComponent(TWITCH_REDIRECT_URI)}&response_type=token&scope=`;
 
-export const getUserFromStorage = () => JSON.parse(localStorage.getItem("twitchUser"));
+export const getUserFromStorage = () => JSON.parse(sessionStorage.getItem("twitchUser"));
 
-export const saveUserToStorage = (user) => localStorage.setItem("twitchUser", JSON.stringify(user));
+export const saveUserToStorage = (user) => sessionStorage.setItem("twitchUser", JSON.stringify(user));
 
-export const clearUserFromStorage = () => localStorage.removeItem("twitchUser");
+export const clearUserFromStorage = () => sessionStorage.removeItem("twitchUser");

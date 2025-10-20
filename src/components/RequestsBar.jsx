@@ -77,6 +77,8 @@ const RequestsBar = () => {
     const ws = new WebSocket(import.meta.env.VITE_WEBSOCKET_URL);
     ws.onmessage = (event) => {
       let srsRelayData = JSON.parse(event.data);
+      console.log("Relay data:");
+      // console.log(srsRelayData);
       setStatus(srsRelayData.srs);
       
       if(srsRelayData.srs) {
@@ -97,10 +99,12 @@ const RequestsBar = () => {
           });
         if(response) {
           const result = await response.json();
-          if(result.status) {
-            setStatus(result);
-            setDataUrl(`/data/${result.id}.json`);
-            setQueuedSongIds( result.queue.map((item) => item.id) );  
+          //console.log(result);
+                    
+          if(result.data.status) {
+            setStatus(result.data);
+            setDataUrl(`/data/${result.data.id}.json`);
+            setQueuedSongIds( result.data.queue.map((item) => item.id) );  
           }
           
         }
@@ -114,24 +118,22 @@ const RequestsBar = () => {
 
   },[]);
 
-  const requestSong = async (id,title,artist,user) => {
-    const requestCloud = await fetch(`${import.meta.env.VITE_CLOUD_URL}/srs/request-site`, {
+  const requestSong = async (id,user) => {
+    const requestCloud = await fetch(`${import.meta.env.VITE_CLOUD_URL}/srs/request-song`, {
       method: "POST",
       headers: {
           "x-api-key": import.meta.env.VITE_CLOUD_APIKEY,
           "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        id: id,
-        title: title,
-        artist: artist,
+        song_title: id,
         user_name: user
       })
     });
     const data = await requestCloud.json();
     //console.log(data);
     //alert(data.message);
-    openDialog(data.status,data.message);
+    openDialog(data.success,data.message);
     return false;
   }
 
@@ -141,7 +143,8 @@ const RequestsBar = () => {
 
   return (
     <>
-    { status ? (
+    {/* <pre>{JSON.stringify(status,null,2)}</pre> */}
+    { status  ? (
       <>
       <div className={`srs-indicator `+ (status.requests_open ? "on" : "off")}>
         <div className='status'>
@@ -172,7 +175,7 @@ const RequestsBar = () => {
             </div>
             <div className="action">
               { !queuedSongIds.includes(song.id) && status.requests_open && (
-                <button className="request" onClick={() => requestSong(song.id,song.title,song.artist,user.display_name)}>Request</button>
+                <button className="request" onClick={() => requestSong(song.id,user.display_name)}>Request</button>
               ) }
               { queuedSongIds.includes(song.id) && status.requests_open && (
                 <button className="request disabled" disabled>Queued</button>

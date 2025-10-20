@@ -28,7 +28,7 @@ const GachaCardList = () => {
             });
           if(response) {
             const result = await response.json();
-            setAvailableCards(result.list);
+            setAvailableCards(result.data.cards);
           }
         } catch(e) {
           console.log('[Available Cards] Error: ' + e.message);

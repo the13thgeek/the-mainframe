@@ -48,27 +48,28 @@ const Profile = () => {
     setModalOpen(false);
   };
 
-  const changeCard = async (userId, cardId) => {
-    const requestCloud = await fetch(`${import.meta.env.VITE_CLOUD_URL}/mainframe/change-card-site`, {
+  const changeCard = async (userId, userName, cardName) => {
+    const requestCloud = await fetch(`${import.meta.env.VITE_CLOUD_URL}/mainframe/change-card`, {
       method: "POST",
       headers: {
           "x-api-key": import.meta.env.VITE_CLOUD_APIKEY,
           "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        user_id: userId,
-        card_id: cardId
+        twitch_id: userId,
+        twitch_display_name: userName,
+        new_card_name: cardName
       })
     });
     const data = await requestCloud.json();    
 
-    if(data.status) {
+    if(data.success) {
       let newUserData = user;
       let newActiveCard = null;
       let newCardSet = [];
 
       for(let card of user.user_cards) {
-        if(card.card_id == cardId) {
+        if(card.sysname == cardName) {
           newActiveCard = card;
           card.is_default = 1;
         } else {
@@ -81,7 +82,7 @@ const Profile = () => {
       saveUserToStorage(newUserData);
       setUserCards(newCardSet);
     }
-    openDialog(data.status, data.message);
+    openDialog(data.success, data.message);
   }
 
   useEffect(() => {
@@ -141,7 +142,7 @@ const Profile = () => {
                     </div>  
                     <div className="card-actions">
                       {card.is_default !== 1 ? (
-                        <button className="set-active" onClick={() => changeCard(user.local_id,card.card_id)}>Set Active</button>
+                        <button className="set-active" onClick={() => changeCard(user.twitch_id,user.twitch_display_name,card.sysname)}>Set Active</button>
                       ) : (
                         <span>Active</span>
                       )}
@@ -171,7 +172,7 @@ const Profile = () => {
                     </div>  
                     <div className="card-actions">
                       {card.is_default !== 1 ? (
-                        <button className="set-active" onClick={() => changeCard(user.local_id,card.card_id)}>Set Active</button>
+                        <button className="set-active" onClick={() => changeCard(user.twitch_id,user.twitch_display_name,card.sysname)}>Set Active</button>
                       ) : (
                         <span>Active</span>
                       )}
@@ -201,7 +202,7 @@ const Profile = () => {
                     </div>  
                     <div className="card-actions">
                       {card.is_default !== 1 ? (
-                        <button className="set-active" onClick={() => changeCard(user.local_id,card.card_id)}>Set Active</button>
+                        <button className="set-active" onClick={() => changeCard(user.twitch_id,user.twitch_display_name,card.sysname)}>Set Active</button>
                       ) : (
                         <span>Active</span>
                       )}

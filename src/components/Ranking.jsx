@@ -40,7 +40,7 @@ const Ranking = ({ rankType = null, itemsToShow = 5, valueLabels = null, enableU
           });
         if(response) {
           const result = await response.json();
-          setRankData(result);
+          setRankData(result.data);
         }
       } catch(e) {
         console.log('[Ranking] Error: ' + e.message);

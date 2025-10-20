@@ -48,7 +48,7 @@ const Catalog = () => {
           });
         if(response) {
           const result = await response.json();
-          setCatalog(result.catalog);
+          setCatalog(result.data.catalog);
           setIsLoading(false);
         }
       } catch(e) {

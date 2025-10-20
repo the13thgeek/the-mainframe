@@ -28,7 +28,7 @@ const DialogUserPreview = ({ userId }) => {
           });
         if(response) {
           const result = await response.json();
-          setUserData(result);
+          setUserData(result.data);
           setLoading(false);
         }
       } catch(e) {

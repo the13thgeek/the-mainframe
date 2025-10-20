@@ -23,14 +23,15 @@ const Home = () => {
 
     const fetchLiveData = async () => {
       // Fetch live data
-      const liveResponse = await fetch(`https://api.twitch.tv/helix/streams?user_login=the13thgeek`, {
+      const liveResponse = await fetch(`${import.meta.env.VITE_CLOUD_URL}/twitch/live-data`, {
+        method: 'POST',
         headers: {
-            'Authorization': `Bearer ${TWITCH_ACCESS_TOKEN}`,
-            'Client-Id': `${TWITCH_EXT_CLIENT_ID}`
+            "x-api-key": import.meta.env.VITE_CLOUD_APIKEY,
+            "Content-Type": "application/json"
         },
       });
       const data = await liveResponse.json();
-      const liveDataFeed = data.data[0];
+      const liveDataFeed = data.data;
       if(liveDataFeed) {
         liveDataFeed.thumbnail_url = thumbnailResize(liveDataFeed.thumbnail_url,1280,720);
       }

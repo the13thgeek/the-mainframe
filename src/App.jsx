@@ -46,7 +46,7 @@ function App() {
                     .then((res) => res.json())
                     .then((localData) => {
                         if(localData) {
-                            user = { ...user, ...localData };
+                            user = { ...user, ...localData.data };
                         }
                         saveUserToStorage(user);                        
                         window.location.hash = "#/"; // Clean URL, keep `HashRouter` path
