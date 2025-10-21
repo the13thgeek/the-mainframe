@@ -13,7 +13,7 @@ const PlayerRanking = ({ enableUserView = false }) => {
   const [modalContent, setModalContent] = useState(null);
 
   const openUserInfo = (userId) => {
-    if(userId) {
+    if(userId > 0) {
       setModalContent(
         <DialogUserPreview userId={userId} />
       );
@@ -39,7 +39,28 @@ const PlayerRanking = ({ enableUserView = false }) => {
           });
         if(response) {
           const result = await response.json();
-          setRankData(result.data);
+          const ranks = result.data;
+          const minItems = 5;
+
+          while(ranks.length < minItems) {
+            ranks.push({
+              active_card: null,
+              exp: 0,
+              id: -1,
+              is_premium: 0,
+              level: 1,
+              levelProgress: 0,
+              sub_months: 0,
+              sysname: "standard",
+              team: null,
+              title: "n00b",
+              twitch_avatar: "/assets/avatar-null.png",
+              twitch_display_name: "[no data]",
+              values: 0
+            });
+          }
+          
+          setRankData(ranks);
         }
       } catch(e) {
         console.log('[Ranking] Error: ' + e.message);
