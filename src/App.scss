@@ -193,6 +193,7 @@ footer {
 }
 
 .user-level {
+  &.level-0  { color: #999999; }
   &.level-1  { color: #0096C7; }
   &.level-2  { color: #00A5BC; }
   &.level-3  { color: #00B4B1; }
@@ -246,6 +247,7 @@ footer {
 }
 
 .user-level-bg {
+  &.level-0  { background-color: #cccccc; }
   &.level-1  { background-color: #0096C7; }
   &.level-2  { background-color: #00A5BC; }
   &.level-3  { background-color: #00B4B1; }

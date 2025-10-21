@@ -45,10 +45,10 @@ const PlayerRanking = ({ enableUserView = false }) => {
           while(ranks.length < minItems) {
             ranks.push({
               active_card: null,
-              exp: 0,
+              exp: -1,
               id: -1,
               is_premium: 0,
-              level: 1,
+              level: 0,
               levelProgress: 0,
               sub_months: 0,
               sysname: "standard",
@@ -90,10 +90,13 @@ const PlayerRanking = ({ enableUserView = false }) => {
             { user.is_premium === 1 && (<PlayerBadge badgeName='elite' />) }
             {/* { user.team !== null && (<PlayerBadge badgeName={user.team?.toLowerCase()} />) } */}
           </div>
-          <p className='player-level'>
-            <span className="level">Lvl {user.level}</span>
-            <span className='title'>{user.title}</span>
-          </p>
+          {user.level > 0 && (
+            <p className='player-level'>
+              <span className="level">Lvl {user.level}</span>
+              <span className='title'>{user.title}</span>
+            </p>
+          )}
+          
         </li>
       ))}      
     </ol>
