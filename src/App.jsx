@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Catalog from "./pages/Catalog";
 import Privacy from "./pages/Privacy";
+import FlightLog from "./pages/FlightLog";
 //import GlobalNotice from "./components/GlobalNotice";
 import Footer from "./components/Footer";
 import { TWITCH_REDIRECT_URI, TWITCH_CLIENT_ID, saveUserToStorage } from "./utils/auth";
@@ -77,6 +78,7 @@ function App() {
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/catalog" element={<Catalog />} />
                 <Route path="/privacy-policy" element={<Privacy />} />
+                <Route path="/flight-log" element={<FlightLog />} />
             </Routes>
             <Footer />
         </Router>

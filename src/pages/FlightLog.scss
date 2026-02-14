@@ -1,0 +1,45 @@
+main.page-flight-report {
+  .tile.flight-report {
+  }
+
+  section {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    padding: 40px 20px;
+
+    &.front-page {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      background: linear-gradient(135deg, #0288d1 0%, #01579b 100%);
+      color: white;
+
+      &>* {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 50px;
+        text-transform: uppercase;
+      }
+      h2 {
+        font-weight: 500;
+      }
+      p {
+        &.instruction {
+          font-size: 18px;
+        }
+        &.user-name {
+          font-size: 28px;
+          font-weight: 600;
+        }
+      }
+      img.photo {
+        border-radius: 50%;
+        width: 200px;
+      }
+    }
+  }
+}

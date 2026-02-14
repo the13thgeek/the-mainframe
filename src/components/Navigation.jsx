@@ -28,7 +28,11 @@ const Navigation = () => {
           </li>
           </>
         )}
-        
+        {/* <li>
+          <NavLink to="/flight-log" className={({isActive}) => isActive ? "active" : "" }>
+          Flight Log
+          </NavLink>
+        </li> */}
         <li>
           <Link className='domain-link' to='https://the13thgeek.com' target='_blank'>
           the13thgeek.com <i className="fa-solid fa-up-right-from-square"></i>
