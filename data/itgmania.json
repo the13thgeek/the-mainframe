@@ -1,1919 +1,2589 @@
 {
-  "game_id": "itgmania",
-  "game_title": "ITGmania",
-  "game_year": 2025,
-  "songs":[
-    {
-      "title": "!",
-      "artist": "Onyx",
-      "id": "XXXXXX-YYYY9714"
-    },
-    {
-      "title": "%%",
-      "artist": "Apink",
-      "id": "EUNGEU-YYYY3787"
-    },
-    {
-      "title": "365",
-      "artist": "Zedd & Katy Perry",
-      "id": "365XXX-365Y4736"
-    },
-    {
-      "title": "4 Walls",
-      "artist": "f(x)",
-      "id": "4WALLS-4WYY5425"
-    },
-    {
-      "title": "AUTOMATIC",
-      "artist": "Tokyo Machine & Dyson",
-      "id": "AUTOMA-AUTO7591"
-    },
-    {
-      "title": "Agent Blatant",
-      "artist": "Ernest + Julio",
-      "id": "AGENTB-ABYY1692"
-    },
-    {
-      "title": "Aliens in Our Midst",
-      "artist": "Corporation",
-      "id": "ALIENS-AIOM4716"
-    },
-    {
-      "title": "All I Want Is You",
-      "artist": "m-flo",
-      "id": "ALLIWA-AIWI2988"
-    },
-    {
-      "title": "All She Wants",
-      "artist": "Kim Petras",
-      "id": "ALLSHE-ASWY4908"
-    },
-    {
-      "title": "All That Matters",
-      "artist": "Andreas Viklund",
-      "id": "ALLTHA-ATMY2150"
-    },
-    {
-      "title": "All That She Wants",
-      "artist": "Ace Of Base",
-      "id": "ALLTHA-ATSW8739"
-    },
-    {
-      "title": "Always in My Heart",
-      "artist": "Lagoona",
-      "id": "ALWAYS-AIMH7235"
-    },
-    {
-      "title": "Amore",
-      "artist": "Uniq",
-      "id": "AMOREX-AMOR3809"
-    },
-    {
-      "title": "Amore",
-      "artist": "Uniq",
-      "id": "AMOREE-AMOR4920"
-    },
-    {
-      "title": "Amore",
-      "artist": "Camilot",
-      "id": "AMORER-AMOR2169"
-    },
-    {
-      "title": "Anubis",
-      "artist": "Banzai",
-      "id": "ANUBIS-ANUB7079"
-    },
-    {
-      "title": "Applause",
-      "artist": "Lady Gaga",
-      "id": "APPLAU-APPL1325"
-    },
-    {
-      "title": "Are U Ready?",
-      "artist": "Pakito",
-      "id": "AREURE-AURY6250"
-    },
-    {
-      "title": "Arriba",
-      "artist": "Little Big & Tatarka",
-      "id": "ARRIBA-ARRI8763"
-    },
-    {
-      "title": "Art City",
-      "artist": "Virgill",
-      "id": "ARTCIT-ACYY8773"
-    },
-    {
-      "title": "Autoload",
-      "artist": "Nightfly",
-      "id": "AUTOLO-AUTO7424"
-    },
-    {
-      "title": "Ba$$in",
-      "artist": "Yelle",
-      "id": "BASSIN-BAYY8696"
-    },
-    {
-      "title": "Baby Baby",
-      "artist": "Bambee",
-      "id": "BABYBA-BBYY4385"
-    },
-    {
-      "title": "Baby Don't You Want Me",
-      "artist": "Nina",
-      "id": "BABYDO-BDYW9916"
-    },
-    {
-      "title": "Bad Dream",
-      "artist": "Bermuda",
-      "id": "BADDRE-BDYY5490"
-    },
-    {
-      "title": "Badster",
-      "artist": "HYO",
-      "id": "BADSTE-BADS8724"
-    },
-    {
-      "title": "Badster",
-      "artist": "HYO",
-      "id": "BADSTE-BADS7865"
-    },
-    {
-      "title": "Bagpipe",
-      "artist": "A-Moe",
-      "id": "BAGPIP-BAGP1180"
-    },
-    {
-      "title": "Bassa Sababa",
-      "artist": "Netta",
-      "id": "BASSAS-BSYY9847"
-    },
-    {
-      "title": "Be My Friend",
-      "artist": "Lagoona",
-      "id": "BEMYFR-BMFY8073"
-    },
-    {
-      "title": "Believe",
-      "artist": "VINAI & Alexandra Stan",
-      "id": "BELIEV-BELI8095"
-    },
-    {
-      "title": "Bend Your Mind",
-      "artist": "Reflection Theory",
-      "id": "BENDYO-BYMY2308"
-    },
-    {
-      "title": "Beware The Dog",
-      "artist": "The Griswolds",
-      "id": "BEWARE-BTDY7999"
-    },
-    {
-      "title": "Big Boom",
-      "artist": "Reve",
-      "id": "BIGBOO-BBYY2286"
-    },
-    {
-      "title": "Birdie",
-      "artist": "Doolittle",
-      "id": "BIRDIE-BIRD2615"
-    },
-    {
-      "title": "Blame",
-      "artist": "Calvin Harris",
-      "id": "BLAMEF-BLAM9437"
-    },
-    {
-      "title": "Bloodrush",
-      "artist": "Tekno Dred",
-      "id": "BLOODR-BLOO8668"
-    },
-    {
-      "title": "Blow My Mind",
-      "artist": "Alphadelta",
-      "id": "BLOWMY-BMMY6775"
-    },
-    {
-      "title": "Blow Your Mind",
-      "artist": "Dua Lipa",
-      "id": "BLOWYO-BYMY4281"
-    },
-    {
-      "title": "Bon Appetit",
-      "artist": "ALIKA",
-      "id": "BONAPP-BAYY3004"
-    },
-    {
-      "title": "Boogie Down",
-      "artist": "Inurvise",
-      "id": "BOOGIE-BDYY6089"
-    },
-    {
-      "title": "Bouff",
-      "artist": "Machinae Supremacy",
-      "id": "BOUFFX-BOUF2067"
-    },
-    {
-      "title": "Boy With Luv",
-      "artist": "BTS",
-      "id": "BOYWIT-BWLY7158"
-    },
-    {
-      "title": "Bubble Dancer",
-      "artist": "Crispy",
-      "id": "BUBBLE-BDYY6053"
-    },
-    {
-      "title": "Bumble Bee",
-      "artist": "Bambee",
-      "id": "BUMBLE-BBYY9224"
-    },
-    {
-      "title": "Buzina",
-      "artist": "Pabllo Vittar",
-      "id": "BUZINA-BUZI7931"
-    },
-    {
-      "title": "C'est la Vie",
-      "artist": "B*Witched",
-      "id": "CESTLA-CLVY8651"
-    },
-    {
-      "title": "Call My Name",
-      "artist": "Cheryl",
-      "id": "CALLMY-CMNY2301"
-    },
-    {
-      "title": "Cannonball",
-      "artist": "Showtek & Justin Prime",
-      "id": "CANNON-CANN5222"
-    },
-    {
-      "title": "Car Keys",
-      "artist": "Alok & Ava Max",
-      "id": "CARKEY-CKYY1086"
-    },
-    {
-      "title": "Castle In The Sky",
-      "artist": "Kim Petras",
-      "id": "CASTLE-CITS7793"
-    },
-    {
-      "title": "Cave Drips",
-      "artist": "Adam Vox",
-      "id": "CAVEDR-CDYY8018"
-    },
-    {
-      "title": "Cha Cha Cha",
-      "artist": "Kaarija",
-      "id": "CHACHA-CCCY6567"
-    },
-    {
-      "title": "Changes",
-      "artist": "Rivera & Haze",
-      "id": "CHANGE-CHAN3356"
-    },
-    {
-      "title": "Charlene",
-      "artist": "Missing Heart",
-      "id": "CHARLE-CHAR8562"
-    },
-    {
-      "title": "Charlene",
-      "artist": "Gracia",
-      "id": "CHARLE-CHAR7607"
-    },
-    {
-      "title": "Chase Me",
-      "artist": "Nitro Fun & Linney",
-      "id": "CHASEM-CMYY8802"
-    },
-    {
-      "title": "Choose Your Fighter",
-      "artist": "Ava Max",
-      "id": "CHOOSE-CYFY5802"
-    },
-    {
-      "title": "Chopstix",
-      "artist": "Sonic Dimension",
-      "id": "CHOPST-CHOP8194"
-    },
-    {
-      "title": "Circus",
-      "artist": "Britney Spears",
-      "id": "CIRCUS-CIRC4489"
-    },
-    {
-      "title": "Clockwork Genesis",
-      "artist": "Inspector K",
-      "id": "CLOCKW-CGYY8312"
-    },
-    {
-      "title": "Coming Out",
-      "artist": "Playmaker feat. Robin",
-      "id": "COMING-COYY6665"
-    },
-    {
-      "title": "Countdown",
-      "artist": "Amber",
-      "id": "COUNTD-COUN9799"
-    },
-    {
-      "title": "Crazy",
-      "artist": "DJ Doo",
-      "id": "CRAZYX-CRAZ9948"
-    },
-    {
-      "title": "Crazy Little Love",
-      "artist": "Nuage",
-      "id": "CRAZYL-CLLY9315"
-    },
-    {
-      "title": "Crush",
-      "artist": "Weki Meki",
-      "id": "CRUSHX-CRUS7081"
-    },
-    {
-      "title": "Cryin' In The Rain",
-      "artist": "ItaloBrothers",
-      "id": "CRYINI-CITR8196"
-    },
-    {
-      "title": "Cryosleep",
-      "artist": "Machinae Supremacy",
-      "id": "CRYOSL-CRYO4351"
-    },
-    {
-      "title": "D-Code",
-      "artist": "Dust Devil",
-      "id": "DCODEX-DCOY3200"
-    },
-    {
-      "title": "DJ Party",
-      "artist": "BB Hayes",
-      "id": "DJPART-DPYY7373"
-    },
-    {
-      "title": "DJ Superstar",
-      "artist": "Oscillator X",
-      "id": "DJSUPE-DSYY1725"
-    },
-    {
-      "title": "Da Roots",
-      "artist": "Mind Reflection",
-      "id": "DAROOT-DRYY1037"
-    },
-    {
-      "title": "Dalla Dalla",
-      "artist": "ITZY",
-      "id": "DALLAD-DDYY6251"
-    },
-    {
-      "title": "Dance All Night",
-      "artist": "Oscillator X",
-      "id": "DANCEA-DANY2327"
-    },
-    {
-      "title": "Dance All Over Me",
-      "artist": "George Ezra",
-      "id": "DANCEA-DAOM9646"
-    },
-    {
-      "title": "Dance Vibrations",
-      "artist": "Elpis",
-      "id": "DANCEV-DVYY1637"
-    },
-    {
-      "title": "Dancing All Alone",
-      "artist": "Morgan Page & TELYKAST",
-      "id": "DANCIN-DAAY1519"
-    },
-    {
-      "title": "Darkest Night",
-      "artist": "Kevu & NIVIRO",
-      "id": "DARKES-DNYY5532"
-    },
-    {
-      "title": "Dawn",
-      "artist": "KaW",
-      "id": "DAWNXX-DAWN3038"
-    },
-    {
-      "title": "Dawn",
-      "artist": "KaW vs. i09",
-      "id": "DAWNPE-DAWN6337"
-    },
-    {
-      "title": "Deeper Shade Of Blue",
-      "artist": "Steps",
-      "id": "DEEPER-DSOB4158"
-    },
-    {
-      "title": "Delirium",
-      "artist": "☺",
-      "romanizedArtist": "Smiley",
-      "id": "DELIRI-DELI6320"
-    },
-    {
-      "title": "Destiny",
-      "artist": "☺",
-      "romanizedArtist": "Smiley",
-      "id": "DESTIN-DEST8325"
-    },
-    {
-      "title": "Determinator",
-      "artist": "Dust Devil",
-      "id": "DETERM-DETE1770"
-    },
-    {
-      "title": "Ding Dong Song",
-      "artist": "E-Type",
-      "id": "DINGDO-DDSY1584"
-    },
-    {
-      "title": "Dirty Car",
-      "artist": "Studio Killers",
-      "id": "DIRTYC-DCYY9373"
-    },
-    {
-      "title": "Disco Dance",
-      "artist": "Domincer",
-      "id": "DISCOD-DDYY1410"
-    },
-    {
-      "title": "Disconnected",
-      "artist": "Inspector K",
-      "id": "DISCON-DISC7555"
-    },
-    {
-      "title": "Disconnected",
-      "artist": "Inspector K",
-      "id": "DISCON-DISC1184"
-    },
-    {
-      "title": "Disconnected",
-      "artist": "Inspector K",
-      "id": "DISCON-DISC9374"
-    },
-    {
-      "title": "Disconnected",
-      "artist": "CanBlaster",
-      "id": "DISCON-DISC9950"
-    },
-    {
-      "title": "Disconnected Disco",
-      "artist": "Kid Whatever",
-      "id": "DISCON-DDYY9134"
-    },
-    {
-      "title": "Disconnected Zeo",
-      "artist": "G5",
-      "id": "DISCON-DZYY8439"
-    },
-    {
-      "title": "Do It!!!",
-      "artist": "HiBiki",
-      "id": "DOITDJ-DIYY2715"
-    },
-    {
-      "title": "Do Si Do",
-      "artist": "Flo Rida",
-      "id": "DOSIDO-DSDY4551"
-    },
-    {
-      "title": "Do U Love Me",
-      "artist": "DJ Doo",
-      "id": "DOULOV-DULM2766"
-    },
-    {
-      "title": "Do What You Wanna Do",
-      "artist": "Playmaker",
-      "id": "DOWHAT-DWYW6217"
-    },
-    {
-      "title": "Do Your Thing",
-      "artist": "Basement Jaxx",
-      "id": "DOYOUR-DYTY5493"
-    },
-    {
-      "title": "Don't Panic",
-      "artist": "Street Corner Poets",
-      "id": "DONTPA-DPYY1888"
-    },
-    {
-      "title": "Don't Promise Me",
-      "artist": "Reflection Theory",
-      "id": "DONTPR-DPMY6403"
-    },
-    {
-      "title": "Don't Promise Me",
-      "artist": "Reflection Theory",
-      "id": "HAPPIN-DPMY5316"
-    },
-    {
-      "title": "Dr. Love",
-      "artist": "Stella Getz",
-      "id": "DRLOVE-DLYY4997"
-    },
-    {
-      "title": "Dragostea Din Tei",
-      "artist": "Lucas Prata",
-      "id": "DRAGOS-DDTY8197"
-    },
-    {
-      "title": "Dream to Nightmare",
-      "artist": "Nightmare",
-      "id": "DREAMT-DTNY7299"
-    },
-    {
-      "title": "Dreamer",
-      "artist": "J090",
-      "id": "DREAME-DREA3626"
-    },
-    {
-      "title": "Dreams of Passion",
-      "artist": "Dax",
-      "id": "DREAMS-DOPY1684"
-    },
-    {
-      "title": "Drifting Away",
-      "artist": "Filo Bedo",
-      "id": "DRIFTI-DAYY1161"
-    },
-    {
-      "title": "Driving Force Classical",
-      "artist": "Digital Explosion",
-      "id": "DRIVIN-DFCY8147"
-    },
-    {
-      "title": "Drought",
-      "artist": "Dropgun",
-      "id": "DROUGH-DROU7266"
-    },
-    {
-      "title": "Dumb & Dumber",
-      "artist": "iKON",
-      "id": "DUMBDU-DDYY5098"
-    },
-    {
-      "title": "Dynamite",
-      "artist": "E-Rotic",
-      "id": "DYNAMI-DYNA6517"
-    },
-    {
-      "title": "El Mariachi",
-      "artist": "Bassjackers & Jay Hardway",
-      "id": "ELMARI-EMYY3365"
-    },
-    {
-      "title": "Emergency",
-      "artist": "Kim Leoni",
-      "id": "EMERGE-EMER7758"
-    },
-    {
-      "title": "Energizer",
-      "artist": "ZiGZaG",
-      "id": "ENERGI-ENER7677"
-    },
-    {
-      "title": "Esperanza",
-      "artist": "KaW",
-      "id": "ESPERA-ESPE6708"
-    },
-    {
-      "title": "Euphoria",
-      "artist": "KaW feat. ☺",
-      "romanizedArtist": "KaW feat. Smiley",
-      "id": "EUPHOR-EUPH3724"
-    },
-    {
-      "title": "Exotica",
-      "artist": "Banzai",
-      "id": "EXOTIC-EXOT7019"
-    },
-    {
-      "title": "Fancy",
-      "artist": "Twice",
-      "id": "FANCYX-FANC7513"
-    },
-    {
-      "title": "Fantasia",
-      "artist": "☺",
-      "romanizedArtist": "Smiley",
-      "id": "FANTAS-FANT3474"
-    },
-    {
-      "title": "Feels Just Like That Night",
-      "artist": "Eskimo & Icebird",
-      "id": "FEELSJ-FJLT6439"
-    },
-    {
-      "title": "Five Fathoms",
-      "artist": "Everything But The Girl",
-      "id": "FIVEFA-FFYY6823"
-    },
-    {
-      "title": "Fleadh Uncut",
-      "artist": "Parker/Stiles",
-      "id": "FLEADH-FUYY4384"
-    },
-    {
-      "title": "Floorfiller",
-      "artist": "A-Teens",
-      "id": "FLOORF-FLOO8880"
-    },
-    {
-      "title": "Flowers",
-      "artist": "Rob IYF & Al Storm",
-      "id": "FLOWER-FLOW7491"
-    },
-    {
-      "title": "Fly Away",
-      "artist": "Missing Heart",
-      "id": "FLYAWA-FAYY8460"
-    },
-    {
-      "title": "Fly With Me",
-      "artist": "Nina",
-      "id": "FLYWIT-FWMY7921"
-    },
-    {
-      "title": "Flying High",
-      "artist": "Filo Bedo",
-      "id": "FLYING-FHYY5932"
-    },
-    {
-      "title": "Frozen Fire",
-      "artist": "Kbit",
-      "id": "FROZEN-FFYY4548"
-    },
-    {
-      "title": "Fucking Want",
-      "artist": "Rob IYF & Al Storm",
-      "id": "FUCKIN-FWYY6563"
-    },
-    {
-      "title": "Funk Factory",
-      "artist": "Money Deluxe",
-      "id": "FUNKFA-FFYY2777"
-    },
-    {
-      "title": "Get Away",
-      "artist": "E-Rotic",
-      "id": "GETAWA-GAYY3827"
-    },
-    {
-      "title": "Get Happy",
-      "artist": "Boom Boom Room",
-      "id": "GETHAP-GHYY1493"
-    },
-    {
-      "title": "Get Outta My Heart",
-      "artist": "Ava Max",
-      "id": "GETOUT-GOMH4782"
-    },
-    {
-      "title": "Get Up",
-      "artist": "Marwin & D-fly feat. Bina",
-      "id": "GETUPX-GUYY3764"
-    },
-    {
-      "title": "Girls",
-      "artist": "Sugababes",
-      "id": "GIRLSX-GIRL1273"
-    },
-    {
-      "title": "Glamazon",
-      "artist": "RuPaul",
-      "id": "GLAMAZ-GLAM3584"
-    },
-    {
-      "title": "Go 60 Go",
-      "artist": "Takoyaki",
-      "id": "GO60GO-G6GY8086"
-    },
-    {
-      "title": "Got to Have You",
-      "artist": "Nightfly",
-      "id": "GOTTOH-GTHY7730"
-    },
-    {
-      "title": "Groovin' Motion",
-      "artist": "Sonic Dimension",
-      "id": "GROOVI-GMYY4774"
-    },
-    {
-      "title": "Habanera 1",
-      "artist": "Boom Boom Room",
-      "id": "HABANE-H1YY7950"
-    },
-    {
-      "title": "Hand of Time",
-      "artist": "Reflection Theory",
-      "id": "HANDOF-HOTY3722"
-    },
-    {
-      "title": "Hands Up",
-      "artist": "Lagoona",
-      "id": "HANDSU-HUYY1378"
-    },
-    {
-      "title": "Hanging On",
-      "artist": "Cyrex",
-      "id": "HANGIN-HOYY7128"
-    },
-    {
-      "title": "Hardcore Symphony",
-      "artist": "Digital Explosion",
-      "id": "HARDCO-HSYY7745"
-    },
-    {
-      "title": "Hardcore of the North",
-      "artist": "Digital Explosion",
-      "id": "HARDCO-HOTN5263"
-    },
-    {
-      "title": "Hardkore Atomic",
-      "artist": "CanBlaster",
-      "id": "HARDKO-HAYY1300"
-    },
-    {
-      "title": "Hasse Mich",
-      "artist": "Onyx",
-      "id": "HASSEM-HMYY9700"
-    },
-    {
-      "title": "Hearts of Ice",
-      "artist": "Missing Heart",
-      "id": "HEARTS-HOIY7760"
-    },
-    {
-      "title": "Heel and Toe",
-      "artist": "KURi-ZiLL",
-      "id": "HEELAN-HATY6472"
-    },
-    {
-      "title": "Here We Go Again",
-      "artist": "Oliver Tree & David Guetta",
-      "id": "HEREWE-HWGA2127"
-    },
-    {
-      "title": "High",
-      "artist": "Digital Explosion",
-      "id": "HIGHXX-HIGH3984"
-    },
-    {
-      "title": "Hillbilly Hardcore",
-      "artist": "Benga Boys",
-      "id": "HILLBI-HHYY2555"
-    },
-    {
-      "title": "Hip Hop Jam",
-      "artist": "Indiggo",
-      "id": "HIPHOP-HHJY6597"
-    },
-    {
-      "title": "Hispanic Panic",
-      "artist": "Chucho Merchan",
-      "id": "HISPAN-HPYY5396"
-    },
-    {
-      "title": "Holler",
-      "artist": "Spice Girls",
-      "id": "HOLLER-HOLL6666"
-    },
-    {
-      "title": "Holy Guacamole",
-      "artist": "Chucho Merchan",
-      "id": "HOLYGU-HGYY4357"
-    },
-    {
-      "title": "Horsey",
-      "artist": "Alex Chapman",
-      "id": "HORSEY-HORS7391"
-    },
-    {
-      "title": "Hurt Locker",
-      "artist": "9Muses",
-      "id": "HURTLO-HLYY5490"
-    },
-    {
-      "title": "Hustle Beach",
-      "artist": "Papa J",
-      "id": "HUSTLE-HBYY5978"
-    },
-    {
-      "title": "Hybrid",
-      "artist": "Machinae Supremacy",
-      "id": "HYBRID-HYBR3616"
-    },
-    {
-      "title": "Hyper Hyper",
-      "artist": "☺",
-      "romanizedArtist": "Smiley",
-      "id": "HYPERH-HHYY1551"
-    },
-    {
-      "title": "I Don't Want It At All",
-      "artist": "Kim Petras",
-      "id": "IDONTW-IDWI9013"
-    },
-    {
-      "title": "I Think I Like That Sound",
-      "artist": "Kid Whatever",
-      "id": "ITHINK-ITIL9406"
-    },
-    {
-      "title": "I Wrote A Song",
-      "artist": "Mae Muller",
-      "id": "IWROTE-IWAS1871"
-    },
-    {
-      "title": "I'll Get There Anyway",
-      "artist": "Sammi Morelli",
-      "id": "ILLGET-IGTA4407"
-    },
-    {
-      "title": "I'm A Slave 4 U",
-      "artist": "Britney Spears",
-      "id": "IMASLA-IAS47608"
-    },
-    {
-      "title": "I'm OK",
-      "artist": "Little Big",
-      "id": "IMOKXX-IOYY5263"
-    },
-    {
-      "title": "Ice Cream Cake",
-      "artist": "Red Velvet",
-      "id": "ICECRE-ICCY2659"
-    },
-    {
-      "title": "Icy",
-      "artist": "ITZY",
-      "id": "ICYXXX-ICYY9546"
-    },
-    {
-      "title": "If U Seek Amy",
-      "artist": "Britney Spears",
-      "id": "IFUSEE-IUSA6725"
-    },
-    {
-      "title": "Ignite",
-      "artist": "K-391",
-      "id": "IGNITE-IGNI7037"
-    },
-    {
-      "title": "Incognito",
-      "artist": "Inspector K",
-      "id": "INCOGN-INCO5266"
-    },
-    {
-      "title": "Infection",
-      "artist": "Inspector K",
-      "id": "INFECT-INFE5949"
-    },
-    {
-      "title": "Into My Dream",
-      "artist": "Lagoona",
-      "id": "INTOMY-IMDY7803"
-    },
-    {
-      "title": "It Gets Better",
-      "artist": "Eskimo Feat. Maria Merete",
-      "id": "ITGETS-IGBY8731"
-    },
-    {
-      "title": "It's Over Now",
-      "artist": "Virgill",
-      "id": "ITSOVE-IONY1089"
-    },
-    {
-      "title": "Ize Pie",
-      "artist": "Headtwist & Pump",
-      "id": "IZEPIE-IPYY8185"
-    },
-    {
-      "title": "Jenny",
-      "artist": "Studio Killers",
-      "id": "JENNYX-JENN9395"
-    },
-    {
-      "title": "Jet World",
-      "artist": "Remixed by Ryu",
-      "id": "JETWOR-JWYY3769"
-    },
-    {
-      "title": "Juice",
-      "artist": "Lizzo",
-      "id": "JUICEX-JUIC3251"
-    },
-    {
-      "title": "July",
-      "artist": "☺",
-      "romanizedArtist": "Smiley",
-      "id": "JULYXX-JULY4679"
-    },
-    {
-      "title": "July",
-      "artist": "js14",
-      "id": "JULYEU-JULY4635"
-    },
-    {
-      "title": "Kagami",
-      "artist": "KaW",
-      "id": "KAGAMI-KAGA6223"
-    },
-    {
-      "title": "Kahu",
-      "artist": "Asha",
-      "id": "KAHUXX-KAHU8191"
-    },
-    {
-      "title": "Kamikaze",
-      "artist": "Tia Tia",
-      "id": "KAMIKA-KAMI1520"
-    },
-    {
-      "title": "Karma",
-      "artist": "Blackswan",
-      "id": "KARMAX-KARM2484"
-    },
-    {
-      "title": "Kill This Love",
-      "artist": "BLACKPINK",
-      "id": "KILLTH-KTLY9190"
-    },
-    {
-      "title": "King Kong",
-      "artist": "Shanadoo",
-      "id": "KINGKO-KKYY3792"
-    },
-    {
-      "title": "King Of Hearts",
-      "artist": "Kim Petras",
-      "id": "KINGOF-KOHY7963"
-    },
-    {
-      "title": "Kings & Queens",
-      "artist": "Ava Max",
-      "id": "KINGSQ-KQYY1018"
-    },
-    {
-      "title": "Kiss Me",
-      "artist": "E-Rotic",
-      "id": "KISSME-KMYY9394"
-    },
-    {
-      "title": "Kiss Me Red",
-      "artist": "Crispy",
-      "id": "KISSME-KMRY4177"
-    },
-    {
-      "title": "Know Your Enemy",
-      "artist": "Hybrid",
-      "id": "KNOWYO-KYEY7252"
-    },
-    {
-      "title": "LALALAY",
-      "artist": "Sunmi",
-      "id": "LALALA-LALA8190"
-    },
-    {
-      "title": "La Perla",
-      "artist": "Kobojsarna",
-      "id": "LAPERL-LPYY3393"
-    },
-    {
-      "title": "Land of Imagination",
-      "artist": "Lagoona",
-      "id": "LANDOF-LOIY8749"
-    },
-    {
-      "title": "Land of the Rising Sun",
-      "artist": "Spacekats",
-      "id": "LANDOF-LOTR3729"
-    },
-    {
-      "title": "Land of the Rising Sun",
-      "artist": "Spacekats",
-      "id": "LANDOF-LOTR8781"
-    },
-    {
-      "title": "Lemmings on the Run",
-      "artist": "E-Rotic",
-      "id": "LEMMIN-LOTR5797"
-    },
-    {
-      "title": "Less Than Three",
-      "artist": "Becky",
-      "id": "LESSTH-LTTY7743"
-    },
-    {
-      "title": "Let Me Be The One",
-      "artist": "Sammi Morelli",
-      "id": "LETMEB-LMBT9395"
-    },
-    {
-      "title": "Let My Love Go Blind",
-      "artist": "Nina",
-      "id": "LETMYL-LMLG8230"
-    },
-    {
-      "title": "Life of a Butterfly",
-      "artist": "Nina",
-      "id": "LIFEOF-LOAB8283"
-    },
-    {
-      "title": "Lipstick Kiss",
-      "artist": "Ernest + Julio",
-      "id": "LIPSTI-LKYY9627"
-    },
-    {
-      "title": "Liquid Moon",
-      "artist": "Inspector K",
-      "id": "LIQUID-LMYY4271"
-    },
-    {
-      "title": "Little Kitty Mine",
-      "artist": "Ni Ni",
-      "id": "LITTLE-LKMY8112"
-    },
-    {
-      "title": "Live 4 Ever",
-      "artist": "Neptunia & ItaloBrothers",
-      "id": "LIVE4E-L4EY2250"
-    },
-    {
-      "title": "Living Without You",
-      "artist": "Ni Ni",
-      "id": "LIVING-LWYY6464"
-    },
-    {
-      "title": "Long Way Down",
-      "artist": "W&W & Darren Styles",
-      "id": "LONGWA-LWDY4850"
-    },
-    {
-      "title": "Louder",
-      "artist": "MOTi",
-      "id": "LOUDER-LOUD3376"
-    },
-    {
-      "title": "Louder",
-      "artist": "Big Freedia",
-      "id": "LOUDER-LOUD4716"
-    },
-    {
-      "title": "Love City",
-      "artist": "9Muses",
-      "id": "LOVECI-LCYY6353"
-    },
-    {
-      "title": "Love Made Me Do It",
-      "artist": "Cheryl",
-      "id": "LOVEMA-LMMD2661"
-    },
-    {
-      "title": "Lovers On The Sun",
-      "artist": "David Guetta",
-      "id": "LOVERS-LOTS8079"
-    },
-    {
-      "title": "Lovesong",
-      "artist": "Morgan Page",
-      "id": "LOVESO-LOVE4530"
-    },
-    {
-      "title": "Loyal To Me",
-      "artist": "Nina Nesbitt",
-      "id": "LOYALT-LTMY5152"
-    },
-    {
-      "title": "Magic",
-      "artist": "KSHMR",
-      "id": "MAGICX-MAGI2621"
-    },
-    {
-      "title": "Mars Drive",
-      "artist": "m-flo",
-      "id": "MARSDR-MDYY4605"
-    },
-    {
-      "title": "Mellow",
-      "artist": "Spacekats",
-      "id": "MELLOW-MELL4822"
-    },
-    {
-      "title": "Monolith",
-      "artist": "Affinity",
-      "id": "MONOLI-MONO9285"
-    },
-    {
-      "title": "Moonstone",
-      "artist": "Virgill",
-      "id": "MOONST-MOON6088"
-    },
-    {
-      "title": "Mouth",
-      "artist": "Rochelle",
-      "id": "MOUTHX-MOUT8018"
-    },
-    {
-      "title": "Mr.Vain",
-      "artist": "DJ Tora & SHADW",
-      "id": "MRVAIN-MRVY4141"
-    },
-    {
-      "title": "Music Pleeze",
-      "artist": "B. Dastardly",
-      "id": "MUSICP-MPYY6065"
-    },
-    {
-      "title": "My Favorite Holiday",
-      "artist": "RuPaul",
-      "id": "MYFAVO-MFHY4975"
-    },
-    {
-      "title": "My Favourite Game",
-      "artist": "Natalie Browne",
-      "id": "MYFAVO-MFGY4538"
-    },
-    {
-      "title": "My Heart Is Ticking Like a Bomb",
-      "artist": "E-Rotic",
-      "id": "MYHEAR-MHIT8156"
-    },
-    {
-      "title": "My Life Is So Crazy",
-      "artist": "DJ Zombie",
-      "id": "MYLIFE-MLIS5510"
-    },
-    {
-      "title": "My Love",
-      "artist": "Nightfly",
-      "id": "MYLOVE-MLYY9532"
-    },
-    {
-      "title": "My X",
-      "artist": "Little Sis Nora",
-      "id": "MYXXXX-MXYY3831"
-    },
-    {
-      "title": "Mythology",
-      "artist": "Digital Explosion",
-      "id": "MYTHOL-MYTH8825"
-    },
-    {
-      "title": "N2U",
-      "artist": "Showtek & Eva Shaw",
-      "id": "N2UFEA-N2UY9590"
-    },
-    {
-      "title": "Nightmoves",
-      "artist": "Playmaker",
-      "id": "NIGHTM-NIGH8364"
-    },
-    {
-      "title": "No",
-      "artist": "CLC",
-      "id": "NOXXXX-NOYY9250"
-    },
-    {
-      "title": "No 1 Nation",
-      "artist": "Anet",
-      "id": "NO1NAT-N1NY8566"
-    },
-    {
-      "title": "No Princess",
-      "artist": "Lynn",
-      "id": "NOPRIN-NPYY9390"
-    },
-    {
-      "title": "Normal",
-      "artist": "Anet",
-      "id": "NORMAL-NORM4482"
-    },
-    {
-      "title": "Not That Type",
-      "artist": "Gugudan",
-      "id": "NOTTHA-NTTY9538"
-    },
-    {
-      "title": "Not Worth The Paper",
-      "artist": "Dax",
-      "id": "NOTWOR-NWTP6199"
-    },
-    {
-      "title": "Oasis",
-      "artist": "KaW",
-      "id": "OASISX-OASI6465"
-    },
-    {
-      "title": "On A Night Like This",
-      "artist": "Kylie Minogue",
-      "id": "ONANIG-OANL6439"
-    },
-    {
-      "title": "On a Day Like Today",
-      "artist": "Obsession",
-      "id": "ONADAY-OADL5165"
-    },
-    {
-      "title": "One False Move",
-      "artist": "Dust Devil",
-      "id": "ONEFAL-OFMY6355"
-    },
-    {
-      "title": "One In A Million",
-      "artist": "Bebe Rexha & David Guetta",
-      "id": "ONEINA-OIAM8990"
-    },
-    {
-      "title": "One Kiss",
-      "artist": "Calvin Harris & Dua Lipa",
-      "id": "ONEKIS-OKYY6084"
-    },
-    {
-      "title": "Online",
-      "artist": "Lynn",
-      "id": "ONLINE-ONLI8407"
-    },
-    {
-      "title": "Only You",
-      "artist": "Captain Jack",
-      "id": "ONLYYO-OYYY1668"
-    },
-    {
-      "title": "Out Of Time",
-      "artist": "Slayyyter",
-      "id": "OUTOFT-OOTY7302"
-    },
-    {
-      "title": "Out of the Dark",
-      "artist": "Hybrid",
-      "id": "OUTOFT-OOTD5533"
-    },
-    {
-      "title": "PA Theme",
-      "artist": "MC Frontalot",
-      "id": "PATHEM-PTYY2315"
-    },
-    {
-      "title": "Pandemonium",
-      "artist": "ZiGZaG",
-      "id": "PANDEM-PAND6648"
-    },
-    {
-      "title": "Papaoutai",
-      "artist": "Stromae",
-      "id": "PAPAOU-PAPA5374"
-    },
-    {
-      "title": "Partyman",
-      "artist": "Hit 'N' Hide",
-      "id": "PARTYM-PART5727"
-    },
-    {
-      "title": "Perfect",
-      "artist": "Sammi Morelli",
-      "id": "PERFEC-PERF3491"
-    },
-    {
-      "title": "Personal Hell",
-      "artist": "Kim Petras",
-      "id": "PERSON-PHYY6110"
-    },
-    {
-      "title": "Pick Me Up & Tango",
-      "artist": "Nina",
-      "id": "PICKME-PMUY3958"
-    },
-    {
-      "title": "Picky Picky",
-      "artist": "Weki Meki",
-      "id": "PICKYP-PPYY9431"
-    },
-    {
-      "title": "Pink Fuzzy Bunnies",
-      "artist": "Wonderboy",
-      "id": "PINKFU-PFBY6507"
-    },
-    {
-      "title": "Play",
-      "artist": "Jolin Tsai",
-      "id": "PLAYXX-PLAY1905"
-    },
-    {
-      "title": "Psalm Pilot",
-      "artist": "Jason Creasey",
-      "id": "PSALMP-PPYY2079"
-    },
-    {
-      "title": "Punk Right Now",
-      "artist": "HYO & 3LAU",
-      "id": "PUNKRI-PRNY7278"
-    },
-    {
-      "title": "Punk Right Now",
-      "artist": "HYO & 3LAU",
-      "id": "PUNKRI-PRNY9304"
-    },
-    {
-      "title": "Q&A",
-      "artist": "Cherry Bullet",
-      "id": "QAXXXX-QAYY7474"
-    },
-    {
-      "title": "Queen of Light",
-      "artist": "Missing Heart",
-      "id": "QUEENO-QOLY6010"
-    },
-    {
-      "title": "RE-RAVE",
-      "artist": "KURi-ZiLL",
-      "id": "RERAVE-RERY1584"
-    },
-    {
-      "title": "ROM-eo & Juli8",
-      "artist": "Nina",
-      "id": "ROMEOJ-RJYY3181"
-    },
-    {
-      "title": "Ra",
-      "artist": "Banzai",
-      "id": "RAXXXX-RAYY9013"
-    },
-    {
-      "title": "Radius",
-      "artist": "KURi-ZiLL",
-      "id": "RADIUS-RADI6231"
-    },
-    {
-      "title": "Rave Love",
-      "artist": "W&W, AXMIO, SONJA",
-      "id": "RAVELO-RLYY2515"
-    },
-    {
-      "title": "Raver",
-      "artist": "nanobii",
-      "id": "RAVERX-RAVE3147"
-    },
-    {
-      "title": "Reactor",
-      "artist": "Jason Creasey",
-      "id": "REACTO-REAC5457"
-    },
-    {
-      "title": "Remember December",
-      "artist": "Mind Reflection",
-      "id": "REMEMB-RDYY6410"
-    },
-    {
-      "title": "Renaissance",
-      "artist": "☺",
-      "romanizedArtist": "Smiley",
-      "id": "RENAIS-RENA6979"
-    },
-    {
-      "title": "Ride the Bass",
-      "artist": "DJ Zombie",
-      "id": "RIDETH-RTBY2876"
-    },
-    {
-      "title": "Riders, Unite!",
-      "artist": "Andreas Viklund",
-      "id": "RIDERS-RUYY1067"
-    },
-    {
-      "title": "Robotix",
-      "artist": "K-bit",
-      "id": "ROBOTI-ROBO5793"
-    },
-    {
-      "title": "Romeo & Juliet",
-      "artist": "S.O.A.P.",
-      "id": "ROMEOJ-RJYY3612"
-    },
-    {
-      "title": "Roses Are Red",
-      "artist": "Aqua",
-      "id": "ROSESA-RARY4451"
-    },
-    {
-      "title": "Round and Round",
-      "artist": "Eskimo & Icebird",
-      "id": "ROUNDA-RARY4073"
-    },
-    {
-      "title": "Russkij Pusskij",
-      "artist": "Carlito",
-      "id": "RUSSKI-RPYY7480"
-    },
-    {
-      "title": "SOLO",
-      "artist": "Jennie",
-      "id": "SOLOXX-SOLO1672"
-    },
-    {
-      "title": "STOP! & Go",
-      "artist": "Onyx",
-      "id": "STOPGO-SGYY5858"
-    },
-    {
-      "title": "Safari Disco Club",
-      "artist": "Yelle",
-      "id": "SAFARI-SDCY4448"
-    },
-    {
-      "title": "Seven Seas",
-      "artist": "Maurice West",
-      "id": "SEVENS-SSYY2830"
-    },
-    {
-      "title": "Shadow",
-      "artist": "Vicetone & Allie X",
-      "id": "SHADOW-SHAD4539"
-    },
-    {
-      "title": "Siren",
-      "artist": "Sunmi",
-      "id": "SIRENX-SIRE5624"
-    },
-    {
-      "title": "Slamyatsya Guys",
-      "artist": "Little Big",
-      "id": "SLAMYA-SGYY5929"
-    },
-    {
-      "title": "Slay",
-      "artist": "Everglow",
-      "id": "SLAYXX-SLAY4018"
-    },
-    {
-      "title": "Smells Like a Chocolate",
-      "artist": "Vospi",
-      "id": "SMELLS-SLAC3221"
-    },
-    {
-      "title": "Snow Stream",
-      "artist": "Vospi",
-      "id": "SNOWST-SSYY2503"
-    },
-    {
-      "title": "So Crazy",
-      "artist": "T-ARA",
-      "id": "SOCRAZ-SCYY4061"
-    },
-    {
-      "title": "Soapy Bubble",
-      "artist": "Fragmentz",
-      "id": "SOAPYB-SBYY9787"
-    },
-    {
-      "title": "Solina",
-      "artist": "Evolution",
-      "id": "SOLINA-SOLI2842"
-    },
-    {
-      "title": "Something Deep Inside",
-      "artist": "Billie Piper",
-      "id": "SOMETH-SDIY8069"
-    },
-    {
-      "title": "Southcoast Calling",
-      "artist": "Street Corner Poets",
-      "id": "SOUTHC-SCYY8955"
-    },
-    {
-      "title": "Spaceman",
-      "artist": "Lynn",
-      "id": "SPACEM-SPAC4515"
-    },
-    {
-      "title": "Spacy Crazy Girl",
-      "artist": "Ni Ni",
-      "id": "SPACYC-SCGY4554"
-    },
-    {
-      "title": "Spice Up Your Life",
-      "artist": "Spice Girls",
-      "id": "SPICEU-SUYL9247"
-    },
-    {
-      "title": "Spin Chicken",
-      "artist": "Freebie & The Bean",
-      "id": "SPINCH-SCYY1173"
-    },
-    {
-      "title": "Starfield",
-      "artist": "Cyrex",
-      "id": "STARFI-STAR2427"
-    },
-    {
-      "title": "Step",
-      "artist": "f(x)",
-      "id": "STEPXX-STEP1570"
-    },
-    {
-      "title": "Sucks To Be You",
-      "artist": "Prozzak",
-      "id": "SUCKST-STBY5167"
-    },
-    {
-      "title": "Summer",
-      "artist": "☺",
-      "romanizedArtist": "Smiley",
-      "id": "SUMMER-SUMM7035"
-    },
-    {
-      "title": "Summer Of Love",
-      "artist": "Steps",
-      "id": "SUMMER-SOLY4894"
-    },
-    {
-      "title": "Summer in Belize",
-      "artist": "Digital Explosion",
-      "id": "SUMMER-SIBY6082"
-    },
-    {
-      "title": "Sun Son Sunday",
-      "artist": "Vospi",
-      "id": "SUNSON-SSSY5654"
-    },
-    {
-      "title": "Sun Son Sunday",
-      "artist": "Vospi",
-      "id": "SUNSON-SSSY1766"
-    },
-    {
-      "title": "Sundance",
-      "artist": "Hit 'N' Hide",
-      "id": "SUNDAN-SUND1995"
-    },
-    {
-      "title": "Sunday",
-      "artist": "Nuage",
-      "id": "SUNDAY-SUND6435"
-    },
-    {
-      "title": "Sunshine",
-      "artist": "Triple J",
-      "id": "SUNSHI-SUNS3638"
-    },
-    {
-      "title": "Sunshine",
-      "artist": "Playmaker",
-      "id": "SUNSHI-SUNS6665"
-    },
-    {
-      "title": "Sunshine",
-      "artist": "ANMO x Dance Nation",
-      "id": "SUNSHI-SUNS7770"
-    },
-    {
-      "title": "Super Clap",
-      "artist": "Super Junior",
-      "id": "SUPERC-SCYY4890"
-    },
-    {
-      "title": "Supremacy",
-      "artist": "KaW",
-      "id": "SUPREM-SUPR5544"
-    },
-    {
-      "title": "Sweet Things",
-      "artist": "Andreas Viklund",
-      "id": "SWEETT-STYY3408"
-    },
-    {
-      "title": "Sweet World",
-      "artist": "Omega Men",
-      "id": "SWEETW-SWYY5802"
-    },
-    {
-      "title": "TMI",
-      "artist": "Hot Place",
-      "id": "TMIXXX-TMIY3601"
-    },
-    {
-      "title": "Take My Time",
-      "artist": "Alphadelta",
-      "id": "TAKEMY-TMTY8209"
-    },
-    {
-      "title": "Take Your Chance",
-      "artist": "Fun Factory",
-      "id": "TAKEYO-TYCY2388"
-    },
-    {
-      "title": "Tekkno Train",
-      "artist": "Electric Callboy",
-      "id": "TEKKNO-TTYY2024"
-    },
-    {
-      "title": "Tell",
-      "artist": "Symphonious",
-      "id": "TELLXX-TELL3947"
-    },
-    {
-      "title": "Temple of Boom",
-      "artist": "Yanis Kamarinos",
-      "id": "TEMPLE-TOBY5880"
-    },
-    {
-      "title": "Temple of Love",
-      "artist": "E-Rotic",
-      "id": "TEMPLE-TOLY9535"
-    },
-    {
-      "title": "Tension",
-      "artist": "Inspector K",
-      "id": "TENSIO-TENS6329"
-    },
-    {
-      "title": "Tension",
-      "artist": "Kylie Minogue",
-      "id": "TENSIO-TENS3169"
-    },
-    {
-      "title": "That Is Fair",
-      "artist": "Vospi",
-      "id": "THATIS-TIFY9065"
-    },
-    {
-      "title": "The Beginning",
-      "artist": "DJ Doo",
-      "id": "THEBEG-TBYY1218"
-    },
-    {
-      "title": "The Deep Unknown",
-      "artist": "Adam Vox",
-      "id": "THEDEE-TDUY1736"
-    },
-    {
-      "title": "The Game",
-      "artist": "Crispy",
-      "id": "THEGAM-TGYY1367"
-    },
-    {
-      "title": "The Girls",
-      "artist": "BLACKPINK",
-      "id": "THEGIR-TGYY1447"
-    },
-    {
-      "title": "The Last Kiss",
-      "artist": "Missing Heart",
-      "id": "THELAS-TLKY7786"
-    },
-    {
-      "title": "The Message",
-      "artist": "Ni Ni",
-      "id": "THEMES-TMYY4184"
-    },
-    {
-      "title": "The Promised Land",
-      "artist": "Lagoona",
-      "id": "THEPRO-TPLY4628"
-    },
-    {
-      "title": "The Universe Beside You",
-      "artist": "Asha",
-      "id": "THEUNI-TUBY6153"
-    },
-    {
-      "title": "This is Rock & Roll",
-      "artist": "DJ Zombie",
-      "id": "THISIS-TIRY2171"
-    },
-    {
-      "title": "Thunder",
-      "artist": "Madison Rose",
-      "id": "THUNDE-THUN2877"
-    },
-    {
-      "title": "Torn",
-      "artist": "Natalie Browne",
-      "id": "TORNXX-TORN3873"
-    },
-    {
-      "title": "Touch Me",
-      "artist": "E-Rotic",
-      "id": "TOUCHM-TMYY7005"
-    },
-    {
-      "title": "Tough Enough",
-      "artist": "Vanilla Ninja",
-      "id": "TOUGHE-TEYY2026"
-    },
-    {
-      "title": "Tribal Style",
-      "artist": "KaW",
-      "id": "TRIBAL-TSYY4620"
-    },
-    {
-      "title": "Tribe Attacker",
-      "artist": "CanBlaster",
-      "id": "TRIBEA-TAYY8267"
-    },
-    {
-      "title": "Turn It On",
-      "artist": "Georgetown",
-      "id": "TURNIT-TIOY4430"
-    },
-    {
-      "title": "Tutorial",
-      "artist": "BB Hayes",
-      "id": "TRAINI-TUTO1009"
-    },
-    {
-      "title": "Twilight",
-      "artist": "KaW",
-      "id": "TWILIG-TWIL2254"
-    },
-    {
-      "title": "Typical Tropical",
-      "artist": "Bambee",
-      "id": "TYPICA-TTYY9838"
-    },
-    {
-      "title": "Under The Bridge",
-      "artist": "Bermuda",
-      "id": "UNDERT-UTBY3241"
-    },
-    {
-      "title": "Unicorn",
-      "artist": "Noa Kirel",
-      "id": "UNICOR-UNIC4294"
-    },
-    {
-      "title": "Upside Down",
-      "artist": "DJ Jump",
-      "id": "UPSIDE-UDYY4902"
-    },
-    {
-      "title": "Utami",
-      "artist": "Bougenvilla",
-      "id": "UTAMIX-UTAM6831"
-    },
-    {
-      "title": "Utopia",
-      "artist": "☺",
-      "romanizedArtist": "Smiley",
-      "id": "UTOPIA-UTOP8041"
-    },
-    {
-      "title": "Vegas High",
-      "artist": "Kylie Minogue",
-      "id": "VEGASH-VHYY7659"
-    },
-    {
-      "title": "VerTex",
-      "artist": "ZiGZaG",
-      "id": "VERTEX-VERT6632"
-    },
-    {
-      "title": "VerTex²",
-      "artist": "ZiGZaG",
-      "romanizedTitle": "VerTex^2",
-      "id": "VERTEX-VERT6856"
-    },
-    {
-      "title": "VerTex³",
-      "artist": "ZiGZaG",
-      "romanizedTitle": "VerTex^3",
-      "id": "VERTEX-VERT8021"
-    },
-    {
-      "title": "Virtual Emotion",
-      "artist": "Inspector K",
-      "id": "VIRTUA-VEYY7292"
-    },
-    {
-      "title": "Visible Noise",
-      "artist": "Hybrid",
-      "id": "VISIBL-VNYY9531"
-    },
-    {
-      "title": "Vorsprung Durch",
-      "artist": "Sly/Fly/Badman",
-      "id": "VORSPR-VDYY4621"
-    },
-    {
-      "title": "WWW",
-      "artist": "nanobii",
-      "id": "WWWXXX-WWWY3833"
-    },
-    {
-      "title": "Wake Up",
-      "artist": "Kid Whatever",
-      "id": "WAKEUP-WUYY5287"
-    },
-    {
-      "title": "Walking on Fire",
-      "artist": "Evolution feat. Jayn Hanna",
-      "id": "WALKIN-WOFY5018"
-    },
-    {
-      "title": "Wanna Do",
-      "artist": "Nina",
-      "id": "WANNAD-WDYY5937"
-    },
-    {
-      "title": "We Know What To Do",
-      "artist": "Matiloe",
-      "id": "WEKNOW-WKWT9345"
-    },
-    {
-      "title": "Wet",
-      "artist": "Solid Base",
-      "id": "WETRAD-WETY4783"
-    },
-    {
-      "title": "Wham Bam Boogie",
-      "artist": "Bambee",
-      "id": "WHAMBA-WBBY8807"
-    },
-    {
-      "title": "Which MC Was That?",
-      "artist": "MC Frontalot",
-      "id": "WHICHM-WMWT3744"
-    },
-    {
-      "title": "While Tha Rekkid Spinz",
-      "artist": "DJ Zombie",
-      "id": "WHILET-WTRS2930"
-    },
-    {
-      "title": "Who",
-      "artist": "KaW",
-      "id": "WHOXXX-WHOY3581"
-    },
-    {
-      "title": "Who The Hell Is Edgar?",
-      "artist": "TEYA & SELENA",
-      "id": "WHOTHE-WTHI8150"
-    },
-    {
-      "title": "Why Me",
-      "artist": "Desire",
-      "id": "WHYMEX-WMYY4980"
-    },
-    {
-      "title": "Wig",
-      "artist": "Todrick Hall",
-      "id": "WIGXXX-WIGY4411"
-    },
-    {
-      "title": "Wonder Where You Are",
-      "artist": "Da Buzz",
-      "id": "WONDER-WWYA1822"
-    },
-    {
-      "title": "Woowa",
-      "artist": "Dia",
-      "id": "WOOWAX-WOOW9668"
-    },
-    {
-      "title": "Work With My Love",
-      "artist": "Alok & James Arthur",
-      "id": "WORKWI-WWML1594"
-    },
-    {
-      "title": "World of Dreams",
-      "artist": "Hit 'N' Hide",
-      "id": "WORLDO-WODY3322"
-    },
-    {
-      "title": "XLR8",
-      "artist": "Gothy Kendoll & Sminty Drop",
-      "id": "XLR8XX-XLR82351"
-    },
-    {
-      "title": "Xuxa",
-      "artist": "☺",
-      "romanizedArtist": "Smiley",
-      "id": "XUXAXX-XUXA8347"
-    },
-    {
-      "title": "Y2Z",
-      "artist": "Affinity",
-      "id": "Y2ZXXX-Y2ZY7447"
-    },
-    {
-      "title": "Yodel Song",
-      "artist": "Basement Jaxx",
-      "id": "YODELS-YSYY2961"
-    },
-    {
-      "title": "Young Forever",
-      "artist": "Rebecca",
-      "id": "YOUNGF-YFYY8431"
-    },
-    {
-      "title": "Zodiac",
-      "artist": "Banzai",
-      "id": "ZODIAC-ZODI5976"
-    }
-  ]
+	"game_id": "itgmania",
+	"game_title": "ITGmania",
+	"game_year": 2025,
+	"songs": [
+		{
+			"title": "!",
+			"artist": "Onyx",
+			"id": "XXXXXX-YYYY5901"
+		},
+		{
+			"title": "%% (Eung Eung)",
+			"artist": "Apink",
+			"id": "EUNGEU-EYYY5644"
+		},
+		{
+			"title": "365",
+			"artist": "Zedd & Katy Perry",
+			"id": "365XXX-365Y9279"
+		},
+		{
+			"title": "4 Walls",
+			"artist": "f(x)",
+			"id": "4WALLS-4WYY6893"
+		},
+		{
+			"title": "777 Lucky Run [EARs Hyper Techno Edit] Daytona USA",
+			"artist": "RobKTA",
+			"id": "777LUC-7LRY3073"
+		},
+		{
+			"title": "A Glitch Hop's World Deltarune",
+			"artist": "Spad3s",
+			"id": "AGLITC-AGHW3420"
+		},
+		{
+			"title": "AUTOMATIC",
+			"artist": "Tokyo Machine & Dyson",
+			"id": "AUTOMA-AUTO3886"
+		},
+		{
+			"title": "Agent Blatant",
+			"artist": "Ernest + Julio",
+			"id": "AGENTB-ABYY6581"
+		},
+		{
+			"title": "Aliens in Our Midst",
+			"artist": "Corporation",
+			"id": "ALIENS-AIOM2419"
+		},
+		{
+			"title": "All I Want Is You (DJ Shimamura Remix)",
+			"artist": "m-flo",
+			"id": "ALLIWA-AIWI9653"
+		},
+		{
+			"title": "All She Wants (Feat. Paris Hilton)",
+			"artist": "Kim Petras",
+			"id": "ALLSHE-ASWY7978"
+		},
+		{
+			"title": "All That Matters",
+			"artist": "Andreas Viklund",
+			"id": "ALLTHA-ATMY7269"
+		},
+		{
+			"title": "All That She Wants",
+			"artist": "Ace Of Base",
+			"id": "ALLTHA-ATSW1208"
+		},
+		{
+			"title": "Always in My Heart",
+			"artist": "Lagoona",
+			"id": "ALWAYS-AIMH3410"
+		},
+		{
+			"title": "Amore",
+			"artist": "Uniq",
+			"id": "AMOREX-AMOR2528"
+		},
+		{
+			"title": "Amore (Extended Remix)",
+			"artist": "Uniq",
+			"id": "AMOREE-ARYY9268"
+		},
+		{
+			"title": "Amore (Radio Edit)",
+			"artist": "Camilot",
+			"id": "AMORER-AEYY4270"
+		},
+		{
+			"title": "Anarchy Rainbow Splatoon 3",
+			"artist": "Player2, NoteBlock",
+			"id": "ANARCH-ARS36974"
+		},
+		{
+			"title": "Ancient Lake Diddy Kong Racing",
+			"artist": "Player2",
+			"id": "ANCIEN-ALDK1010"
+		},
+		{
+			"title": "Anubis",
+			"artist": "Banzai",
+			"id": "ANUBIS-ANUB4920"
+		},
+		{
+			"title": "Applause",
+			"artist": "Lady Gaga",
+			"id": "APPLAU-APPL1549"
+		},
+		{
+			"title": "Aquatic Ambience Donkey Kong Country",
+			"artist": "GameChops",
+			"id": "AQUATI-AADK9974"
+		},
+		{
+			"title": "Are U Ready? (Radio Edit)",
+			"artist": "Pakito",
+			"id": "AREURE-AURY5059"
+		},
+		{
+			"title": "Armored Armadillo Mega Man X",
+			"artist": "GaMetal",
+			"id": "ARMORE-AAMM7031"
+		},
+		{
+			"title": "Arriba (feat. Clean Bandit)",
+			"artist": "Little Big & Tatarka",
+			"id": "ARRIBA-ACBY8191"
+		},
+		{
+			"title": "Art City",
+			"artist": "Virgill",
+			"id": "ARTCIT-ACYY9206"
+		},
+		{
+			"title": "Athletic Super Mario World",
+			"artist": "Mykah",
+			"id": "ATHLET-ASMW3885"
+		},
+		{
+			"title": "Autoload",
+			"artist": "Nightfly",
+			"id": "AUTOLO-AUTO4535"
+		},
+		{
+			"title": "Axem Rangers - Smithy Battle Super Mario RPG",
+			"artist": "Vector U",
+			"id": "AXEMRA-ARSY7230"
+		},
+		{
+			"title": "Ba$$in",
+			"artist": "Yelle",
+			"id": "BASSIN-BAYY7378"
+		},
+		{
+			"title": "Baby Baby",
+			"artist": "Bambee",
+			"id": "BABYBA-BBYY5913"
+		},
+		{
+			"title": "Baby Don't You Want Me",
+			"artist": "Nina",
+			"id": "BABYDO-BDYW1075"
+		},
+		{
+			"title": "Bad Dream (Feat. TEYA)",
+			"artist": "Bermuda",
+			"id": "BADDRE-BDTY6292"
+		},
+		{
+			"title": "Bad To The Bone",
+			"artist": "George Thorogood & The Destroyers",
+			"id": "BADTOT-BTTB7469"
+		},
+		{
+			"title": "Badster",
+			"artist": "HYO",
+			"id": "BADSTE-BADS3079"
+		},
+		{
+			"title": "Badster (English Version)",
+			"artist": "HYO",
+			"id": "BADSTE-BVYY5608"
+		},
+		{
+			"title": "Bagpipe",
+			"artist": "A-Moe",
+			"id": "BAGPIP-BAGP9722"
+		},
+		{
+			"title": "Bassa Sababa",
+			"artist": "Netta",
+			"id": "BASSAS-BSYY9809"
+		},
+		{
+			"title": "Battle Theme (Final Fantasy Mystic Quest) Final Fantasy Mystic Quest",
+			"artist": "Mykah",
+			"id": "BATTLE-BTFY4049"
+		},
+		{
+			"title": "Be My Friend",
+			"artist": "Lagoona",
+			"id": "BEMYFR-BMFY1593"
+		},
+		{
+			"title": "Believe",
+			"artist": "VINAI & Alexandra Stan",
+			"id": "BELIEV-BELI6658"
+		},
+		{
+			"title": "Bend Your Mind",
+			"artist": "Reflection Theory",
+			"id": "BENDYO-BYMY9543"
+		},
+		{
+			"title": "Beware The Dog",
+			"artist": "The Griswolds",
+			"id": "BEWARE-BTDY4324"
+		},
+		{
+			"title": "Big Arms Sonic the Hedgehog 3",
+			"artist": "Sare",
+			"id": "BIGARM-BAST5561"
+		},
+		{
+			"title": "Big Blue (S.S.H Metal Remix) F-Zero",
+			"artist": "S.S.H",
+			"id": "FZEROB-BBMY4875"
+		},
+		{
+			"title": "Big Boom",
+			"artist": "Reve",
+			"id": "BIGBOO-BBYY2678"
+		},
+		{
+			"title": "Big Snowman (Chasers Remix) Snowboard Kids",
+			"artist": "djChasers",
+			"id": "BIGSNO-BSRY2411"
+		},
+		{
+			"title": "Birdie",
+			"artist": "Doolittle",
+			"id": "BIRDIE-BIRD2331"
+		},
+		{
+			"title": "Blame (Feat. John Newman)",
+			"artist": "Calvin Harris",
+			"id": "BLAMEF-BJNY6938"
+		},
+		{
+			"title": "Bloodrush",
+			"artist": "Tekno Dred",
+			"id": "BLOODR-BLOO2773"
+		},
+		{
+			"title": "Bloody Tears & Vampire Killer Castlevania",
+			"artist": "Vector U",
+			"id": "BLOODY-BTVY2186"
+		},
+		{
+			"title": "Blow My Mind",
+			"artist": "Alphadelta",
+			"id": "BLOWMY-BMMY2766"
+		},
+		{
+			"title": "Blow Your Mind (Mwah)",
+			"artist": "Dua Lipa",
+			"id": "BLOWYO-BYMY9555"
+		},
+		{
+			"title": "Bon Appetit",
+			"artist": "ALIKA",
+			"id": "BONAPP-BAYY4731"
+		},
+		{
+			"title": "Bon Appetit (Feat. Migos)",
+			"artist": "Katy Perry",
+			"id": "BONAPP-BAMY3186"
+		},
+		{
+			"title": "Boogie Down",
+			"artist": "Inurvise",
+			"id": "BOOGIE-BDYY3168"
+		},
+		{
+			"title": "Boss Bossanova Donkey Kong Country 2",
+			"artist": "Pixel Pirates",
+			"id": "BOSSBO-BBDK6763"
+		},
+		{
+			"title": "Boss Challenge (Metal Remix) Diddy Kong Racing",
+			"artist": "Nestalgica",
+			"id": "BOSSCH-BCRY8387"
+		},
+		{
+			"title": "Boss Challenge Diddy Kong Racing",
+			"artist": "Player2",
+			"id": "BOSSCH-BCDK3412"
+		},
+		{
+			"title": "Boss Theme - Final Fantasy Mystic Quest Final Fantasy Mystic Quest",
+			"artist": "Vector U",
+			"id": "FINALF-BTFY2846"
+		},
+		{
+			"title": "Bouff",
+			"artist": "Machinae Supremacy",
+			"id": "BOUFFX-BOUF5101"
+		},
+		{
+			"title": "Bowsette Super Mario Bros.",
+			"artist": "The Chalkeaters",
+			"id": "BOWSET-BSMB2118"
+		},
+		{
+			"title": "Boy With Luv (Feat. Halsey)",
+			"artist": "BTS",
+			"id": "BOYWIT-BWLY8703"
+		},
+		{
+			"title": "Brinstar Metroid",
+			"artist": "Player2",
+			"id": "BRINST-BMYY3043"
+		},
+		{
+			"title": "Bubble Dancer",
+			"artist": "Crispy",
+			"id": "BUBBLE-BDYY1481"
+		},
+		{
+			"title": "Bumble Bee",
+			"artist": "Bambee",
+			"id": "BUMBLE-BBYY3689"
+		},
+		{
+			"title": "Burning Town Shantae and the Pirate's Curse",
+			"artist": "Player2, NoteBlock",
+			"id": "BURNIN-BTSA3811"
+		},
+		{
+			"title": "Buzina",
+			"artist": "Pabllo Vittar",
+			"id": "BUZINA-BUZI3383"
+		},
+		{
+			"title": "C'est la Vie (Remix Edit)",
+			"artist": "B*Witched",
+			"id": "CESTLA-CLVY4125"
+		},
+		{
+			"title": "Call My Name (Wideboys Edit Remix)",
+			"artist": "Cheryl",
+			"id": "CALLMY-CMNY1849"
+		},
+		{
+			"title": "Can't Stop Rockin'",
+			"artist": "ZZ Top",
+			"id": "CANTST-CSRY1627"
+		},
+		{
+			"title": "Cannonball (Feat. Matthew Koma)",
+			"artist": "Showtek & Justin Prime",
+			"id": "CANNON-CMKY5355"
+		},
+		{
+			"title": "Canterbury Plains (Allan Zax remix) Top Gear 2",
+			"artist": "Allan Zax",
+			"id": "CANTER-CPZY2814"
+		},
+		{
+			"title": "Car Keys (Ayla)",
+			"artist": "Alok & Ava Max",
+			"id": "CARKEY-CKYY4370"
+		},
+		{
+			"title": "Castle In The Sky",
+			"artist": "Kim Petras",
+			"id": "CASTLE-CITS7523"
+		},
+		{
+			"title": "Castle Theme Super Mario World",
+			"artist": "Garrett Williamson",
+			"id": "CASTLE-CTSM4716"
+		},
+		{
+			"title": "Cave Drips",
+			"artist": "Adam Vox",
+			"id": "CAVEDR-CDYY6560"
+		},
+		{
+			"title": "Cha Cha Cha",
+			"artist": "Kaarija",
+			"id": "CHACHA-CCCY2998"
+		},
+		{
+			"title": "Changes",
+			"artist": "Rivera & Haze",
+			"id": "CHANGE-CHAN2752"
+		},
+		{
+			"title": "Charlene",
+			"artist": "Missing Heart",
+			"id": "CHARLE-CHAR2813"
+		},
+		{
+			"title": "Charlene -Rock Mix-",
+			"artist": "Gracia",
+			"id": "CHARLE-CMYY8723"
+		},
+		{
+			"title": "Chase Me",
+			"artist": "Nitro Fun & Linney",
+			"id": "CHASEM-CMYY2441"
+		},
+		{
+			"title": "Chemical Plant Zone Sonic 2",
+			"artist": "VGR",
+			"id": "CHEMIC-CPZS5588"
+		},
+		{
+			"title": "Chemical Reaction Sonic the Hedgehog 2",
+			"artist": "PanPan",
+			"id": "CHEMIC-CRST2990"
+		},
+		{
+			"title": "Choose Your Fighter",
+			"artist": "Ava Max",
+			"id": "CHOOSE-CYFY8560"
+		},
+		{
+			"title": "Chopstix",
+			"artist": "Sonic Dimension",
+			"id": "CHOPST-CHOP5231"
+		},
+		{
+			"title": "Circus (Villains Remix)",
+			"artist": "Britney Spears",
+			"id": "CIRCUS-CRYY4740"
+		},
+		{
+			"title": "Clockwork Genesis",
+			"artist": "Inspector K",
+			"id": "CLOCKW-CGYY6237"
+		},
+		{
+			"title": "Coming Out",
+			"artist": "Playmaker feat. Robin",
+			"id": "COMING-COYY5102"
+		},
+		{
+			"title": "Conga!",
+			"artist": "Miami Sound Machine feat. Gloria Estefan",
+			"id": "CONGAX-CONG5710"
+		},
+		{
+			"title": "Corneria Starfox",
+			"artist": "Turbomaster",
+			"id": "CORNER-CSYY3619"
+		},
+		{
+			"title": "Countdown (Feat. LDN Noise)",
+			"artist": "Amber",
+			"id": "COUNTD-CLNY2109"
+		},
+		{
+			"title": "Crazy",
+			"artist": "DJ Doo",
+			"id": "CRAZYX-CRAZ4049"
+		},
+		{
+			"title": "Crazy Little Love",
+			"artist": "Nuage",
+			"id": "CRAZYL-CLLY6188"
+		},
+		{
+			"title": "Crush",
+			"artist": "Weki Meki",
+			"id": "CRUSHX-CRUS5291"
+		},
+		{
+			"title": "Cryin' In The Rain (Video Edit)",
+			"artist": "ItaloBrothers",
+			"id": "CRYINI-CITR7065"
+		},
+		{
+			"title": "Cryosleep",
+			"artist": "Machinae Supremacy",
+			"id": "CRYOSL-CRYO4558"
+		},
+		{
+			"title": "D-Code",
+			"artist": "Dust Devil",
+			"id": "DCODEX-DCOY2981"
+		},
+		{
+			"title": "DJ Party",
+			"artist": "BB Hayes",
+			"id": "DJPART-DPYY2187"
+		},
+		{
+			"title": "DJ Superstar",
+			"artist": "Oscillator X",
+			"id": "DJSUPE-DSYY5594"
+		},
+		{
+			"title": "Da Roots (Folk Mix)",
+			"artist": "Mind Reflection",
+			"id": "DAROOT-DRMY7775"
+		},
+		{
+			"title": "Dalla Dalla",
+			"artist": "ITZY",
+			"id": "DALLAD-DDYY2645"
+		},
+		{
+			"title": "Dance All Night",
+			"artist": "Oscillator X",
+			"id": "DANCEA-DANY6539"
+		},
+		{
+			"title": "Dance All Over Me (Jax Jones Remix)",
+			"artist": "George Ezra",
+			"id": "DANCEA-DAOM7553"
+		},
+		{
+			"title": "Dance Vibrations",
+			"artist": "Elpis",
+			"id": "DANCEV-DVYY9712"
+		},
+		{
+			"title": "Dancing All Alone",
+			"artist": "Morgan Page & TELYKAST",
+			"id": "DANCIN-DAAY8865"
+		},
+		{
+			"title": "Danger Zone",
+			"artist": "Kenny Loggins",
+			"id": "DANGER-DZYY8234"
+		},
+		{
+			"title": "Dark World Zelda - A Link to the Past",
+			"artist": "Vector U",
+			"id": "DARKWO-DWZY7591"
+		},
+		{
+			"title": "Darkest Night",
+			"artist": "Kevu & NIVIRO",
+			"id": "DARKES-DNYY2562"
+		},
+		{
+			"title": "Darkmoon Caverns Diddy Kong Racing",
+			"artist": "Qumu",
+			"id": "DARKMO-DCDK8570"
+		},
+		{
+			"title": "Dawn",
+			"artist": "KaW",
+			"id": "DAWNXX-DAWN9956"
+		},
+		{
+			"title": "Dawn (Perpetual Mix)",
+			"artist": "KaW vs. i09",
+			"id": "DAWNPE-DMYY7305"
+		},
+		{
+			"title": "Deeper Shade Of Blue",
+			"artist": "Steps",
+			"id": "DEEPER-DSOB5043"
+		},
+		{
+			"title": "Delirium",
+			"artist": "☺",
+			"romanizedArtist": "Smiley",
+			"id": "DELIRI-DELI9062"
+		},
+		{
+			"title": "Destiny",
+			"artist": "☺",
+			"romanizedArtist": "Smiley",
+			"id": "DESTIN-DEST6405"
+		},
+		{
+			"title": "Determinator",
+			"artist": "Dust Devil",
+			"id": "DETERM-DETE8185"
+		},
+		{
+			"title": "Ding Dong Song",
+			"artist": "E-Type",
+			"id": "DINGDO-DDSY2458"
+		},
+		{
+			"title": "Dire Dire Docks (DrLou's Eurobeat Remix) Super Mario 64",
+			"artist": "DrLou",
+			"id": "DIREDI-DDDY6790"
+		},
+		{
+			"title": "Dirty Car",
+			"artist": "Studio Killers",
+			"id": "DIRTYC-DCYY6852"
+		},
+		{
+			"title": "Disco Dance",
+			"artist": "Domincer",
+			"id": "DISCOD-DDYY9126"
+		},
+		{
+			"title": "Disconnected",
+			"artist": "Inspector K",
+			"id": "DISCON-DISC8560"
+		},
+		{
+			"title": "Disconnected -Hardkore-",
+			"artist": "CanBlaster",
+			"id": "DISCON-DYYY9096"
+		},
+		{
+			"title": "Disconnected -Hyper-",
+			"artist": "Inspector K",
+			"id": "DISCON-DYYY2375"
+		},
+		{
+			"title": "Disconnected -Mobius-",
+			"artist": "Inspector K",
+			"id": "DISCON-DYYY9333"
+		},
+		{
+			"title": "Disconnected Disco",
+			"artist": "Kid Whatever",
+			"id": "DISCON-DDYY3191"
+		},
+		{
+			"title": "Disconnected Zeo",
+			"artist": "G5",
+			"id": "DISCON-DZYY6022"
+		},
+		{
+			"title": "Do It!!! (DJ KEN-BOW REMIX)",
+			"artist": "HiBiki",
+			"id": "DOITDJ-DIKY2978"
+		},
+		{
+			"title": "Do Si Do",
+			"artist": "Flo Rida",
+			"id": "DOSIDO-DSDY9986"
+		},
+		{
+			"title": "Do U Love Me",
+			"artist": "DJ Doo",
+			"id": "DOULOV-DULM3227"
+		},
+		{
+			"title": "Do What You Wanna Do",
+			"artist": "Playmaker",
+			"id": "DOWHAT-DWYW4959"
+		},
+		{
+			"title": "Do Your Thing",
+			"artist": "Basement Jaxx",
+			"id": "DOYOUR-DYTY7309"
+		},
+		{
+			"title": "Don't Panic",
+			"artist": "Street Corner Poets",
+			"id": "DONTPA-DPYY5493"
+		},
+		{
+			"title": "Don't Promise Me",
+			"artist": "Reflection Theory",
+			"id": "DONTPR-DPMY5282"
+		},
+		{
+			"title": "Don't Promise Me ~Happiness~",
+			"artist": "Reflection Theory",
+			"id": "HAPPIN-DPMY3819"
+		},
+		{
+			"title": "Don't Stop Me Now",
+			"artist": "Queen",
+			"id": "DONTST-DSMN5695"
+		},
+		{
+			"title": "Dr. Love",
+			"artist": "Stella Getz",
+			"id": "DRLOVE-DLYY7645"
+		},
+		{
+			"title": "Dr. Wilys Castle Megaman 2",
+			"artist": "Bossfight",
+			"id": "DRWILY-DWCM4106"
+		},
+		{
+			"title": "Dragostea Din Tei (English Mix)",
+			"artist": "Lucas Prata",
+			"id": "DRAGOS-DDTY8990"
+		},
+		{
+			"title": "Dream to Nightmare",
+			"artist": "Nightmare",
+			"id": "DREAMT-DTNY2156"
+		},
+		{
+			"title": "Dreamer",
+			"artist": "J090",
+			"id": "DREAME-DREA5506"
+		},
+		{
+			"title": "Dreams of Passion",
+			"artist": "Dax",
+			"id": "DREAMS-DOPY2773"
+		},
+		{
+			"title": "Drifting Away",
+			"artist": "Filo Bedo",
+			"id": "DRIFTI-DAYY9354"
+		},
+		{
+			"title": "Driving Force Classical",
+			"artist": "Digital Explosion",
+			"id": "DRIVIN-DFCY6951"
+		},
+		{
+			"title": "Drought (Feat. Nevve)",
+			"artist": "Dropgun",
+			"id": "DROUGH-DNYY2238"
+		},
+		{
+			"title": "Dumb & Dumber",
+			"artist": "iKON",
+			"id": "DUMBDU-DDYY3153"
+		},
+		{
+			"title": "Dynamite",
+			"artist": "E-Rotic",
+			"id": "DYNAMI-DYNA9497"
+		},
+		{
+			"title": "El Mariachi",
+			"artist": "Bassjackers & Jay Hardway",
+			"id": "ELMARI-EMYY9733"
+		},
+		{
+			"title": "Emergency (Radio Mix)",
+			"artist": "Kim Leoni",
+			"id": "EMERGE-EMYY6823"
+		},
+		{
+			"title": "Encounter! Sea of Stars",
+			"artist": "Lame Genie",
+			"id": "ENCOUN-ESOS7433"
+		},
+		{
+			"title": "Energizer",
+			"artist": "ZiGZaG",
+			"id": "ENERGI-ENER4667"
+		},
+		{
+			"title": "Esperanza",
+			"artist": "KaW",
+			"id": "ESPERA-ESPE7713"
+		},
+		{
+			"title": "Euphoria",
+			"artist": "KaW feat. ☺",
+			"romanizedArtist": "KaW feat. Smiley",
+			"id": "EUPHOR-EUPH3956"
+		},
+		{
+			"title": "Exotica",
+			"artist": "Banzai",
+			"id": "EXOTIC-EXOT1183"
+		},
+		{
+			"title": "FEEL the POWER in YOUR SOUL WARofBRAINS",
+			"artist": "HIDEKI NAGANUMA",
+			"id": "FEELTH-FTPI6347"
+		},
+		{
+			"title": "FEEL the POWER in YOUR SOUL [Silent Dreams Power Mix] WARofBRAINS",
+			"artist": "Silent Dreams",
+			"id": "FEELTH-FTPI2772"
+		},
+		{
+			"title": "Fancy",
+			"artist": "Twice",
+			"id": "FANCYX-FANC5657"
+		},
+		{
+			"title": "Fantasia",
+			"artist": "☺",
+			"romanizedArtist": "Smiley",
+			"id": "FANTAS-FANT9448"
+		},
+		{
+			"title": "Feels Just Like That Night",
+			"artist": "Eskimo & Icebird",
+			"id": "FEELSJ-FJLT2316"
+		},
+		{
+			"title": "File Select Super Mario 64",
+			"artist": "Hyper Potions",
+			"id": "FILESE-FSSM8423"
+		},
+		{
+			"title": "Five Fathoms",
+			"artist": "Everything But The Girl",
+			"id": "FIVEFA-FFYY6311"
+		},
+		{
+			"title": "Fleadh Uncut",
+			"artist": "Parker/Stiles",
+			"id": "FLEADH-FUYY5669"
+		},
+		{
+			"title": "Floorfiller",
+			"artist": "A-Teens",
+			"id": "FLOORF-FLOO7779"
+		},
+		{
+			"title": "Flowers",
+			"artist": "Rob IYF & Al Storm",
+			"id": "FLOWER-FLOW1282"
+		},
+		{
+			"title": "Fly Away",
+			"artist": "Missing Heart",
+			"id": "FLYAWA-FAYY8851"
+		},
+		{
+			"title": "Fly With Me",
+			"artist": "Nina",
+			"id": "FLYWIT-FWMY2503"
+		},
+		{
+			"title": "Flying Battery Zone Sonic & Knuckles",
+			"artist": "Tee Lopes",
+			"id": "FLYING-FBZS7933"
+		},
+		{
+			"title": "Flying High",
+			"artist": "Filo Bedo",
+			"id": "FLYING-FHYY6494"
+		},
+		{
+			"title": "Frozen Fire",
+			"artist": "Kbit",
+			"id": "FROZEN-FFYY4514"
+		},
+		{
+			"title": "Fucking Want",
+			"artist": "Rob IYF & Al Storm",
+			"id": "FUCKIN-FWYY3431"
+		},
+		{
+			"title": "Funk Factory",
+			"artist": "Money Deluxe",
+			"id": "FUNKFA-FFYY2063"
+		},
+		{
+			"title": "GRADIUS Gradius",
+			"artist": "Tokyo Machine",
+			"id": "GRADIU-GGYY6652"
+		},
+		{
+			"title": "GameCube Intro The GameCube",
+			"artist": "Vgr",
+			"id": "GAMECU-GITG4038"
+		},
+		{
+			"title": "Ganondorf Tower Battle Zelda Ocarina of Time",
+			"artist": "ToxicXEternity",
+			"id": "GANOND-GTBZ6356"
+		},
+		{
+			"title": "Gerudo Valley Zelda Ocarina of Time",
+			"artist": "Hotline Sehwani",
+			"id": "GERUDO-GVZO3184"
+		},
+		{
+			"title": "Get Away",
+			"artist": "E-Rotic",
+			"id": "GETAWA-GAYY1648"
+		},
+		{
+			"title": "Get Happy",
+			"artist": "Boom Boom Room",
+			"id": "GETHAP-GHYY8383"
+		},
+		{
+			"title": "Get Outta My Heart",
+			"artist": "Ava Max",
+			"id": "GETOUT-GOMH3193"
+		},
+		{
+			"title": "Get Up",
+			"artist": "Marwin & D-fly feat. Bina",
+			"id": "GETUPX-GUYY6396"
+		},
+		{
+			"title": "Girls",
+			"artist": "Sugababes",
+			"id": "GIRLSX-GIRL7911"
+		},
+		{
+			"title": "Glamazon (Matt Pop Radio Edit)",
+			"artist": "RuPaul",
+			"id": "GLAMAZ-GPRY6425"
+		},
+		{
+			"title": "Go 60 Go",
+			"artist": "Takoyaki",
+			"id": "GO60GO-G6GY3706"
+		},
+		{
+			"title": "Got to Have You",
+			"artist": "Nightfly",
+			"id": "GOTTOH-GTHY8908"
+		},
+		{
+			"title": "Gourmet Race Kirby Super Star",
+			"artist": "Vgr",
+			"id": "GOURME-GRKS8513"
+		},
+		{
+			"title": "Green Hill Zone Sonic 1",
+			"artist": "Chuck None",
+			"id": "GREENH-GHZS9805"
+		},
+		{
+			"title": "Groovin' Motion",
+			"artist": "Sonic Dimension",
+			"id": "GROOVI-GMYY3721"
+		},
+		{
+			"title": "Gruntilda's Lair Banjo-Kazooie",
+			"artist": "Oodora",
+			"id": "BANJOK-GLBY9947"
+		},
+		{
+			"title": "Habanera 1",
+			"artist": "Boom Boom Room",
+			"id": "HABANE-H1YY8419"
+		},
+		{
+			"title": "Hand of Time",
+			"artist": "Reflection Theory",
+			"id": "HANDOF-HOTY7827"
+		},
+		{
+			"title": "Hands Up",
+			"artist": "Lagoona",
+			"id": "HANDSU-HUYY5612"
+		},
+		{
+			"title": "Hanging On",
+			"artist": "Cyrex",
+			"id": "HANGIN-HOYY1296"
+		},
+		{
+			"title": "Hardcore Symphony",
+			"artist": "Digital Explosion",
+			"id": "HARDCO-HSYY5369"
+		},
+		{
+			"title": "Hardcore of the North",
+			"artist": "Digital Explosion",
+			"id": "HARDCO-HOTN1600"
+		},
+		{
+			"title": "Hardkore Atomic",
+			"artist": "CanBlaster",
+			"id": "HARDKO-HAYY5787"
+		},
+		{
+			"title": "Hasse Mich",
+			"artist": "Onyx",
+			"id": "HASSEM-HMYY2822"
+		},
+		{
+			"title": "Hazy Maze Cave Super Mario 64",
+			"artist": "Ben Briggs",
+			"id": "HAZYMA-HMCS5377"
+		},
+		{
+			"title": "Hearts of Ice",
+			"artist": "Missing Heart",
+			"id": "HEARTS-HOIY2294"
+		},
+		{
+			"title": "Heel and Toe",
+			"artist": "KURi-ZiLL",
+			"id": "HEELAN-HATY7006"
+		},
+		{
+			"title": "Here We Go Again",
+			"artist": "Oliver Tree & David Guetta",
+			"id": "HEREWE-HWGA7602"
+		},
+		{
+			"title": "High",
+			"artist": "Digital Explosion",
+			"id": "HIGHXX-HIGH7030"
+		},
+		{
+			"title": "Higher Love",
+			"artist": "Steve Winwood",
+			"id": "HIGHER-HLYY9564"
+		},
+		{
+			"title": "Hill Top Zone Sonic 2",
+			"artist": "Mykah",
+			"id": "HILLTO-HTZS5003"
+		},
+		{
+			"title": "Hillbilly Hardcore",
+			"artist": "Benga Boys",
+			"id": "HILLBI-HHYY8564"
+		},
+		{
+			"title": "Hip Hop Jam",
+			"artist": "Indiggo",
+			"id": "HIPHOP-HHJY1087"
+		},
+		{
+			"title": "Hispanic Panic",
+			"artist": "Chucho Merchan",
+			"id": "HISPAN-HPYY9018"
+		},
+		{
+			"title": "Holding Out for a Hero",
+			"artist": "Bonnie Tyler",
+			"id": "HOLDIN-HOFA2080"
+		},
+		{
+			"title": "Holler (Radio Edit)",
+			"artist": "Spice Girls",
+			"id": "HOLLER-HEYY8103"
+		},
+		{
+			"title": "Holy Guacamole",
+			"artist": "Chucho Merchan",
+			"id": "HOLYGU-HGYY2123"
+		},
+		{
+			"title": "Horsey (Feat. Kim Petras)",
+			"artist": "Alex Chapman",
+			"id": "HORSEY-HKPY5000"
+		},
+		{
+			"title": "Hot Top Volcano Diddy Kong Racing",
+			"artist": "Ben Briggs",
+			"id": "HOTTOP-HTVD5114"
+		},
+		{
+			"title": "Hot for Teacher",
+			"artist": "Van Halen",
+			"id": "HOTFOR-HFTY2976"
+		},
+		{
+			"title": "Hurt Locker",
+			"artist": "9Muses",
+			"id": "HURTLO-HLYY2580"
+		},
+		{
+			"title": "Hustle Beach",
+			"artist": "Papa J",
+			"id": "HUSTLE-HBYY6717"
+		},
+		{
+			"title": "Hybrid",
+			"artist": "Machinae Supremacy",
+			"id": "HYBRID-HYBR6525"
+		},
+		{
+			"title": "Hydrocity (8-Bit Fusion) Sonic 3",
+			"artist": "Button Masher, Dj Cutman",
+			"id": "HYDROC-HFSY6979"
+		},
+		{
+			"title": "Hydrocity Zone Act 2 Sonic 3",
+			"artist": "Seibin",
+			"id": "HYDROC-HZA26583"
+		},
+		{
+			"title": "Hyper Hyper",
+			"artist": "☺",
+			"romanizedArtist": "Smiley",
+			"id": "HYPERH-HHYY2555"
+		},
+		{
+			"title": "Hyrule Castle The Legend of Zelda - A Link to the Past",
+			"artist": "Vector U",
+			"id": "HYRULE-HCTL7348"
+		},
+		{
+			"title": "I Don't Want It At All",
+			"artist": "Kim Petras",
+			"id": "IDONTW-IDWI7716"
+		},
+		{
+			"title": "I Think I Like That Sound",
+			"artist": "Kid Whatever",
+			"id": "ITHINK-ITIL1930"
+		},
+		{
+			"title": "I Wrote A Song (Topic Remix)",
+			"artist": "Mae Muller",
+			"id": "IWROTE-IWAS7605"
+		},
+		{
+			"title": "I'll Get There Anyway",
+			"artist": "Sammi Morelli",
+			"id": "ILLGET-IGTA5206"
+		},
+		{
+			"title": "I'm A Slave 4 U",
+			"artist": "Britney Spears",
+			"id": "IMASLA-IAS47226"
+		},
+		{
+			"title": "I'm OK",
+			"artist": "Little Big",
+			"id": "IMOKXX-IOYY3894"
+		},
+		{
+			"title": "I'm the Boss Big Bad Bosses Remix",
+			"artist": "Dj Cutman",
+			"id": "IMTHEB-ITBB7510"
+		},
+		{
+			"title": "Ice Cream Cake",
+			"artist": "Red Velvet",
+			"id": "ICECRE-ICCY8831"
+		},
+		{
+			"title": "Icy",
+			"artist": "ITZY",
+			"id": "ICYXXX-ICYY3094"
+		},
+		{
+			"title": "If U Seek Amy (Funk Generation Remix)",
+			"artist": "Britney Spears",
+			"id": "IFUSEE-IUSA8088"
+		},
+		{
+			"title": "Ignite (feat. Julie Bergan & Seungri)",
+			"artist": "K-391",
+			"id": "IGNITE-IJBY8340"
+		},
+		{
+			"title": "Im Gonna Be (500 Miles)",
+			"artist": "The Proclaimers",
+			"id": "IMGONN-IGBY7564"
+		},
+		{
+			"title": "Incognito",
+			"artist": "Inspector K",
+			"id": "INCOGN-INCO6896"
+		},
+		{
+			"title": "Infection",
+			"artist": "Inspector K",
+			"id": "INFECT-INFE3667"
+		},
+		{
+			"title": "Intense Color Mario Paint",
+			"artist": "Sephfire & Super Green X",
+			"id": "INTENS-ICMP5785"
+		},
+		{
+			"title": "Into My Dream (Kaveh Azizi Remix)",
+			"artist": "Lagoona",
+			"id": "INTOMY-IMDY7487"
+		},
+		{
+			"title": "It Gets Better (Radio Edit)",
+			"artist": "Eskimo Feat. Maria Merete",
+			"id": "ITGETS-IGBY8330"
+		},
+		{
+			"title": "It's Over Now",
+			"artist": "Virgill",
+			"id": "ITSOVE-IONY9937"
+		},
+		{
+			"title": "It's Tricky",
+			"artist": "Run-D.M.C.",
+			"id": "ITSTRI-ITYY9488"
+		},
+		{
+			"title": "Ize Pie",
+			"artist": "Headtwist & Pump",
+			"id": "IZEPIE-IPYY8940"
+		},
+		{
+			"title": "Jenny",
+			"artist": "Studio Killers",
+			"id": "JENNYX-JENN8555"
+		},
+		{
+			"title": "Jet World (Ryu Remix)",
+			"artist": "Remixed by Ryu",
+			"id": "JETWOR-JWRY7348"
+		},
+		{
+			"title": "Juice",
+			"artist": "Lizzo",
+			"id": "JUICEX-JUIC3392"
+		},
+		{
+			"title": "July",
+			"artist": "☺",
+			"romanizedArtist": "Smiley",
+			"id": "JULYXX-JULY6888"
+		},
+		{
+			"title": "July -Euromix-",
+			"artist": "js14",
+			"id": "JULYEU-JYYY5008"
+		},
+		{
+			"title": "Jungle Japes Donkey Kong 64",
+			"artist": "IncredFx",
+			"id": "JUNGLE-JJDK7344"
+		},
+		{
+			"title": "Junkit Earthworm Jim",
+			"artist": "Darkman007",
+			"id": "JUNKIT-JEJY8917"
+		},
+		{
+			"title": "Kagami",
+			"artist": "KaW",
+			"id": "KAGAMI-KAGA1658"
+		},
+		{
+			"title": "Kahu",
+			"artist": "Asha",
+			"id": "KAHUXX-KAHU3311"
+		},
+		{
+			"title": "Kamikaze",
+			"artist": "Tia Tia",
+			"id": "KAMIKA-KAMI3180"
+		},
+		{
+			"title": "Karma",
+			"artist": "Blackswan",
+			"id": "KARMAX-KARM7815"
+		},
+		{
+			"title": "Karma Chameleon",
+			"artist": "Culture Club",
+			"id": "KARMAC-KCYY5102"
+		},
+		{
+			"title": "Katamari on the Rocks Katamari Damacy",
+			"artist": "Yuu Miyake feat. Masayuki Tanaka & Tomomi Suzuki",
+			"id": "KATAMA-KOTR3720"
+		},
+		{
+			"title": "Kickstart My Heart",
+			"artist": "Mötley Crüe",
+			"id": "KICKST-KMHY7973"
+		},
+		{
+			"title": "Kill This Love",
+			"artist": "BLACKPINK",
+			"id": "KILLTH-KTLY2706"
+		},
+		{
+			"title": "Killer Instinct Theme Killer Instinct",
+			"artist": "Mkvaff",
+			"id": "KILLER-KITK2478"
+		},
+		{
+			"title": "King Bowser Super Mario Bros. 3",
+			"artist": "GaMetal",
+			"id": "KINGBO-KBSM8271"
+		},
+		{
+			"title": "King Kong",
+			"artist": "Shanadoo",
+			"id": "KINGKO-KKYY2112"
+		},
+		{
+			"title": "King Of Hearts",
+			"artist": "Kim Petras",
+			"id": "KINGOF-KOHY2223"
+		},
+		{
+			"title": "Kings & Queens",
+			"artist": "Ava Max",
+			"id": "KINGSQ-KQYY9929"
+		},
+		{
+			"title": "Kiss Me",
+			"artist": "E-Rotic",
+			"id": "KISSME-KMYY7664"
+		},
+		{
+			"title": "Kiss Me Red",
+			"artist": "Crispy",
+			"id": "KISSME-KMRY9666"
+		},
+		{
+			"title": "Know Your Enemy",
+			"artist": "Hybrid",
+			"id": "KNOWYO-KYEY9306"
+		},
+		{
+			"title": "LALALAY",
+			"artist": "Sunmi",
+			"id": "LALALA-LALA6939"
+		},
+		{
+			"title": "La Perla",
+			"artist": "Kobojsarna",
+			"id": "LAPERL-LPYY9248"
+		},
+		{
+			"title": "Land of Imagination",
+			"artist": "Lagoona",
+			"id": "LANDOF-LOIY5317"
+		},
+		{
+			"title": "Land of the Rising Sun",
+			"artist": "Spacekats",
+			"id": "LANDOF-LOTR6189"
+		},
+		{
+			"title": "Land of the Rising Sun (Diskowarp Mix)",
+			"artist": "Spacekats",
+			"id": "LANDOF-LOTR2645"
+		},
+		{
+			"title": "Lava Reef Zone Sonic 3 & Knuckles",
+			"artist": "Tee Lopes",
+			"id": "LAVARE-LRZS8533"
+		},
+		{
+			"title": "Lemmings on the Run",
+			"artist": "E-Rotic",
+			"id": "LEMMIN-LOTR1219"
+		},
+		{
+			"title": "Less Than Three",
+			"artist": "Becky",
+			"id": "LESSTH-LTTY2710"
+		},
+		{
+			"title": "Let Me Be The One",
+			"artist": "Sammi Morelli",
+			"id": "LETMEB-LMBT2143"
+		},
+		{
+			"title": "Let My Love Go Blind",
+			"artist": "Nina",
+			"id": "LETMYL-LMLG1041"
+		},
+		{
+			"title": "Life of a Butterfly",
+			"artist": "Nina",
+			"id": "LIFEOF-LOAB4379"
+		},
+		{
+			"title": "Lil Slugger Super Meat Boy",
+			"artist": "EXT4NT",
+			"id": "LILSLU-LSSM3419"
+		},
+		{
+			"title": "Lipstick Kiss",
+			"artist": "Ernest + Julio",
+			"id": "LIPSTI-LKYY7658"
+		},
+		{
+			"title": "Liquid Moon",
+			"artist": "Inspector K",
+			"id": "LIQUID-LMYY6934"
+		},
+		{
+			"title": "Little Kitty Mine",
+			"artist": "Ni Ni",
+			"id": "LITTLE-LKMY6405"
+		},
+		{
+			"title": "Live 4 Ever",
+			"artist": "Neptunia & ItaloBrothers",
+			"id": "LIVE4E-L4EY1621"
+		},
+		{
+			"title": "Living Without You",
+			"artist": "Ni Ni",
+			"id": "LIVING-LWYY1585"
+		},
+		{
+			"title": "Long Way Down (feat. Giin)",
+			"artist": "W&W & Darren Styles",
+			"id": "LONGWA-LWDY2350"
+		},
+		{
+			"title": "Lost Woods Zelda Ocarina of Time",
+			"artist": "VGR",
+			"id": "LOSTWO-LWZO1121"
+		},
+		{
+			"title": "Louder",
+			"artist": "MOTi",
+			"id": "LOUDER-LOUD5047"
+		},
+		{
+			"title": "Louder (Feat. Icona Pop)",
+			"artist": "Big Freedia",
+			"id": "LOUDER-LIPY3402"
+		},
+		{
+			"title": "Love City",
+			"artist": "9Muses",
+			"id": "LOVECI-LCYY7237"
+		},
+		{
+			"title": "Love Is A Battlefield",
+			"artist": "Pat Benatar",
+			"id": "LOVEIS-LIAB2818"
+		},
+		{
+			"title": "Love Made Me Do It (Initial Talk Remix)",
+			"artist": "Cheryl",
+			"id": "LOVEMA-LMMD4074"
+		},
+		{
+			"title": "Love Shack",
+			"artist": "The B-52's",
+			"id": "LOVESH-LSYY9976"
+		},
+		{
+			"title": "Lovers On The Sun (Feat. Sam Martin)",
+			"artist": "David Guetta",
+			"id": "LOVERS-LOTS5523"
+		},
+		{
+			"title": "Lovesong (Feat. Britt Daley)",
+			"artist": "Morgan Page",
+			"id": "LOVESO-LBDY6324"
+		},
+		{
+			"title": "Loyal To Me",
+			"artist": "Nina Nesbitt",
+			"id": "LOYALT-LTMY7451"
+		},
+		{
+			"title": "Magic",
+			"artist": "KSHMR",
+			"id": "MAGICX-MAGI1039"
+		},
+		{
+			"title": "Maneater",
+			"artist": "Daryl Hall & John Oates",
+			"id": "MANEAT-MANE3465"
+		},
+		{
+			"title": "Maniac",
+			"artist": "Michael Sembello",
+			"id": "MANIAC-MANI5949"
+		},
+		{
+			"title": "Mario Brothers Rap The Super Mario Bros. Super Show!",
+			"artist": "Shuki Levy & Haim Saban feat. Ali Dee",
+			"id": "MARIOB-MBRT3481"
+		},
+		{
+			"title": "Mars Drive",
+			"artist": "m-flo",
+			"id": "MARSDR-MDYY6240"
+		},
+		{
+			"title": "Mellow",
+			"artist": "Spacekats",
+			"id": "MELLOW-MELL6604"
+		},
+		{
+			"title": "Meta Crystal Super Smash Bros.",
+			"artist": "Tibor Bosma",
+			"id": "METACR-MCSS2358"
+		},
+		{
+			"title": "Metal Bros. Super Smash Bros. Melee",
+			"artist": "Chernabogue",
+			"id": "METALB-MBSS7650"
+		},
+		{
+			"title": "Metal Crusher Undertale",
+			"artist": "CementCity",
+			"id": "METALC-MCUY5084"
+		},
+		{
+			"title": "Metal Squad (Synthwave Remix) THUNDER FORCE IV",
+			"artist": "Elezeid",
+			"id": "METALS-MSRY6410"
+		},
+		{
+			"title": "Metallic Madness Zone Sonic Mania",
+			"artist": "A_RIVAL",
+			"id": "METALL-MMZS4350"
+		},
+		{
+			"title": "Money For Nothing",
+			"artist": "Dire Straits",
+			"id": "MONEYF-MFNY8644"
+		},
+		{
+			"title": "Monolith",
+			"artist": "Affinity",
+			"id": "MONOLI-MONO4459"
+		},
+		{
+			"title": "Moonstone",
+			"artist": "Virgill",
+			"id": "MOONST-MOON6087"
+		},
+		{
+			"title": "Mouth",
+			"artist": "Rochelle",
+			"id": "MOUTHX-MOUT5820"
+		},
+		{
+			"title": "Mr.Vain (Feat. Kanae Asaba)",
+			"artist": "DJ Tora & SHADW",
+			"id": "MRVAIN-MKAY2169"
+		},
+		{
+			"title": "Music Pleeze",
+			"artist": "B. Dastardly",
+			"id": "MUSICP-MPYY8067"
+		},
+		{
+			"title": "My Favorite Holiday (Matt Pop Remix)",
+			"artist": "RuPaul",
+			"id": "MYFAVO-MFHY2838"
+		},
+		{
+			"title": "My Favourite Game",
+			"artist": "Natalie Browne",
+			"id": "MYFAVO-MFGY1728"
+		},
+		{
+			"title": "My Heart Is Ticking Like a Bomb",
+			"artist": "E-Rotic",
+			"id": "MYHEAR-MHIT7657"
+		},
+		{
+			"title": "My Life Is So Crazy",
+			"artist": "DJ Zombie",
+			"id": "MYLIFE-MLIS4950"
+		},
+		{
+			"title": "My Love",
+			"artist": "Nightfly",
+			"id": "MYLOVE-MLYY7886"
+		},
+		{
+			"title": "My X",
+			"artist": "Little Sis Nora",
+			"id": "MYXXXX-MXYY1596"
+		},
+		{
+			"title": "Mythology",
+			"artist": "Digital Explosion",
+			"id": "MYTHOL-MYTH1874"
+		},
+		{
+			"title": "N2U (Feat. Martha Wash)",
+			"artist": "Showtek & Eva Shaw",
+			"id": "N2UFEA-NMWY9630"
+		},
+		{
+			"title": "Never Gonna Give You Up",
+			"artist": "Rick Astley",
+			"id": "NEVERG-NGGY8208"
+		},
+		{
+			"title": "Nightmoves",
+			"artist": "Playmaker",
+			"id": "NIGHTM-NIGH4230"
+		},
+		{
+			"title": "No",
+			"artist": "CLC",
+			"id": "NOXXXX-NOYY7691"
+		},
+		{
+			"title": "No 1 Nation",
+			"artist": "Anet",
+			"id": "NO1NAT-N1NY4357"
+		},
+		{
+			"title": "No Princess",
+			"artist": "Lynn",
+			"id": "NOPRIN-NPYY9851"
+		},
+		{
+			"title": "Normal",
+			"artist": "Anet",
+			"id": "NORMAL-NORM9491"
+		},
+		{
+			"title": "Not That Type",
+			"artist": "Gugudan",
+			"id": "NOTTHA-NTTY2371"
+		},
+		{
+			"title": "Not Worth The Paper",
+			"artist": "Dax",
+			"id": "NOTWOR-NWTP6520"
+		},
+		{
+			"title": "Oasis",
+			"artist": "KaW",
+			"id": "OASISX-OASI8550"
+		},
+		{
+			"title": "Oil Ocean Zone Sonic the Hedgehog 2",
+			"artist": "Mykah",
+			"id": "OILOCE-OOZS7877"
+		},
+		{
+			"title": "On A Night Like This",
+			"artist": "Kylie Minogue",
+			"id": "ONANIG-OANL5628"
+		},
+		{
+			"title": "On a Day Like Today",
+			"artist": "Obsession",
+			"id": "ONADAY-OADL9369"
+		},
+		{
+			"title": "One False Move",
+			"artist": "Dust Devil",
+			"id": "ONEFAL-OFMY7706"
+		},
+		{
+			"title": "One In A Million",
+			"artist": "Bebe Rexha & David Guetta",
+			"id": "ONEINA-OIAM5043"
+		},
+		{
+			"title": "One Kiss",
+			"artist": "Calvin Harris & Dua Lipa",
+			"id": "ONEKIS-OKYY6253"
+		},
+		{
+			"title": "Online",
+			"artist": "Lynn",
+			"id": "ONLINE-ONLI2409"
+		},
+		{
+			"title": "Only You (Twist Radio Mix)",
+			"artist": "Captain Jack",
+			"id": "ONLYYO-OYRY5617"
+		},
+		{
+			"title": "Opening Theme Mischief Makers",
+			"artist": "James Landino",
+			"id": "OPENIN-OTMM6283"
+		},
+		{
+			"title": "Out Of Time",
+			"artist": "Slayyyter",
+			"id": "OUTOFT-OOTY8523"
+		},
+		{
+			"title": "Out of the Dark",
+			"artist": "Hybrid",
+			"id": "OUTOFT-OOTD1281"
+		},
+		{
+			"title": "Overworld Theme The Legend of Zelda",
+			"artist": "Player2",
+			"id": "THELEG-OTTL8674"
+		},
+		{
+			"title": "PA Theme",
+			"artist": "MC Frontalot",
+			"id": "PATHEM-PTYY4521"
+		},
+		{
+			"title": "PAC OI OI OI PAC-MAN Championship Edition 2",
+			"artist": "Toshio Kai",
+			"id": "PACOIO-POOO8278"
+		},
+		{
+			"title": "PAC-MAN NEVA PAX!! PAC-MAN",
+			"artist": "Sasakure.Uk",
+			"id": "PACMAN-PNPP6791"
+		},
+		{
+			"title": "Pandemonium",
+			"artist": "ZiGZaG",
+			"id": "PANDEM-PAND5715"
+		},
+		{
+			"title": "Papaoutai",
+			"artist": "Stromae",
+			"id": "PAPAOU-PAPA9725"
+		},
+		{
+			"title": "Partyman",
+			"artist": "Hit 'N' Hide",
+			"id": "PARTYM-PART9542"
+		},
+		{
+			"title": "Perfect",
+			"artist": "Sammi Morelli",
+			"id": "PERFEC-PERF1533"
+		},
+		{
+			"title": "Personal Hell",
+			"artist": "Kim Petras",
+			"id": "PERSON-PHYY1161"
+		},
+		{
+			"title": "Pick Me Up & Tango",
+			"artist": "Nina",
+			"id": "PICKME-PMUY5178"
+		},
+		{
+			"title": "Picky Picky",
+			"artist": "Weki Meki",
+			"id": "PICKYP-PPYY1270"
+		},
+		{
+			"title": "Pink Fuzzy Bunnies",
+			"artist": "Wonderboy",
+			"id": "PINKFU-PFBY7146"
+		},
+		{
+			"title": "Play",
+			"artist": "Jolin Tsai",
+			"id": "PLAYXX-PLAY1260"
+		},
+		{
+			"title": "Power Trip Geometry Dash SubZero",
+			"artist": "Boom Kitty",
+			"id": "POWERT-PTGD5194"
+		},
+		{
+			"title": "Power of the Triforce Zelda",
+			"artist": "DragonForce",
+			"id": "POWERO-POTT2693"
+		},
+		{
+			"title": "Psalm Pilot",
+			"artist": "Jason Creasey",
+			"id": "PSALMP-PPYY5109"
+		},
+		{
+			"title": "Punk Right Now",
+			"artist": "HYO & 3LAU",
+			"id": "PUNKRI-PRNY8777"
+		},
+		{
+			"title": "Punk Right Now (English Version)",
+			"artist": "HYO & 3LAU",
+			"id": "PUNKRI-PRNY6912"
+		},
+		{
+			"title": "Q&A",
+			"artist": "Cherry Bullet",
+			"id": "QAXXXX-QAYY7693"
+		},
+		{
+			"title": "Queen of Light",
+			"artist": "Missing Heart",
+			"id": "QUEENO-QOLY6955"
+		},
+		{
+			"title": "RE-RAVE",
+			"artist": "KURi-ZiLL",
+			"id": "RERAVE-RERY3466"
+		},
+		{
+			"title": "ROM-eo & Juli8",
+			"artist": "Nina",
+			"id": "ROMEOJ-RJYY1607"
+		},
+		{
+			"title": "Ra",
+			"artist": "Banzai",
+			"id": "RAXXXX-RAYY3928"
+		},
+		{
+			"title": "Radius",
+			"artist": "KURi-ZiLL",
+			"id": "RADIUS-RADI2265"
+		},
+		{
+			"title": "Rainbow Road (From Mario Kart Wii) Mario Kart Wii",
+			"artist": "Vgr",
+			"id": "RAINBO-RRMY3118"
+		},
+		{
+			"title": "Rave Love",
+			"artist": "W&W, AXMIO, SONJA",
+			"id": "RAVELO-RLYY3866"
+		},
+		{
+			"title": "Raver",
+			"artist": "nanobii",
+			"id": "RAVERX-RAVE3559"
+		},
+		{
+			"title": "Reactor",
+			"artist": "Jason Creasey",
+			"id": "REACTO-REAC4692"
+		},
+		{
+			"title": "Rebel Yell",
+			"artist": "Billy Idol",
+			"id": "REBELY-RYYY2942"
+		},
+		{
+			"title": "Redial (Vector U Remix) Bomberman Hero",
+			"artist": "Vector U",
+			"id": "BOMBER-RURY2323"
+		},
+		{
+			"title": "Remember December",
+			"artist": "Mind Reflection",
+			"id": "REMEMB-RDYY3241"
+		},
+		{
+			"title": "Renaissance",
+			"artist": "☺",
+			"romanizedArtist": "Smiley",
+			"id": "RENAIS-RENA2736"
+		},
+		{
+			"title": "Ride the Bass",
+			"artist": "DJ Zombie",
+			"id": "RIDETH-RTBY2293"
+		},
+		{
+			"title": "Riders, Unite!",
+			"artist": "Andreas Viklund",
+			"id": "RIDERS-RUYY4430"
+		},
+		{
+			"title": "Robotix",
+			"artist": "K-bit",
+			"id": "ROBOTI-ROBO1875"
+		},
+		{
+			"title": "Romeo & Juliet",
+			"artist": "S.O.A.P.",
+			"id": "ROMEOJ-RJYY1524"
+		},
+		{
+			"title": "Roses Are Red (Radio Edit)",
+			"artist": "Aqua",
+			"id": "ROSESA-RARY5347"
+		},
+		{
+			"title": "Round and Round",
+			"artist": "Eskimo & Icebird",
+			"id": "ROUNDA-RARY2442"
+		},
+		{
+			"title": "Russkij Pusskij",
+			"artist": "Carlito",
+			"id": "RUSSKI-RPYY2580"
+		},
+		{
+			"title": "SOLO",
+			"artist": "Jennie",
+			"id": "SOLOXX-SOLO8498"
+		},
+		{
+			"title": "STOP! & Go",
+			"artist": "Onyx",
+			"id": "STOPGO-SGYY1577"
+		},
+		{
+			"title": "Safari Disco Club",
+			"artist": "Yelle",
+			"id": "SAFARI-SDCY3233"
+		},
+		{
+			"title": "Safety Dance",
+			"artist": "Men Without Hats",
+			"id": "SAFETY-SDYY9971"
+		},
+		{
+			"title": "Sandopolis Zone Sonic & Knuckles",
+			"artist": "Mykah",
+			"id": "SANDOP-SZSY3099"
+		},
+		{
+			"title": "Seven Seas",
+			"artist": "Maurice West",
+			"id": "SEVENS-SSYY4837"
+		},
+		{
+			"title": "Shadow",
+			"artist": "Vicetone & Allie X",
+			"id": "SHADOW-SHAD3770"
+		},
+		{
+			"title": "Simple And Clean Kingdom Hearts",
+			"artist": "Utada Hikaru",
+			"id": "SIMPLE-SACK7011"
+		},
+		{
+			"title": "Siren",
+			"artist": "Sunmi",
+			"id": "SIRENX-SIRE6268"
+		},
+		{
+			"title": "Slamyatsya Guys",
+			"artist": "Little Big",
+			"id": "SLAMYA-SGYY5523"
+		},
+		{
+			"title": "Slay",
+			"artist": "Everglow",
+			"id": "SLAYXX-SLAY3073"
+		},
+		{
+			"title": "Sledgehammer",
+			"artist": "Peter Gabriel",
+			"id": "SLEDGE-SLED1660"
+		},
+		{
+			"title": "Slider Super Mario 64",
+			"artist": "Vector U",
+			"id": "SLIDER-SSM62427"
+		},
+		{
+			"title": "Smash Super Smash Bros. Series",
+			"artist": "Barely Alive x Twine",
+			"id": "SMASHF-SSSB7917"
+		},
+		{
+			"title": "Smells Like a Chocolate",
+			"artist": "Vospi",
+			"id": "SMELLS-SLAC1249"
+		},
+		{
+			"title": "Snow Stream",
+			"artist": "Vospi",
+			"id": "SNOWST-SSYY7565"
+		},
+		{
+			"title": "So Crazy",
+			"artist": "T-ARA",
+			"id": "SOCRAZ-SCYY3327"
+		},
+		{
+			"title": "Soapy Bubble",
+			"artist": "Fragmentz",
+			"id": "SOAPYB-SBYY1546"
+		},
+		{
+			"title": "Solina",
+			"artist": "Evolution",
+			"id": "SOLINA-SOLI5732"
+		},
+		{
+			"title": "Something Deep Inside (The Bold & The Beautiful Mix)",
+			"artist": "Billie Piper",
+			"id": "SOMETH-SDIY7715"
+		},
+		{
+			"title": "Sonic Boom Sonic CD",
+			"artist": "Vector U",
+			"id": "SONICB-SBSC7134"
+		},
+		{
+			"title": "Southcoast Calling",
+			"artist": "Street Corner Poets",
+			"id": "SOUTHC-SCYY1802"
+		},
+		{
+			"title": "Spaceman",
+			"artist": "Lynn",
+			"id": "SPACEM-SPAC7958"
+		},
+		{
+			"title": "Spacy Crazy Girl",
+			"artist": "Ni Ni",
+			"id": "SPACYC-SCGY4772"
+		},
+		{
+			"title": "Speed Me Up Sonic The Hedgehog",
+			"artist": "Cg5 feat. NerdOut & FabvL",
+			"id": "SPEEDM-SMUS2948"
+		},
+		{
+			"title": "Spice Up Your Life",
+			"artist": "Spice Girls",
+			"id": "SPICEU-SUYL5727"
+		},
+		{
+			"title": "Spider Dance Undertale",
+			"artist": "Shirobon",
+			"id": "SPIDER-SDUY6678"
+		},
+		{
+			"title": "Spin Chicken",
+			"artist": "Freebie & The Bean",
+			"id": "SPINCH-SCYY2396"
+		},
+		{
+			"title": "Staff Roll (From Super Mario 64) Super Mario 64 (Ty Charles Martinet)",
+			"artist": "Player2",
+			"id": "STAFFR-SRSY5418"
+		},
+		{
+			"title": "Star Theme Super Mario Bros",
+			"artist": "Vgr",
+			"id": "STARTH-STSM6395"
+		},
+		{
+			"title": "Starfield",
+			"artist": "Cyrex",
+			"id": "STARFI-STAR8304"
+		},
+		{
+			"title": "Step",
+			"artist": "f(x)",
+			"id": "STEPXX-STEP9381"
+		},
+		{
+			"title": "Storm Eagle Mega Man X",
+			"artist": "MyNewSoundtrack",
+			"id": "STORME-SEMM8075"
+		},
+		{
+			"title": "Sucks To Be You",
+			"artist": "Prozzak",
+			"id": "SUCKST-STBY5188"
+		},
+		{
+			"title": "Summer Of '69",
+			"artist": "Bryan Adams",
+			"id": "SUMMER-SOYY1963"
+		},
+		{
+			"title": "Summer Of Love",
+			"artist": "Steps",
+			"id": "SUMMER-SOLY6389"
+		},
+		{
+			"title": "Summer in Belize",
+			"artist": "Digital Explosion",
+			"id": "SUMMER-SIBY7888"
+		},
+		{
+			"title": "Summer ~Speedy Mix~",
+			"artist": "☺",
+			"romanizedArtist": "Smiley",
+			"id": "SUMMER-SMYY3507"
+		},
+		{
+			"title": "Sun Son Sunday",
+			"artist": "Vospi",
+			"id": "SUNSON-SSSY3315"
+		},
+		{
+			"title": "Sun Son Sunday (Orange Mix)",
+			"artist": "Vospi",
+			"id": "SUNSON-SSSY7569"
+		},
+		{
+			"title": "Sundance",
+			"artist": "Hit 'N' Hide",
+			"id": "SUNDAN-SUND9437"
+		},
+		{
+			"title": "Sunday",
+			"artist": "Nuage",
+			"id": "SUNDAY-SUND8702"
+		},
+		{
+			"title": "Sunshine",
+			"artist": "Triple J",
+			"id": "SUNSHI-SUNS5410"
+		},
+		{
+			"title": "Sunshine",
+			"artist": "Playmaker",
+			"id": "SUNSHI-SUNS8735"
+		},
+		{
+			"title": "Sunshine",
+			"artist": "ANMO x Dance Nation",
+			"id": "SUNSHI-SUNS7636"
+		},
+		{
+			"title": "Super Clap",
+			"artist": "Super Junior",
+			"id": "SUPERC-SCYY6466"
+		},
+		{
+			"title": "Super Mario Bros. Main Theme Super Mario Bros.",
+			"artist": "Vgr",
+			"id": "SUPERM-SMBM5740"
+		},
+		{
+			"title": "Super Mario World (OFFICIAL GFM TRAP REMIX) Super Mario World",
+			"artist": "Goblins From Mars",
+			"id": "SUPERM-SMWY7139"
+		},
+		{
+			"title": "Supremacy",
+			"artist": "KaW",
+			"id": "SUPREM-SUPR8817"
+		},
+		{
+			"title": "Sweet Things",
+			"artist": "Andreas Viklund",
+			"id": "SWEETT-STYY4183"
+		},
+		{
+			"title": "Sweet World",
+			"artist": "Omega Men",
+			"id": "SWEETW-SWYY5747"
+		},
+		{
+			"title": "TMI",
+			"artist": "Hot Place",
+			"id": "TMIXXX-TMIY1809"
+		},
+		{
+			"title": "TT's Theme Diddy Kong Racing",
+			"artist": "Vector U feat. Player2",
+			"id": "TTSTHE-TTDK2493"
+		},
+		{
+			"title": "Take My Time",
+			"artist": "Alphadelta",
+			"id": "TAKEMY-TMTY2427"
+		},
+		{
+			"title": "Take On Me",
+			"artist": "a ha",
+			"id": "TAKEON-TOMY5212"
+		},
+		{
+			"title": "Take Your Chance",
+			"artist": "Fun Factory",
+			"id": "TAKEYO-TYCY5630"
+		},
+		{
+			"title": "Target Test (Break The Targets) Super Smash Bros. Melee",
+			"artist": "Player2",
+			"id": "TARGET-TTTY4150"
+		},
+		{
+			"title": "Tears of the Kingdom Main Theme Zelda Tears of the Kingdom",
+			"artist": "VGR, Mikel Dale",
+			"id": "TEARSO-TOTK3579"
+		},
+		{
+			"title": "Techno Syndrome Mortal Kombat",
+			"artist": "Alexey Korovin",
+			"id": "TECHNO-TSMK9210"
+		},
+		{
+			"title": "Tekkno Train",
+			"artist": "Electric Callboy",
+			"id": "TEKKNO-TTYY7542"
+		},
+		{
+			"title": "Tell",
+			"artist": "Symphonious",
+			"id": "TELLXX-TELL3766"
+		},
+		{
+			"title": "Temple of Boom",
+			"artist": "Yanis Kamarinos",
+			"id": "TEMPLE-TOBY9634"
+		},
+		{
+			"title": "Temple of Love",
+			"artist": "E-Rotic",
+			"id": "TEMPLE-TOLY6763"
+		},
+		{
+			"title": "Tension",
+			"artist": "Inspector K",
+			"id": "TENSIO-TENS8959"
+		},
+		{
+			"title": "Tension",
+			"artist": "Kylie Minogue",
+			"id": "TENSIO-TENS7498"
+		},
+		{
+			"title": "Tetris - Theme A Tetris",
+			"artist": "Doctor P",
+			"id": "TETRIS-TTAY5071"
+		},
+		{
+			"title": "That Is Fair",
+			"artist": "Vospi",
+			"id": "THATIS-TIFY3930"
+		},
+		{
+			"title": "The Beginning",
+			"artist": "DJ Doo",
+			"id": "THEBEG-TBYY6507"
+		},
+		{
+			"title": "The Boys Of Summer",
+			"artist": "Don Henley",
+			"id": "THEBOY-TBOS7000"
+		},
+		{
+			"title": "The Darkness of Eternity Final Fantasy IX",
+			"artist": "Vector U",
+			"id": "THEDAR-TDOE3143"
+		},
+		{
+			"title": "The Deep Unknown",
+			"artist": "Adam Vox",
+			"id": "THEDEE-TDUY4997"
+		},
+		{
+			"title": "The Doomsday Sonic 3 & Knuckles",
+			"artist": "SnappleMan, Ashane, norg",
+			"id": "THEDOO-TDS38129"
+		},
+		{
+			"title": "The Game",
+			"artist": "Crispy",
+			"id": "THEGAM-TGYY5545"
+		},
+		{
+			"title": "The Girls",
+			"artist": "BLACKPINK",
+			"id": "THEGIR-TGYY4156"
+		},
+		{
+			"title": "The Instinct Killer Instinct",
+			"artist": "Mick Gordon",
+			"id": "THEINS-TIKI9435"
+		},
+		{
+			"title": "The Last Kiss",
+			"artist": "Missing Heart",
+			"id": "THELAS-TLKY2705"
+		},
+		{
+			"title": "The Message",
+			"artist": "Ni Ni",
+			"id": "THEMES-TMYY1756"
+		},
+		{
+			"title": "The Muu Dream Machine Super Mario Bros. 2",
+			"artist": "Xaleph",
+			"id": "THEMUU-TMDM9021"
+		},
+		{
+			"title": "The Promised Land",
+			"artist": "Lagoona",
+			"id": "THEPRO-TPLY5059"
+		},
+		{
+			"title": "The Universe Beside You",
+			"artist": "Asha",
+			"id": "THEUNI-TUBY1130"
+		},
+		{
+			"title": "The Way You Make Me Feel",
+			"artist": "Michael Jackson",
+			"id": "THEWAY-TWYM6002"
+		},
+		{
+			"title": "This is Rock & Roll",
+			"artist": "DJ Zombie",
+			"id": "THISIS-TIRY1936"
+		},
+		{
+			"title": "Thunder",
+			"artist": "Madison Rose",
+			"id": "THUNDE-THUN7646"
+		},
+		{
+			"title": "Top Gear 2 Intro Theme Top Gear 2",
+			"artist": "Tauan Gutierres",
+			"id": "TOPGEA-TG2I9681"
+		},
+		{
+			"title": "Torn",
+			"artist": "Natalie Browne",
+			"id": "TORNXX-TORN3218"
+		},
+		{
+			"title": "Touch Me",
+			"artist": "E-Rotic",
+			"id": "TOUCHM-TMYY2084"
+		},
+		{
+			"title": "Tough Enough",
+			"artist": "Vanilla Ninja",
+			"id": "TOUGHE-TEYY9384"
+		},
+		{
+			"title": "Toxic Cave Sonic Spinball",
+			"artist": "GameChops, Ben Briggs, Dj Cutman",
+			"id": "TOXICC-TCSS8488"
+		},
+		{
+			"title": "Trainer Battle Pokemon Red and Blue",
+			"artist": "Vgr",
+			"id": "TRAINE-TBPR7630"
+		},
+		{
+			"title": "Treasure Trove Cove Banjo Kazooie",
+			"artist": "midiplex",
+			"id": "TREASU-TTCB3022"
+		},
+		{
+			"title": "Tribal Style",
+			"artist": "KaW",
+			"id": "TRIBAL-TSYY7192"
+		},
+		{
+			"title": "Tribe Attacker",
+			"artist": "CanBlaster",
+			"id": "TRIBEA-TAYY1749"
+		},
+		{
+			"title": "Try To Star Gradius III",
+			"artist": "S.S.H.",
+			"id": "GRADIU-TTSG9539"
+		},
+		{
+			"title": "Turbo Tunnel Battletoads",
+			"artist": "Eight Bit Commando",
+			"id": "TURBOT-TTBY8430"
+		},
+		{
+			"title": "Turn It On",
+			"artist": "Georgetown",
+			"id": "TURNIT-TIOY7553"
+		},
+		{
+			"title": "Tutorial",
+			"artist": "BB Hayes",
+			"id": "TRAINI-TUTO1275"
+		},
+		{
+			"title": "Twilight",
+			"artist": "KaW",
+			"id": "TWILIG-TWIL5016"
+		},
+		{
+			"title": "Typical Tropical",
+			"artist": "Bambee",
+			"id": "TYPICA-TTYY7849"
+		},
+		{
+			"title": "Unbreakable Determination (Stage 4-2) Ninja Gaiden",
+			"artist": "Hidelight",
+			"id": "UNBREA-UD4Y5940"
+		},
+		{
+			"title": "Under The Bridge",
+			"artist": "Bermuda",
+			"id": "UNDERT-UTBY1796"
+		},
+		{
+			"title": "Unicorn (Sagi Kariv & Itay Galo Remix)",
+			"artist": "Noa Kirel",
+			"id": "UNICOR-UKYY3306"
+		},
+		{
+			"title": "Upside Down (Feat. Kim Lukas)",
+			"artist": "DJ Jump",
+			"id": "UPSIDE-UDKY4210"
+		},
+		{
+			"title": "Utami",
+			"artist": "Bougenvilla",
+			"id": "UTAMIX-UTAM6477"
+		},
+		{
+			"title": "Utopia",
+			"artist": "☺",
+			"romanizedArtist": "Smiley",
+			"id": "UTOPIA-UTOP1353"
+		},
+		{
+			"title": "Vandalize Sonic Frontiers",
+			"artist": "VGR feat. CG5",
+			"id": "VANDAL-VSFY3795"
+		},
+		{
+			"title": "Vegas High",
+			"artist": "Kylie Minogue",
+			"id": "VEGASH-VHYY2274"
+		},
+		{
+			"title": "VerTex",
+			"artist": "ZiGZaG",
+			"id": "VERTEX-VERT2267"
+		},
+		{
+			"title": "VerTex²",
+			"artist": "ZiGZaG",
+			"romanizedTitle": "VerTex^2",
+			"id": "VERTEX-VERT6146"
+		},
+		{
+			"title": "VerTex³",
+			"artist": "ZiGZaG",
+			"romanizedTitle": "VerTex^3",
+			"id": "VERTEX-VERT7640"
+		},
+		{
+			"title": "Virtual Emotion",
+			"artist": "Inspector K",
+			"id": "VIRTUA-VEYY1900"
+		},
+		{
+			"title": "Visible Noise",
+			"artist": "Hybrid",
+			"id": "VISIBL-VNYY3672"
+		},
+		{
+			"title": "Vorsprung Durch -Techno-",
+			"artist": "Sly/Fly/Badman",
+			"id": "VORSPR-VDYY9777"
+		},
+		{
+			"title": "WWW",
+			"artist": "nanobii",
+			"id": "WWWXXX-WWWY8989"
+		},
+		{
+			"title": "Wake Up",
+			"artist": "Kid Whatever",
+			"id": "WAKEUP-WUYY7713"
+		},
+		{
+			"title": "Walking on Fire",
+			"artist": "Evolution feat. Jayn Hanna",
+			"id": "WALKIN-WOFY8961"
+		},
+		{
+			"title": "Wanna Do ~Hardhouse Mix~",
+			"artist": "Nina",
+			"id": "WANNAD-WDMY6035"
+		},
+		{
+			"title": "We Built This City",
+			"artist": "Starship",
+			"id": "WEBUIL-WBTC9374"
+		},
+		{
+			"title": "We Didn't Start the Fire",
+			"artist": "Billy Joel",
+			"id": "WEDIDN-WDST3396"
+		},
+		{
+			"title": "We Know What To Do",
+			"artist": "Matiloe",
+			"id": "WEKNOW-WKWT7517"
+		},
+		{
+			"title": "Wet (Radio Mix)",
+			"artist": "Solid Base",
+			"id": "WETRAD-WMYY4281"
+		},
+		{
+			"title": "Wham Bam Boogie",
+			"artist": "Bambee",
+			"id": "WHAMBA-WBBY1791"
+		},
+		{
+			"title": "Which MC Was That?",
+			"artist": "MC Frontalot",
+			"id": "WHICHM-WMWT4199"
+		},
+		{
+			"title": "While Tha Rekkid Spinz",
+			"artist": "DJ Zombie",
+			"id": "WHILET-WTRS3909"
+		},
+		{
+			"title": "Who",
+			"artist": "KaW",
+			"id": "WHOXXX-WHOY9154"
+		},
+		{
+			"title": "Who The Hell Is Edgar?",
+			"artist": "TEYA & SELENA",
+			"id": "WHOTHE-WTHI2210"
+		},
+		{
+			"title": "Why Me",
+			"artist": "Desire",
+			"id": "WHYMEX-WMYY8566"
+		},
+		{
+			"title": "Wig",
+			"artist": "Todrick Hall",
+			"id": "WIGXXX-WIGY1237"
+		},
+		{
+			"title": "Wizpig Challenge Diddy Kong Racing",
+			"artist": "Vector U",
+			"id": "WIZPIG-WCDK3731"
+		},
+		{
+			"title": "Wonder Where You Are",
+			"artist": "Da Buzz",
+			"id": "WONDER-WWYA5071"
+		},
+		{
+			"title": "Woowa",
+			"artist": "Dia",
+			"id": "WOOWAX-WOOW9360"
+		},
+		{
+			"title": "Word Up",
+			"artist": "Cameo",
+			"id": "WORDUP-WUYY8066"
+		},
+		{
+			"title": "Work With My Love",
+			"artist": "Alok & James Arthur",
+			"id": "WORKWI-WWML4202"
+		},
+		{
+			"title": "World of Dreams (Two Gees Radio Edit)",
+			"artist": "Hit 'N' Hide",
+			"id": "WORLDO-WODY9026"
+		},
+		{
+			"title": "XLR8",
+			"artist": "Gothy Kendoll & Sminty Drop",
+			"id": "XLR8XX-XLR88102"
+		},
+		{
+			"title": "Xuxa",
+			"artist": "☺",
+			"romanizedArtist": "Smiley",
+			"id": "XUXAXX-XUXA6921"
+		},
+		{
+			"title": "Y2Z",
+			"artist": "Affinity",
+			"id": "Y2ZXXX-Y2ZY8946"
+		},
+		{
+			"title": "Yodel Song (Feat. Sofia Shkidchenko)",
+			"artist": "Basement Jaxx",
+			"id": "YODELS-YSSY8140"
+		},
+		{
+			"title": "You Spin Me Round (Like a Record)",
+			"artist": "Dead Or Alive",
+			"id": "YOUSPI-YSMR6893"
+		},
+		{
+			"title": "Young Forever",
+			"artist": "Rebecca",
+			"id": "YOUNGF-YFYY6593"
+		},
+		{
+			"title": "Your Love",
+			"artist": "The Outfield",
+			"id": "YOURLO-YLYY2680"
+		},
+		{
+			"title": "Zelda II Battle Theme Zelda II The Adventure of Link",
+			"artist": "Mykah",
+			"id": "ZELDAI-ZIBT9712"
+		},
+		{
+			"title": "Zodiac",
+			"artist": "Banzai",
+			"id": "ZODIAC-ZODI7532"
+		}
+	]
 }
