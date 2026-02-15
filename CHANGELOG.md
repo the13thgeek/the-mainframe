@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.2b] - 2026-02-14
+### Added
+- Added support for ITGmania + song DB update
+
 ## [1.4.2] - 2025-12-09
 ### Added
 - Added Flight Log (2025 Wrapped)
