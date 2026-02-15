@@ -58,7 +58,7 @@ const Home = () => {
               <Tile extraClassName={'livestream-info'}>
                 <Tabs className={'info-tabs'} selectedTabClassName='active'>
                   <TabList className={'tabs-list'}>
-                    {(liveData?.game_name === 'StepMania') && (
+                    {(liveData?.game_name === 'StepMania' || liveData?.game_name === 'ITGmania') && (
                       <Tab disabledClassName='disabled'><span>Requests</span></Tab>
                     )}
                     { liveData && (
@@ -72,7 +72,7 @@ const Home = () => {
                     )}
                   </TabList>
                   <div className="contents">
-                    {(liveData?.game_name === 'StepMania') && (
+                    {(liveData?.game_name === 'StepMania' || liveData?.game_name === 'ITGmania') && (
                       <TabPanel className='panel song-requests' selectedClassName='active'>
                         <RequestsBar />
                       </TabPanel>
