@@ -88,7 +88,7 @@ const PlayerRanking = ({ enableUserView = false }) => {
             {user.is_premium === 1 && (<div className="badge-item mode-elite"><span>Mode Élite</span></div>)} */}
             { getTierName(user.sub_months) !== null && (<PlayerBadge badgeName={getTierName(user.sub_months)} />) }
             { user.is_premium === 1 && (<PlayerBadge badgeName='elite' />) }
-            {/* { user.team !== null && (<PlayerBadge badgeName={user.team?.toLowerCase()} />) } */}
+            { user.team !== null && (<PlayerBadge badgeName={`team`+user.team} />) }
           </div>
           {user.level > 0 && (
             <p className='player-level'>

@@ -77,6 +77,18 @@
     background: linear-gradient(135deg, #43A047, #66BB6A, #A5D6A7);
   }
 
+  &.badge-team1 {
+    background: linear-gradient(135deg, #9900cc, #7b0ba0, #bf28f2);
+  }
+
+  &.badge-team2 {
+    background: linear-gradient(135deg, #009999, #0a8181, #20c3c3);
+  }
+
+  &.badge-team3 {
+    background: linear-gradient(135deg, #cc9900, #a9820f, #d4a822);
+  }
+
   &.badge-elite {
       //background-color: #333;
       //font-style: italic;
