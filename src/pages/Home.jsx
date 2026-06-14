@@ -13,6 +13,7 @@ import PlayerRanking from "../components/PlayerRanking";
 import RequestsBar from "../components/RequestsBar";
 import Ranking from "../components/Ranking";
 import TourneyScoreboard from "../components/TourneyScoreboard";
+import TourneyMembers from "../components/TourneyMembers";
 import './Home.scss';
 
 const Home = () => {
@@ -157,13 +158,16 @@ const Home = () => {
           </Tile>
         </div>
         <div className="row links">
-          <Tile extraClassName={'link-catalog'}>
+          <Tile extraClassName={'member-list'} title={'The Heist Crew'}>
+            <TourneyMembers />
+          </Tile>
+          {/* <Tile extraClassName={'link-catalog'}>
             <div className="content">
               <h3>Catalog</h3>
               <p>Check the complete catalog of released user card designs. Organize your collection and find out more info on how to acquire specials and event exclusives!</p>
               <p><Link to="/catalog" className='btn'>View Catalog</Link></p>
             </div>
-          </Tile>
+          </Tile> */}
           {/* <Tile extraClassName={'link-poweredby'}></Tile> */}
           <Tile extraClassName={'showdown-scoreboard'} title={'The Black Diamond Heist'}>
             <TourneyScoreboard />
