@@ -30,6 +30,7 @@ const DialogUserPreview = ({ userId }) => {
           const result = await response.json();
           setUserData(result.data);
           setLoading(false);
+          //console.log(JSON.stringify(result.data));
         }
       } catch(e) {
         console.log('[User Profile] Error: ' + e.message);
@@ -46,7 +47,7 @@ const DialogUserPreview = ({ userId }) => {
       ) : (
       <div className={'profile-box user-level-bg level-'+userData.level}>
         <div className='card'>
-          <img src={UserCard(userData.card_default.sysname)} alt={`Card: ${userData.card_default.name}`} />
+          <img src={UserCard(userData.equipped.nameplate.sysname)} alt={`Card: ${userData.equipped.nameplate.name}`} />
           <div className='avatar'>
             <img src={userData.twitch_avatar} alt="Twitch Avatar" />
           </div>

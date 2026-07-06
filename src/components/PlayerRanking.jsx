@@ -41,6 +41,7 @@ const PlayerRanking = ({ enableUserView = false }) => {
           const result = await response.json();
           const ranks = result.data;
           const minItems = 5;
+          //console.log(JSON.stringify(ranks));
 
           while(ranks.length < minItems) {
             ranks.push({
@@ -49,7 +50,7 @@ const PlayerRanking = ({ enableUserView = false }) => {
               id: -1,
               is_premium: 0,
               level: 0,
-              levelProgress: 0,
+              level_progress: 0,
               sub_months: 0,
               sysname: "standard",
               team: null,
@@ -77,7 +78,7 @@ const PlayerRanking = ({ enableUserView = false }) => {
       { rankData && rankData.length > 0 && rankData.map((user, idx) => (
         <li key={idx} className={'rank-item' + (enableUserView ? ' clickable' : '') + ' user-level-bg level-'+(user.level)} onClick={() => openUserInfo(enableUserView ? user.id : null)}>
           <div className="card">
-            <img src={UserCard(user.sysname+'-thumb')} alt={`Card: ${user.active_card}`} />
+            <img src={UserCard(user.sysname+'-thumb')} alt={`Card: ${user.active_nameplate}`} />
             <div className="avatar">
               <img src={user.twitch_avatar} alt={user.twitch_display_name + `'s avatar`} />
             </div>

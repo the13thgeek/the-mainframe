@@ -109,7 +109,7 @@ const Home = () => {
             </div>
             <div className="col-c">
               <Tile extraClassName={'user-card'} title={'User Card'}>
-                <UserCardPreview userLevel={user.level} cardName={user.user_card.sysname} cardTitle={user.user_card.name} isPremium={user.user_card.is_premium} isRare={user.user_card.is_rare} isEvent={user.user_card.is_event} />
+                <UserCardPreview userLevel={user.level} cardName={user.equipped.nameplate.sysname} cardTitle={user.equipped.nameplate.name} isPremium={user.equipped.nameplate.is_premium} isRare={user.equipped.nameplate.is_rare} isEvent={user.equipped.nameplate.is_event} />
               </Tile>
             </div>
             </>

@@ -23,7 +23,7 @@ const TwitchUserInfo = () => {
         {user ? (
             <div className={'profile-detail'}>
                 <div className="card-bg">
-                    <img src={UserCard(user.user_card.sysname)} alt={`Card: ${user.user_card.name}`} />
+                    <img src={UserCard(user.equipped.nameplate.sysname)} alt={`Card: ${user.equipped.nameplate.name}`} />
                 </div>
                 <div className="user-card">
                     <div className="avatar">

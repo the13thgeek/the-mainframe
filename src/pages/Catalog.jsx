@@ -14,20 +14,20 @@ const Catalog = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState(null);
 
-  const catalogCardsEX = catalog?.filter(card =>
-    ['EX','GX','SP'].some(option => card.catalog_no.startsWith(option))
+  const catalogNameplatesEX = catalog?.filter(nameplate =>
+    ['EX','GX','SP'].some(option => nameplate.catalog_no.startsWith(option))
   );
-  const catalogCardsRP = catalog?.filter(card =>
-    ['RP'].some(option => card.catalog_no.startsWith(option))
+  const catalogNameplatesRP = catalog?.filter(nameplate =>
+    ['RP'].some(option => nameplate.catalog_no.startsWith(option))
   );
-  const catalogCardsRG = catalog?.filter(card =>
-    ['RG'].some(option => card.catalog_no.startsWith(option))
+  const catalogNameplatesRG = catalog?.filter(nameplate =>
+    ['RG'].some(option => nameplate.catalog_no.startsWith(option))
   );
 
-  const isUserOwned = (card_id) => {
+  const isUserOwned = (nameplate_id) => {
     let output = false;
-    for(let card of user.user_cards) {
-      if(card.id === card_id) {
+    for(let nameplate of user.nameplates) {
+      if(nameplate.id === nameplate_id) {
         output = true;
         break;
       }
@@ -67,22 +67,22 @@ const Catalog = () => {
     }
   }, [user, navigate]);
 
-  const openDialog = (card, type) => {
+  const openDialog = (nameplate, type) => {
     setModalContent(
       <div className={'card-details ' + type}>
-        <img className='card-image' src={UserCard(card.sysname + "-thumb")} alt={card.name} />
-        <h3 className="name">{card.name}</h3>
+        <img className='card-image' src={UserCard(nameplate.sysname + "-thumb")} alt={nameplate.name} />
+        <h3 className="name">{nameplate.name}</h3>
         <div className="badges">
-          {card.is_pull === 0 && (
+          {nameplate.is_pull === 0 && (
             <span className='card-badge oop'>Out of print</span>
           )}
-          {card.is_premium === 1 && (
+          {nameplate.is_premium === 1 && (
             <span className="card-badge premium">Premium</span>
           )}
-          {card.is_event === 1 && (
+          {nameplate.is_event === 1 && (
             <span className="card-badge event">Event Exclusive</span>
           )}
-          {card.is_rare === 1 && (
+          {nameplate.is_rare === 1 && (
             <span className="card-badge rare">Rare</span>
           )}
         </div>
@@ -90,24 +90,24 @@ const Catalog = () => {
           <tbody>
             <tr>
               <th>Catalog #</th>
-              <td>{card.catalog_no}</td>
+              <td>{nameplate.catalog_no}</td>
             </tr>
             <tr>
               <th>Name</th>
-              <td>{card.is_premium === 1 ? 'Premium ' : ''}{card.name}</td>
+              <td>{nameplate.is_premium === 1 ? 'Premium ' : ''}{nameplate.name}</td>
             </tr>
             <tr>
               <th>Release</th>
-              <td>{card.release}</td>
+              <td>{nameplate.release}</td>
             </tr>
             <tr>
               <th>Availability</th>
-              <td>{ card.is_pull === 1 ? card.is_premium === 1 ? ('Yes, VIP/Subscribers only') : ('Yes') : ('No') }</td>
+              <td>{ nameplate.is_pull === 1 ? nameplate.is_premium === 1 ? ('Yes, VIP/Subscribers only') : ('Yes') : ('No') }</td>
             </tr>
-            { card.notes !== null && (
+            { nameplate.notes !== null && (
             <tr>
               <th>Notes</th>
-              <td>{ card.notes }</td>
+              <td>{ nameplate.notes }</td>
             </tr>
             ) }
           </tbody>
@@ -128,16 +128,16 @@ const Catalog = () => {
       <div className="structure">
         <div className="row">
           <div className="col-a">
-            <Tile extraClassName={'card-catalog'} icon={<i className="fa-solid fa-credit-card"></i>} title={'Member Card Catalog'}>
+            <Tile extraClassName={'card-catalog'} icon={<i className="fa-solid fa-credit-card"></i>} title={'Member Nameplate Catalog'}>
               { isLoading ? (
                 <p>Loading...</p>
               ) : (
                 <>
-                <p className="instructions">Click on a card design to show more details.</p>
+                <p className="instructions">Click on a nameplate design to show more details.</p>
                 <h3 className='card-category specials'>Specials &amp; Exclusives</h3>
                 <div className="catalog-list">
-                  {catalogCardsEX.length > 0 && (
-                    catalogCardsEX.map((item, idx) => (
+                  {catalogNameplatesEX.length > 0 && (
+                    catalogNameplatesEX.map((item, idx) => (
                       <div className='catalog-item' key={idx} onClick={() => openDialog(item, 'ex')}>
                         <div className="card-image">
                           <img src={UserCard(item.sysname + "-thumb")} alt={item.name} />
@@ -157,8 +157,8 @@ const Catalog = () => {
                 </div>
                 <h3 className='card-category premium'>Premium Issue</h3>
                 <div className="catalog-list">
-                  {catalogCardsRP.length > 0 && (
-                    catalogCardsRP.map((item, idx) => (
+                  {catalogNameplatesRP.length > 0 && (
+                    catalogNameplatesRP.map((item, idx) => (
                       <div className='catalog-item' key={idx} onClick={() => openDialog(item, 'rp')}>
                         <div className="card-image">
                           <img src={UserCard(item.sysname + "-thumb")} alt={item.name} />
@@ -178,8 +178,8 @@ const Catalog = () => {
                 </div>
                 <h3 className='card-category standard'>Standard Issue</h3>
                 <div className="catalog-list">
-                  {catalogCardsRG.length > 0 && (
-                    catalogCardsRG.map((item, idx) => (
+                  {catalogNameplatesRG.length > 0 && (
+                    catalogNameplatesRG.map((item, idx) => (
                       <div className='catalog-item' key={idx} onClick={() => openDialog(item, 'rg')}>
                         <div className="card-image">
                           <img src={UserCard(item.sysname + "-thumb")} alt={item.name} />
@@ -206,38 +206,80 @@ const Catalog = () => {
             <Tile extraClassName={'card-faq'} icon={<i className="fa-solid fa-circle-question"></i>} title={'Member Card FAQs'}>
               <ul className="faq">
                 <li>
-                  <p className='q'>What are Collectible Member Cards?</p>
-                  <p className='a'>The Collectible Member Cards are issued to every Twitch viewer as their form of virtual ID. Viewers redeem "Check-in" during <b>@the13thgeek</b>'s stream and it shows the viewer's card on the screen with their name on it, together with their user level and number of total check-ins.<br />
-                  These cards comes in various designs and are acquired through a gacha mechanic.</p>
+                  <p className="q">What are Collectible Nameplates?</p>
+                  <p className="a">
+                    Collectible Nameplates are your virtual identity within <b>@the13thgeek</b>'s Twitch community.
+                    <br />
+                    Viewers redeem <b>"Check-in"</b> during the stream, which displays their nameplate on-screen along with their username,
+                    user level, and total number of check-ins.
+                    <br />
+                    Nameplates come in various designs and are acquired through a gacha system.
+                  </p>
                 </li>
+
                 <li>
-                  <p className="q">How do I get my own membership card?</p>
-                  <p className="a">All viewers are issued the regular blue one by default. Viewers can get new designs by redeeming <b>"Mystery Card Pull"</b> using their channel points.</p>
+                  <p className="q">How do I get my own nameplate?</p>
+                  <p className="a">
+                    All viewers are issued the Standard nameplate by default. Viewers can unlock new designs by redeeming{" "}
+                    <b>"Mystery Nameplate Pull"</b> using channel points.
+                  </p>
                 </li>
+
                 <li>
-                  <p className="q">What are the differences between Standard and Premium designs?</p>
-                  <p className="a">The channel's <b>VIP and Subscribers</b> have the opportunity to pull additional designs (Premium). The Standard designs are available for everyone.</p>
+                  <p className="q">What are the differences between Standard and Premium nameplates?</p>
+                  <p className="a">
+                    VIPs and Subscribers have the opportunity to pull additional Premium nameplates. Standard nameplates are
+                    available to all viewers.
+                  </p>
                 </li>
+
                 <li>
-                  <p className="q">What are the Special and Exclusive designs?</p>
-                  <p className="a">There are additional fun card designs that are only available during an event or when streaming specific games! Check out our Discord channel for card drop announcements!</p>
+                  <p className="q">What are Special and Exclusive nameplates?</p>
+                  <p className="a">
+                    Special and Exclusive nameplates are limited-time designs available during events or themed streams.
+                    <br />
+                    These may include seasonal drops, milestones, or game-specific events. Check the Discord for announcements!
+                  </p>
                 </li>
+
                 <li>
-                  <p className="q">I pulled and collected a Premium card but I can't renew my subscription. What happens to the card?</p>
-                  <p className="a">Users will retain ownership of any previously-obtained card designs! :)</p>
+                  <p className="q">
+                    I pulled a Premium nameplate but I can’t renew my subscription. What happens to it?
+                  </p>
+                  <p className="a">
+                    All nameplates you have already obtained are permanently yours! :)
+                  </p>
                 </li>
+
                 <li>
-                  <p className="q">I've collected a few designs. How do I pick which one I want to use for the stream?</p>
-                  <p className="a">There are two ways: <b>(1) on the stream chat, type !getcards</b> and the chatbot will respond do you with a list of card names that you own. Follow the instructions provided; and <b>(2) on the Mainframe site, open your Profile page</b> and click on <b>Set Active</b> on your chosen design.</p>
+                  <p className="q">I've collected a few nameplates. How do I choose which one is shown on stream?</p>
+                  <p className="a">
+                    There are two ways:
+                    <br />
+                    <b>(1)</b> In chat, type <b>!getnp</b> and follow the bot instructions to select your active nameplate.
+                    <br />
+                    <b>(2)</b> On the Mainframe website, go to your Profile page and click <b>Set Active</b> on your chosen nameplate.
+                  </p>
                 </li>
+
                 <li>
-                  <p className="q">Other than the Mainframe site and the check-ins, what else are the cards for?</p>
-                  <p className="a">These cards are a perk of every viewer on <b>@the13thgeek</b>'s stream! It gives everyone recognition in the form of a unique virtual membership ID that is tailored for them.</p>
-                  <p className="a">Additional planned features are to incorporate these cards on raids and shoutouts (if the person raiding in or receiving a shoutout has a membership card in the system)!</p>
+                  <p className="q">Other than the Mainframe site and check-ins, what are nameplates for?</p>
+                  <p className="a">
+                    Nameplates are a way to represent your identity within <b>@the13thgeek</b>'s stream community. They provide
+                    visual recognition as a personalized virtual membership ID.
+                  </p>
+                  <p className="a">
+                    Planned features include displaying nameplates during raids and shoutouts (if the user has a nameplate in the system).
+                  </p>
                 </li>
+
                 <li>
-                  <p className="q">How would I know if there are any new designs?</p>
-                  <p className="a">Announcements will be made live on-stream and on social media and Discord. Make sure you follow and stay tuned!</p>
+                  <p className="q">How do I know when new nameplates are available?</p>
+                  <p className="a">
+                    New nameplates are announced live on-stream and shared through Discord and social media.
+                    <br />
+                    Make sure to stay tuned so you don’t miss limited-time drops!
+                  </p>
                 </li>
               </ul>
             </Tile>

@@ -12,18 +12,18 @@ import './Profile.scss';
 const Profile = () => {
   const navigate = useNavigate();
   const user = getUserFromStorage();
-  const [userCards,setUserCards] = useState(user?.user_cards);
+  const [userNameplates,setUserNameplates] = useState(user?.nameplates || []);
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState(null);
   
-  const userCardsEX = userCards?.filter(card =>
-    ['EX','GX','SP'].some(option => card.catalog_no.startsWith(option))
+  const userNameplatesEX = userNameplates?.filter(nameplate =>
+    ['EX','GX','SP'].some(option => nameplate.catalog_no.startsWith(option))
   );
-  const userCardsRP = userCards?.filter(card =>
-    ['RP'].some(option => card.catalog_no.startsWith(option))
+  const userNameplatesRP = userNameplates?.filter(nameplate =>
+    ['RP'].some(option => nameplate.catalog_no.startsWith(option))
   );
-  const userCardsRG = userCards?.filter(card =>
-    ['RG'].some(option => card.catalog_no.startsWith(option))
+  const userNameplatesRG = userNameplates?.filter(nameplate =>
+    ['RG'].some(option => nameplate.catalog_no.startsWith(option))
   );
   
   const openDialog = (status, message) => {
@@ -48,8 +48,8 @@ const Profile = () => {
     setModalOpen(false);
   };
 
-  const changeCard = async (userId, userName, cardName) => {
-    const requestCloud = await fetch(`${import.meta.env.VITE_CLOUD_URL}/mainframe/change-card`, {
+  const changeNameplate = async (userId, userName, nameplateName) => {
+    const requestCloud = await fetch(`${import.meta.env.VITE_CLOUD_URL}/mainframe/change-nameplate`, {
       method: "POST",
       headers: {
           "x-api-key": import.meta.env.VITE_CLOUD_APIKEY,
@@ -58,29 +58,29 @@ const Profile = () => {
       body: JSON.stringify({
         twitch_id: userId,
         twitch_display_name: userName,
-        new_card_name: cardName
+        new_nameplate_name: nameplateName
       })
     });
     const data = await requestCloud.json();    
 
     if(data.success) {
       let newUserData = user;
-      let newActiveCard = null;
-      let newCardSet = [];
+      let newActiveNameplate = null;
+      let newNameplateSet = [];
 
-      for(let card of user.user_cards) {
-        if(card.sysname == cardName) {
-          newActiveCard = card;
-          card.is_default = 1;
+      for(let nameplate of user.nameplates) {
+        if(nameplate.sysname == nameplateName) {
+          newActiveNameplate = nameplate;
+          nameplate.is_equipped = 1;
         } else {
-          card.is_default = 0;
+          nameplate.is_equipped = 0;
         }
-        newCardSet.push(card);
+        newNameplateSet.push(nameplate);
       }
-      newUserData.user_card = newActiveCard;
-      newUserData.user_cards = newCardSet;
+      newUserData.equipped.nameplate = newActiveNameplate;
+      newUserData.nameplates = newNameplateSet;
       saveUserToStorage(newUserData);
-      setUserCards(newCardSet);
+      setUserNameplates(newNameplateSet);
     }
     openDialog(data.success, data.message);
   }
@@ -112,7 +112,7 @@ const Profile = () => {
                 </div>
                 <div className="profile-right">
                   <div className="user-card">
-                    <img src={UserCard(user.user_card.sysname)} alt={`Card: ${user.user_card.name}`} />
+                    <img src={UserCard(user.equipped.nameplate.sysname)} alt={`Card: ${user.equipped.nameplate.name}`} />
                     <h3 className="username">{user.display_name}</h3>
                     <span className="level">{user.level}</span>
                   </div>
@@ -123,26 +123,26 @@ const Profile = () => {
               {/* Special Cards */}
               <h3 className="card-category specials">Specials &amp; Exclusives</h3>
               <div className="card-list specials">
-                {userCardsEX.length > 0 && userCardsEX.map((card,idx) => (
-                  <div className={'card-item' + (card.is_default === 1 ? (` active`) : (''))} key={idx}>
-                    <img src={UserCard(card.sysname + "-thumb")} alt={card.name} />
+                {userNameplatesEX.length > 0 && userNameplatesEX.map((nameplate,idx) => (
+                  <div className={'card-item' + (nameplate.is_equipped === 1 ? (` active`) : (''))} key={idx}>
+                    <img src={UserCard(nameplate.sysname + "-thumb")} alt={nameplate.name} />
                     <div className="info">
-                      <p className="title">{card.name}</p>
+                      <p className="title">{nameplate.name}</p>
                       <div className="badges">
-                        {card.is_premium === 1 && (
+                        {nameplate.is_premium === 1 && (
                           <span className="card-badge premium">Premium</span>
                         )}
-                        {card.is_event === 1 && (
+                        {nameplate.is_event === 1 && (
                           <span className="card-badge event">Event Exclusive</span>
                         )}
-                        {card.is_rare === 1 && (
+                        {nameplate.is_rare === 1 && (
                           <span className="card-badge rare">Rare</span>
                         )}
                       </div>
                     </div>  
                     <div className="card-actions">
-                      {card.is_default !== 1 ? (
-                        <button className="set-active" onClick={() => changeCard(user.twitch_id,user.twitch_display_name,card.sysname)}>Set Active</button>
+                      {nameplate.is_equipped !== 1 ? (
+                        <button className="set-active" onClick={() => changeNameplate(user.twitch_id,user.twitch_display_name,nameplate.sysname)}>Set Active</button>
                       ) : (
                         <span>Active</span>
                       )}
@@ -153,26 +153,26 @@ const Profile = () => {
               {/* Premium Cards */}
               <h3 className="card-category premium">Premium Issue</h3>
               <div className="card-list premium">
-                {userCardsRP.length > 0 && userCardsRP.map((card,idx) => (
-                  <div className={'card-item' + (card.is_default === 1 ? (` active`) : (''))} key={idx}>
-                    <img src={UserCard(card.sysname + "-thumb")} alt={card.name} />
+                {userNameplatesRP.length > 0 && userNameplatesRP.map((nameplate,idx) => (
+                  <div className={'card-item' + (nameplate.is_equipped === 1 ? (` active`) : (''))} key={idx}>
+                    <img src={UserCard(nameplate.sysname + "-thumb")} alt={nameplate.name} />
                     <div className="info">
-                      <p className="title">{card.name}</p>
+                      <p className="title">{nameplate.name}</p>
                       <div className="badges">
-                        {card.is_premium === 1 && (
+                        {nameplate.is_premium === 1 && (
                           <span className="card-badge premium">Premium</span>
                         )}
-                        {card.is_event === 1 && (
+                        {nameplate.is_event === 1 && (
                           <span className="card-badge event">Event Exclusive</span>
                         )}
-                        {card.is_rare === 1 && (
+                        {nameplate.is_rare === 1 && (
                           <span className="card-badge rare">Rare</span>
                         )}
                       </div>
                     </div>  
                     <div className="card-actions">
-                      {card.is_default !== 1 ? (
-                        <button className="set-active" onClick={() => changeCard(user.twitch_id,user.twitch_display_name,card.sysname)}>Set Active</button>
+                      {nameplate.is_equipped !== 1 ? (
+                        <button className="set-active" onClick={() => changeNameplate(user.twitch_id,user.twitch_display_name,nameplate.sysname)}>Set Active</button>
                       ) : (
                         <span>Active</span>
                       )}
@@ -183,26 +183,26 @@ const Profile = () => {
               {/* Standard Cards */}
               <h3 className="card-category standard">Standard Issue</h3>
               <div className="card-list standard">
-                {userCardsRG.length > 0 && userCardsRG.map((card,idx) => (
-                  <div className={'card-item' + (card.is_default === 1 ? (` active`) : (''))} key={idx}>
-                    <img src={UserCard(card.sysname + "-thumb")} alt={card.name} />
+                {userNameplatesRG.length > 0 && userNameplatesRG.map((nameplate,idx) => (
+                  <div className={'card-item' + (nameplate.is_equipped === 1 ? (` active`) : (''))} key={idx}>
+                    <img src={UserCard(nameplate.sysname + "-thumb")} alt={nameplate.name} />
                     <div className="info">
-                      <p className="title">{card.name}</p>
+                      <p className="title">{nameplate.name}</p>
                       <div className="badges">
-                        {card.is_premium === 1 && (
+                        {nameplate.is_premium === 1 && (
                           <span className="card-badge premium">Premium</span>
                         )}
-                        {card.is_event === 1 && (
+                        {nameplate.is_event === 1 && (
                           <span className="card-badge event">Event Exclusive</span>
                         )}
-                        {card.is_rare === 1 && (
+                        {nameplate.is_rare === 1 && (
                           <span className="card-badge rare">Rare</span>
                         )}
                       </div>
                     </div>  
                     <div className="card-actions">
-                      {card.is_default !== 1 ? (
-                        <button className="set-active" onClick={() => changeCard(user.twitch_id,user.twitch_display_name,card.sysname)}>Set Active</button>
+                      {nameplate.is_equipped !== 1 ? (
+                        <button className="set-active" onClick={() => changeNameplate(user.twitch_id,user.twitch_display_name,nameplate.sysname)}>Set Active</button>
                       ) : (
                         <span>Active</span>
                       )}
